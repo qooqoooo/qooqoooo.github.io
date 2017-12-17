@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Crafty+Girls|Dosis" rel="stylesheet">
+    <link rel="stylesheet" href="me.css" id="css">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link href="https://fonts.googleapis.com/css?family=Abel|Cairo|Rajdhani|Roboto+Condensed:300|Special+Elite|Source+Sans+Pro:200,300|Dosis:200" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav">
+        <div class="logo">
+            <a href="./index.html"> <h1>Heyy Hey</h1> </a>
+        </div>
+        <div class="burger-menu">
+            <div class="line">
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
+            </div>
+        </div>      
+    </nav>
+
+    <div class="menu-cover">
+        <div class="menu-content">
+            <ul>
+                <li>
+                    <a href=""> 
+                        <i>01</i>
+                        <b>Brand</b>
+                    </a> 
+                </li>
+                <li>
+                    <a href="./me.html"> 
+                        <i>02</i>
+                        <b>About</b>
+                    </a> 
+                </li>
+                <li>
+                    <a href="./projects.html"> 
+                        <i>03</i>
+                        <b>Projects</b>
+                    </a> 
+                </li>
+                <li>
+                    <a href=""> 
+                        <i>04</i>
+                        <b>Contracts</b>
+                    </a> 
+                </li>
+            </ul>
+        </div>    
+    </div>
+    
+    <div class="page-content">
+        <div class="main-content">
+            <div class="primary">
+                <div class="bg"></div>
+                <div class="top-left">
+                    <div class="title-box">
+                        <h1 class="title">Hou YaCiao</h1>
+                        <h2 class="pre-title">FRONT-END Engineer</h2>
+                    </div>
+                    <div class="sub-title">
+                        <h3>ABOUTMi</h3>
+                    </div>
+                </div>
+                <div class="top-right">
+                    <!-- <div>
+                        <h1>Front-end Engineer</h1>
+                        <h1>Taiwan Taipei</h1>
+                    </div> -->
+                    <div class="words">
+                        <div class="education">
+                            <h2>EDUCATION</h2>
+                            <p>資策會資策會互動式網站UIUX, May. 2016</p>
+                            <p>淡江大學法文系, Sept. 2011 - Jun. 2015</p>
+                        </div>
+                        <div class="skill">
+                            <h2>SKILL</h2>
+                            <p>HTML / CSS / SASS / RWD / Bootstrap</p>
+                            <p>Javascript / Jquery / Vuejs / GIT</p>
+                        </div>
+                        <div class="experience">
+                            <h2>EXPERIENCE</h2>
+                            <p>Front-end Engineer, Timecity Tech Co., Ltd., 2017</p>
+                            <p>於辰城科技公司擔任前端一職, 負責電腦版及手機版網站VueJS開版與畫面異常部分，處理上線前後網站的需求及臭蟲。</p>
+                        </div>
+                        <div class="mail">
+                            <i class="icon-mail">qoosc18@gmail.com</i>
+                        </div>
+                        
+                    </div>
+                    <div class="div-img">
+                        <img src="img/photo-1488751045188-3c55bbf9a3fa.jpg" alt="">
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+  
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./jquery.transit-master/jquery.transit.js"></script>
+    <script>
+    /*MeNu*/
+    $('.burger-menu').click(function(){
+        if($('.middle').css('display')=='none'){
+            $('.top').css({'transform':'0'})
+            $('.bottom').css({'transform':'0'})
+            $('.middle').css('display','block')
+            $('.menu-cover').css({'transform':'translate(0%,-100%)'})
+        }else if($('.middle').css('height')=='1px'){
+            $('.top').css({'transform':'translate(0px,5px), rotate(45deg)'})
+            $('.middle').css('display','none')
+            $('.bottom').css({'transform':'translate(1px, -5px), rotate(-45deg)'})
+            $('.menu-cover').css({'transform':'translate(0%,0%), matrix(1,0,0,1,0,0)'})            
+        }else{
+            console.log('pp')
+        }
+    })
+
+    /*Nav*/
+    var navClass= document.getElementsByClassName('nav')
+        lastScrollY = 0;
+    window.addEventListener('scroll', function(){
+        var st = this.scrollY;
+        // 判斷是向上捲動，而且捲軸超過 200px
+        console.log(st)
+        if( st < lastScrollY) {
+            //往上
+            navClass[0].classList.remove('hideUp')
+        }else{
+            //往下
+            navClass[0].classList.add('hideUp')
+        }
+        lastScrollY = st;
+    });
+    </script>
+
+
+</body>
+
+</html>

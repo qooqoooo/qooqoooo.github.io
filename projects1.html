@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="projects1.css" id="css">
+    <link rel="stylesheet" href="projects1_ipad.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link href="https://fonts.googleapis.com/css?family=Abel|Cairo|Rajdhani|Roboto+Condensed:300|Special+Elite|Source+Sans+Pro:200,300|Dosis:200" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="logo">
+            <a href="./index.html"> <h1>Heyy Hey</h1> </a>
+        </div>
+        <div class="burger-menu">
+            <div class="line">
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
+            </div>
+        </div>
+        <!-- <div class="social">
+            <div class="social-content">
+                <b>Follow More</b>
+                <a href="https://www.facebook.com/EdSheeranMusic/">
+                    <i class="icon-instagram-1"></i>
+                </a>
+                <a href="https://www.instagram.com/lurehsu/" class="icon-instagram-1"></a>
+            </div>
+        </div> -->
+        
+    </nav>
+    <div class="menu-cover">
+        <div class="menu-content">
+            <ul>
+                <li>
+                    <a href=""> 
+                        <i>01</i>
+                        <b>Brand</b>
+                    </a> 
+                </li>
+                <li>
+                    <a href="./me.html"> 
+                        <i>02</i>
+                        <b>About</b>
+                    </a> 
+                </li>
+                <li>
+                    <a href="./projects.html"> 
+                        <i>03</i>
+                        <b>Projects</b>
+                    </a> 
+                </li>
+                <li>
+                    <a href=""> 
+                        <i>04</i>
+                        <b>Contracts</b>
+                    </a> 
+                </li>
+            </ul>
+        </div>    
+    </div>
+    
+    <div class="page-content">
+        <div class="main-content">
+            <div class="primary">
+                <div class="top-left">
+                    <div class="title-box">
+                        <h1 class="title">WinVip</h1>
+                        <h2 class="pre-title">PROJECT</h2>
+                    </div>
+                    <div class="sub-title">
+                        <h3>PROJECT</h3>
+                    </div>
+                </div>
+                <div class="top-right">
+                    <img src="img/1437164904_taylor-swift-blank-space-zoom.jpg" alt="">
+                </div>
+            </div>
+            <div class="pics">
+                <div class="row">
+                    <div class="left">
+                        <img src="img/vip/snipaste_20171110_143829.png" alt="">
+                    </div>
+                    <div class="right">
+                        <article>
+                            <h3>VueJS / JAVASCRIPT</h3>
+                            <p>於公司期間最主要負責的網站，後改版VueJS，主要負責切版、畫面的修改及部分功能</p>
+                        </article>
+                    </div>
+                </div>
+                <section>
+                    <figure class="ani-entre">
+                        <div class="content-img">
+                            <img src="img/vip/snipaste_20171103_161924.png" alt="">
+                        </div>
+                    </figure>
+                    <figure class="ani-entre">
+                        <div class="content-img">
+                            <img src="img/vip/snipaste_20171103_160303.png" alt="">
+                        </div>
+                    </figure>
+                </section>
+                <section class="mobile">
+                    <figure>
+                        <div class="">
+                            <img src="img/vip/snipaste_20171103_165206.png" alt="">
+                        </div>
+                        <div class="">
+                            <img src="img/vip/snipaste_20171103_165330.png" alt="">
+                        </div>
+                        <div class="">
+                            <img src="img/vip/snipaste_20171103_165451.png" alt="">
+                        </div>
+                        <div class="">
+                            <img src="img/vip/snipaste_20171103_165749.png" alt="">
+                        </div>
+                        <div class="">
+                            <img src="img/vip/snipaste_20171103_165722.png" alt="">
+                        </div>
+                        <div>
+                            <img src="img/vip/snipaste_20171103_165516.png" alt="">
+                                
+                        </div>
+                       
+                    </figure>    
+                </section>
+            </div>               
+        </div>
+    </div>
+
+  
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./jquery.transit-master/jquery.transit.js"></script>
+    <script>
+    /*MeNu*/
+    $('.burger-menu').click(function(){
+        if($('.middle').css('display')=='none'){
+            $('.top').css({'transform':'0'})
+            $('.bottom').css({'transform':'0'})
+            $('.middle').css('display','block')
+            $('.menu-cover').css({'transform':'translate(0%,-100%)'})
+        }else if($('.middle').css('height')=='1px'){
+            $('.top').css({'transform':'translate(0px,5px), rotate(45deg)'})
+            $('.middle').css('display','none')
+            $('.bottom').css({'transform':'translate(1px, -5px), rotate(-45deg)'})
+            $('.menu-cover').css({'transform':'translate(0%,0%), matrix(1,0,0,1,0,0)'})            
+        }else{
+            console.log('pp')
+        }
+    })
+
+    /*Nav*/
+    var navClass= document.getElementsByClassName('nav')
+        lastScrollY = 0;
+    window.addEventListener('scroll', function(){
+        var st = this.scrollY;
+        // 判斷是向上捲動，而且捲軸超過 200px
+        console.log(st)
+        if( st < lastScrollY) {
+            //往上
+            navClass[0].classList.remove('hideUp')
+        }else{
+            //往下
+            navClass[0].classList.add('hideUp')
+        }
+        lastScrollY = st;
+    });
+    </script>
+
+
+</body>
+
+</html>

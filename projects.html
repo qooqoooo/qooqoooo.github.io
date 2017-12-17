@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="projects.css" id="css">
+    <link rel="stylesheet" href="css/fontello-embedded.css">
+    <link href="https://fonts.googleapis.com/css?family=Abel|Cairo|Rajdhani|Roboto+Condensed:300|Special+Elite|Source+Sans+Pro:200,300|Dosis:200" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav-right">
+            <div class="logo">
+                <a href="./index.html"> <h1>Heyy Hey</h1> </a> 
+            </div>
+            <div class="burger-menu">
+                    <div class="line">
+                        <span class="top"></span>
+                        <span class="middle"></span>
+                        <span class="bottom"></span>
+                    </div>
+            </div>
+        </div>    
+        <div class="social">
+            <div class="social-content">
+                <b>Follow More</b>
+                <a href="" class="">
+                    <i class="icon-facebook"></i>
+                </a>
+                <a href="">
+                    <i class="icon-instagram-1"></i>
+                </a>
+            </div>
+        </div>   
+    </nav>
+    <div class="menu-cover">
+        <div class="menu-content">
+            <ul>
+                <li>
+                    <a href=""> 
+                        <i>01</i>
+                        <b>Brand</b>
+                    </a> 
+                </li>
+                <li>
+                    <a href="./me.html"> 
+                        <i>02</i>
+                        <b>About</b>
+                    </a> 
+                </li>
+                <li>
+                    <a href="./projects.html"> 
+                        <i>03</i>
+                        <b>Projects</b>
+                    </a> 
+                </li>
+                <li>
+                    <a href=""> 
+                        <i>04</i>
+                        <b>Contracts</b>
+                    </a> 
+                </li>
+            </ul>
+        </div>    
+    </div>
+    
+    <div class="page-content">
+        <section class="main-content">
+            <div class="box-content">
+                <div class="col-left">
+                    <div class="box">
+                        <a href="projects1.html" class="wrapper-text">
+                            <div class="box-title">
+                                <h1>
+                                    <b>Project I</b>
+                                </h1>
+                                <h1>
+                                    <b>ACG Winvip</b>
+                                </h1>
+                            </div>
+                        </a>
+                        <a href="projects1.html" class="content-img" style="">
+                            <div class="box-img" style="background-image:url(img/1437164904_taylor-swift-blank-space-zoom.jpg)"></div>
+                            <div class="cover"></div>
+                            <div class="overlay"></div>
+                            <div class="hover-text"></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-left">
+                    <div class="box">
+                        <a href="projects2.html" class="wrapper-text">
+                            <div class="box-title">
+                                <h1>
+                                    <b>Project II</b>
+                                </h1>
+                                <h1>
+                                    <b>GPO Castagna</b>
+                                </h1>
+                            </div>
+                        </a>
+                        <a href="projects2.html" class="content-img">
+                            <div class="box-img" style="background-image:url(http://fakeimg.pl/320x216/?text=BS)"></div>
+                            <div class="cover"></div>
+                            <div class="overlay"></div>
+                            <div class="hover-text"></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-left">
+                    <div class="box">
+                        <a href="projects2.html" class="wrapper-text">
+                            <div class="box-title">
+                                <h1>
+                                    <b>Project III</b>
+                                </h1>
+                                <h1>
+                                    <b>Caran d'Ache</b>
+                                </h1>
+                            </div>
+                        </a>
+                        <a href="projects2.html" class="content-img">
+                            <div class="box-img" style="background-image:url(img/All-6901-2.jpg)"></div>
+                            <div class="cover"></div>
+                            <div class="overlay"></div>
+                            <div class="hover-text"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>                
+        </section>
+    </div>
+
+  
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./jquery.transit-master/jquery.transit.js"></script>
+    <script>
+    /*MeNu*/
+    $('.burger-menu').click(function(){
+        if($('.middle').css('display')=='none'){
+            $('.top').css({'transform':'0'})
+            $('.bottom').css({'transform':'0'})
+            $('.middle').css('display','block')
+            $('.menu-cover').css({'transform':'translate(0%,-100%)'})
+        }else if($('.middle').css('height')=='1px'){
+            $('.top').css({'transform':'translate(0px,5px), rotate(45deg)'})
+            $('.middle').css('display','none')
+            $('.bottom').css({'transform':'translate(1px, -5px), rotate(-45deg)'})
+            $('.menu-cover').css({'transform':'translate(0%,0%), matrix(1,0,0,1,0,0)'})            
+        }else{
+            console.log('pp')
+        }
+    })
+    /*Nav*/
+    var navClass= document.getElementsByClassName('nav')
+        lastScrollY = 0;
+    window.addEventListener('scroll', function(){
+        var st = this.scrollY;
+        // 判斷是向上捲動，而且捲軸超過 200px
+        console.log(st)
+        if( st < lastScrollY) {
+            //往上
+            navClass[0].classList.remove('hideUp')
+        }else{
+            //往下
+            navClass[0].classList.add('hideUp')
+        }
+        lastScrollY = st;
+    });
+
+    </script>
+
+
+</body>
+
+</html>
