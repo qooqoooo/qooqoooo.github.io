@@ -774,7 +774,7 @@ i{
     }
 }
 /*IPAD PRO橫*/
-@media screen and (orientation:landscape) and (max-height:1024px) and (min-width:1366px){
+@media screen and (orientation:landscape) and (min-height:1024px) and (min-width:1366px){
     .nav{
         top:3%;
     }
