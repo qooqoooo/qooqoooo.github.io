@@ -693,7 +693,7 @@ i{
     }
 }
 /*I10直*/
-@media screen and (orientation:portrait) and (max-height:812px) and (max-width:375px){
+@media screen and (orientation:portrait) and (max-height:812px) and (min-width:375px){
     .nav{
         top:0;
         white-space: nowrap;
