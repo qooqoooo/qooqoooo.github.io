@@ -668,6 +668,10 @@ i{
     .logo h1{
         font-size: 25px;
     }
+    .menu-content{
+        padding: 120px 0 122px;
+        width: 65%;
+    }
     .wrapper-text{
         left:57%;
         top:74%;
