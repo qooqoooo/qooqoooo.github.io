@@ -1,0 +1,669 @@
+/*   ------------------- for computer, laptop  -----------------------   */
+
+div {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+i{
+    font-style: normal;
+}
+/*標題與漢堡選單*/
+.nav{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top:4%;
+    height:65px;
+    z-index: 100;
+    transition: all 0.6s linear;
+}
+.nav-right{
+    display: flex;
+    width: 70%;
+}
+.hideUp{
+    /*For NAV*/
+    top:-155px;
+    -webkit-overflow-scrolling: touch;
+}
+.logo{
+    padding: 0 0 0 4%;
+    padding-right:4px;
+    font-family: 'Special Elite', cursive;/*打字機款*/
+    color:#282828;
+}
+.logo h1{
+    white-space:nowrap;
+    margin:0 auto;
+    line-height: 65px;
+    color:#555;
+    font-size: 30px;
+}
+.burger-menu{
+    position: absolute;
+    left: 13%;
+    width: 44px;
+    height: 44px;
+    margin:10px 10px;
+    display:flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    color:#282828;
+    cursor: pointer;
+    border:1px rgba(0,0,0,.2) solid;
+    
+}
+.line{
+    display: flex;
+    /* justify-content: center; */
+    justify-content: space-between;
+    padding:16px 0px;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+    height:102%;    
+}
+.top, .middle, .bottom{
+    height: 1px;
+    background-color:#282828;
+    width:18px;
+}
+.menu-cover{
+    overflow-y: hidden;
+    position:fixed;
+    top:0;
+    left: 0;
+    z-index: 99;
+    background:#fff;
+    height: 100%;
+    width:100%;
+    transform: translate(0%, -100%) matrix(1,0,0,1,0,0);
+    overflow: hidden;
+}
+.menu-content{
+    width: 20%;
+    margin:0 auto;
+    padding:142px 0 122px;
+    height:auto;
+}
+.menu-content ul{
+    list-style: none;
+}
+.menu-content a{
+    display: flex;
+}
+.menu-content i{
+    color:#b4a69d;
+    font-weight: 400;
+    line-height: 22px;
+    margin-right:8px;
+    cursor: pointer;
+    font-family: 'Abel', sans-serif;
+    font-size: 15px;
+}
+.menu-content b {
+    font-family: 'TheinhardtLight';
+    line-height: 45px;
+    font-size: 30px;
+    font-weight: 100;
+    color:#333;
+    font-family: 'Cairo', sans-serif;
+}
+.social{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding:0 4%;
+    white-space: nowrap;
+}
+.social-content b{
+    font-family: 'Abel', sans-serif;
+    font-size: 14px;
+    position: relative;
+    padding: 0 60px 0 0 ;
+    letter-spacing: 1px;
+}
+.social-content b:after{
+    content: '';
+    height: 2px;
+    font-family: 'Abel', sans-serif;
+    font-size: 14px;
+    background-color:#63635f;
+    position: absolute;
+    top: 50%;
+    right: 13px;
+    width: 34px;
+    /* margin: -1px 0; */
+}
+.icon-instagram-1:before{
+    content:'\f05d';
+    font-family: "fontello";
+    font-size: 100%;
+    color:#63635f;
+}
+.icon-facebook:before{
+    content:'\6d';
+    font-family: "fontello";
+    font-size: 100%;
+    color:#63635f;
+}
+
+
+/*輪播圖*/
+.slider-area{
+    position: relative;
+    padding-top:200px;
+}
+.slider {
+    position: relative;
+    width: 70%;
+    height: 500px;
+    margin: auto;
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-image: url('../img/photo-1486728297118-82a07bc48a28.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.bg-modal {
+    width: 100%;
+    height: 100%;
+    background-color: #909090;
+    transform: translate(-100.1%, 0);
+}
+
+.text-box {
+    position: absolute;
+    top: 62%;
+    left: -120px;
+    font-size: 2.5em;
+    overflow: hidden;
+}
+
+.text-box-2 {
+    top: 76%;
+    font-size: 2.5em;
+}
+
+.text {
+    white-space: nowrap;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    display: inline-block;
+    padding: 0 6px;
+    background-color: #fff;
+}
+
+.text-modal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #282828;
+    transform: translate(100%, 0);
+}
+
+/*左邊輪播圖按鈕*/
+.custom-page{
+    position: absolute;
+    top:40%;
+    left:0%;
+    width: 10%;
+    line-height: 3;
+    color:#282828;
+    font-family: 'Theinhardt', sans-serif;
+}
+.item-link {
+    position: relative;
+    min-height: 37px;
+}
+.item-link > section{
+    position: absolute;
+    top:50%;
+    height: 1px;
+    width: 80%;
+    background: rgba(40, 40, 40, .1);
+}
+.item-link b {
+    font-size: 13px;
+    /* font-family: 'Theinhardt', sans-serif; */
+    font-family: 'Abel', sans-serif;
+    position: absolute;
+    left: 100%;
+    margin:0 3px;
+    cursor: pointer;
+}
+.item-link .b::after {
+    content: '';
+    height: 2px;
+    background: #282828;
+    position: absolute;
+    top:65%;
+    left: 0;
+    margin-top:2px;
+    transition: all 0.25s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+}
+.item-link.active .b::after {
+    width: 100%;
+}
+/*滑動圖文區*/
+.page-content{
+    padding:0 4%;
+}
+.page-content>section{
+    padding:150px 0;
+}
+.row-one, .row-two, .row-three{
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    font-size: 0;
+}
+.col-two article, .col-three article, .col-six article{
+    padding:10%;
+    display: flex;
+    /* width:30%; */
+}
+.col-three{
+    height:295px;
+    display: flex;
+    justify-content: flex-end;
+}
+.col-three article{
+    align-items: center;
+}
+.col-three article>div{
+    text-align: end;
+    width: 100%;
+}
+.col-three .label-btn{
+    justify-content: flex-end;
+}
+.col-one{
+    overflow: hidden;
+}
+.col-one a, .col-five a{
+    position: relative;/*設相對位置來讓animate left作用*/
+    display: block;
+    overflow: hidden;
+    height: 455px;
+    width: 383px;
+    /* transform: translate3d(383px,0,0) */
+}
+.col-four a{
+    overflow: hidden;
+    position: relative;
+    display: block;
+    width:394px;
+}
+/* .selfie{
+    background-image: url(./img/10733978_732105590205203_345177223661048391_n.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 455px;
+} */
+.col-four img{
+    z-index: 5;
+    filter: grayscale(65%);
+    position: absolute;
+    height:295px;
+    left:-100%;
+}
+/* .col-one-pic{
+    position: relative;
+    height: 455px;
+    background-image:url(img/photo-1509215453737-454a27b8613e.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+} */
+.col-one img, .col-five img{
+    z-index: 5;
+    position: relative;
+    top:0;
+    left: 100%;
+}
+.col-four span{
+    width: 394px;
+    background: #b4a69d;
+    position: relative;
+    display: block;
+    height: 295px;
+    left:-100%;
+}
+.col-one span, .col-five span{
+    position: absolute;
+    top:0;
+    left:100%;/*位於圖片左邊*/
+    height: 100%;
+    width: 383px;
+    display: block;
+    background: #b4a69d;
+}
+
+.row-one .pre-title b:after, .row-three .pre-title b:after{
+    content: '';
+    width:34px;
+    height:2px;
+    margin:2px 12px;
+    background: #b4a69d;
+    display: inline-block;
+}
+.col-three .pre-title b::before{
+    content: '';
+    width:34px;
+    height:2px;
+    margin:2px 12px;
+    background: #b4a69d;
+    display: inline-block;
+}
+.col-one, .col-three, .col-five{
+    width:50%;
+    text-align:-webkit-right;
+    overflow: hidden;   /*先讓中間線出來! 之後再調整*/
+}
+.col-two, .col-four, .col-six{
+    width:50%;
+    text-align: left;
+    overflow: hidden;
+}
+.pre-title{
+    position: relative;
+    left:-100%;
+}
+.pre-title b{
+    position: relative;
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 15px;
+    padding: 5px 0;
+    color:#b4a69d;
+    font-family: 'Rajdhani', sans-serif;    
+}
+.pre-title span{
+    position: absolute;
+    top: 0;
+    right: auto;
+    left: -101%;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+   background:#282828;
+}
+
+.col-three .pre-title, .col-three .pre-title span,
+.col-three .title, .col-three .title span,
+.col-three .label-btn{
+    left:122%;
+}
+
+.col-six .pre-title, .col-six .pre-title span,
+.col-six .title, .col-six .title span,
+.col-six .label-btn{
+    left:-150%;
+}
+
+.title{
+    white-space: normal;
+    /* font-family: 'Rajdhani', sans-serif; */
+    font-family: 'Caveat', cursive;
+    color:#282828;
+    margin-bottom:10px;
+    font-size: 35px;
+    position: relative;
+    left:-100%;
+    width: 100%; /*給第二欄名字不斷行*/
+}
+.title span{
+    position: absolute;
+    top: 0;
+    right: auto;
+    left: -101%;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #282828;
+}
+.hidden{
+    /* height: -webkit-fill-available; */
+    overflow: hidden;
+}
+.label-btn{
+    position: relative;
+    display: flex;
+    left:-100%;
+    /* transform: translate3d(90px, 0px, 0px); */
+}
+/*for the outter div covering the span*/
+.covering{
+    padding:8px 10px;
+}
+.label-btn b{
+    z-index: 5;
+    color:#4e4e4e;
+    letter-spacing: 1px;
+    line-height: 1.2em;
+    height:1.2em;
+    font-size: 16px;
+    font-family: 'Rajdhani', sans-serif;
+    position: relative;
+}
+.label-btn b span{
+    position: absolute; /*我有問題::flex元素想要重疊物件*/
+    top:16px;
+    left:13px;
+    height: 1em;
+    width: 58%;
+    background: #b4a69d;
+    opacity: .5;
+    font-size: initial;
+    /* transition: width 2s; Hover與改變的對象要一致才能作用 */
+}
+
+.covering span:after{
+    content: '';
+    position: absolute;
+    top:0;
+    left: -100%;
+    height: 1em;
+    width: 100%;
+    background: white ;
+}
+
+.hidden:hover .covering span:after{
+    left: 100% ;
+    transition: left 1.3s;
+}
+
+.row-one .label-btn span, .row-two .label-btn span, .row-three .label-btn span{
+    position: absolute; /*我有問題::flex元素想要重疊物件*/
+    top:17px;
+    left:18px;
+    height: 1em;
+    width: 58%;
+    background: #b4a69d;
+    opacity: .5;
+    font-size: initial;
+} 
+.row-one .covering span{
+    width: 80%;
+}
+.row-two .label-btn .covering span{
+    left: auto;
+    right: 18px;
+    width: 42%;
+}
+.row-two .covering span:after{
+    left: 100%; 
+}
+
+.row-two .hidden:hover .covering span:after{
+    left: -100% ;
+    transition: left 1.3s;
+}
+
+
+/*下方補充圖文區*/
+.bottom-area{
+    /* padding-top:180px;
+    padding-bottom:180px; */
+    padding:10% 10%;
+    /* padding-left: 17.6%;
+    padding-right:18.1%; */
+    /* margin-left:-4%;
+    margin-right:-4%; */
+    opacity: 1;
+}
+.bottom-container{
+    width:100%;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+
+}
+.col-left, .col-right{
+    display: flex;
+    width: 50%;
+}
+.col-right{
+    justify-content: flex-end;
+}
+.overlay{
+    align-self: center;
+    overflow: hidden;
+    width: 20%;
+    height:88%;
+    background-color:rgba(255,255,255,.7);
+}
+.col-bg{
+    left:100%;
+    position: relative;
+    background-image: url(../img/10533800_700416273363434_8463850696732086619_n.jpg);
+    width:100%;
+    height:100%;
+    align-self: center;
+    filter:grayscale(100%);
+    background-size: cover;
+    opacity: .8;
+}
+.col-text{
+    overflow: hidden;
+    width:60%;
+}
+.col-left .col-text{
+    margin-left: -2%;
+    z-index: 2;
+}
+.col-right .col-text{
+    text-align: right;
+    margin-right: -2%;
+    z-index: 2;
+}
+.col-title{
+    /* font-family:'Caveat', cursive; 不適合*/
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color:#444;
+    position: relative;/*FOR位移*/
+    left:-100%;
+}
+.col-content{
+    position: relative;
+    left:-100%;
+    margin:15px 0;
+    color: rgba(51, 51, 51, .35);
+    line-height: 1.2em;
+}
+.col-btn{
+    position: relative;
+    left:-100%;
+}
+.col-btn a{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    padding:0 6px;
+    letter-spacing: 1px;
+    color:#4e4e4e;
+    height:1.2em;
+    line-height: 1.2em;
+    position: relative;
+    margin: 15px 0;
+    display: inline-block;/*為了包覆整個span按鍵*/
+}
+.col-btn span{
+    position: absolute;
+    top:8px;
+    left: 0;
+    height: 1em;
+    width: 100%;
+    opacity: .5;
+    background: #b4a69d;
+    z-index: 1;
+}
+
+/*Footer*/
+footer{
+    padding-bottom: 15px;
+}
+.footer-container{
+    padding: 0 13%;
+    width:100%;
+}
+.footer-row{
+    display: flex;
+    justify-content: space-between;
+}
+.col-last ul{
+    list-style: none;
+}
+.col-last ul li, .col-email h3, .col-info h3{
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 14px;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 800;
+    letter-spacing: 1px;
+    line-height: 1.2em;
+    height: 1.2em;
+}
+.col-last ul li a{
+    color:#333;
+    border-bottom: 2px solid #b4a69d;
+}
+.col-email h3, .col-info h3{
+    color:#333;
+    white-space: nowrap;
+}
+.col-last, .col-email, .col-info, .row-last{
+    display: inline-block;
+    padding:0 30px;
+}
+.row-last{
+    display: inline-flex;
+}
+

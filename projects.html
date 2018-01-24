@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="projects.css" id="css">
+    <link rel="stylesheet" href="css/projects.css" id="css">
     <link rel="stylesheet" href="css/fontello-embedded.css">
     <link href="https://fonts.googleapis.com/css?family=Abel|Cairo|Rajdhani|Roboto+Condensed:300|Special+Elite|Source+Sans+Pro:200,300|Dosis:200" rel="stylesheet">
 </head>
@@ -41,9 +41,9 @@
         <div class="menu-content">
             <ul>
                 <li>
-                    <a href=""> 
+                    <a href="./index.html"> 
                         <i>01</i>
-                        <b>Brand</b>
+                        <b>Home</b>
                     </a> 
                 </li>
                 <li>
@@ -61,7 +61,7 @@
                 <li>
                     <a href=""> 
                         <i>04</i>
-                        <b>Contracts</b>
+                        <b>Contacts</b>
                     </a> 
                 </li>
             </ul>
@@ -79,7 +79,7 @@
                                     <b>Project I</b>
                                 </h1>
                                 <h1>
-                                    <b>ACG Winvip</b>
+                                    <b>AGG Winvip</b>
                                 </h1>
                             </div>
                         </a>
@@ -93,18 +93,18 @@
                 </div>
                 <div class="col-left">
                     <div class="box">
-                        <a href="projects2.html" class="wrapper-text">
+                        <a href="projects3.html" class="wrapper-text">
                             <div class="box-title">
                                 <h1>
                                     <b>Project II</b>
                                 </h1>
                                 <h1>
-                                    <b>GPO Castagna</b>
+                                    <b>GPiiO Castagna</b>
                                 </h1>
                             </div>
                         </a>
-                        <a href="projects2.html" class="content-img">
-                            <div class="box-img" style="background-image:url(http://fakeimg.pl/320x216/?text=BS)"></div>
+                        <a href="projects3.html" class="content-img">
+                            <div class="box-img" style="background-image:url(img/photo-1508349083404-75b96ae8f41a.jpg)"></div>
                             <div class="cover"></div>
                             <div class="overlay"></div>
                             <div class="hover-text"></div>
@@ -141,20 +141,21 @@
     <script src="./jquery.transit-master/jquery.transit.js"></script>
     <script>
     /*MeNu*/
+    var navIsOpen = false
     $('.burger-menu').click(function(){
-        if($('.middle').css('display')=='none'){
+        if(navIsOpen){
             $('.top').css({'transform':'0'})
             $('.bottom').css({'transform':'0'})
             $('.middle').css('display','block')
             $('.menu-cover').css({'transform':'translate(0%,-100%)'})
-        }else if($('.middle').css('height')=='1px'){
+        } else {
             $('.top').css({'transform':'translate(0px,5px), rotate(45deg)'})
             $('.middle').css('display','none')
             $('.bottom').css({'transform':'translate(1px, -5px), rotate(-45deg)'})
             $('.menu-cover').css({'transform':'translate(0%,0%), matrix(1,0,0,1,0,0)'})            
-        }else{
-            console.log('pp')
         }
+
+        navIsOpen = !navIsOpen
     })
     /*Nav*/
     var navClass= document.getElementsByClassName('nav')

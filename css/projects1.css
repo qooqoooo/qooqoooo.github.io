@@ -1,0 +1,275 @@
+div {
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+i{
+    font-style: normal;
+}
+
+/*Logo and Menu*/
+.nav{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top:4%;
+    height:65px;
+    z-index: 100;
+    transition: all 0.6s linear;
+    /* transition: top .6s ease-in-out; */
+}
+.hideUp{
+    /*For NAV*/
+    top:-155px;
+}
+.nav-right{
+    display: flex;
+    width:70%;
+}
+.logo{
+    /*for圖片*/
+    /* -webkit-filter: invert(100%);
+    filter: invert(100%);  CSS3 */
+    padding: 0 0 0 4%;
+    padding-right:4px;
+    /*for 文字*/
+    font-family: 'Special Elite', cursive;/*打字機款*/
+    color:#282828; 
+}
+.logo h1{
+    margin:0 auto;
+    line-height: 65px;
+    color:#555;
+    font-size: 30px;
+}
+.burger-menu{
+    position: absolute;
+    left: 13%;
+    width: 44px;
+    height: 44px;
+    /* line-height: 65px; */
+    margin:10px 10px;
+    display:flex;
+    color:#282828;
+    cursor: pointer;
+    border:1px rgba(0,0,0,.2) solid;    
+}
+.line{
+    display: flex;
+    /* justify-content: center; */
+    justify-content: space-between;
+    padding:16px 0px;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+    height:102%;    
+}
+.top, .middle, .bottom{
+    height: 1px;
+    background-color:#282828;
+    width:18px;
+}
+.menu-cover{
+    position:fixed;
+    top:0;
+    left: 0;
+    z-index: 99;
+    background:#fff;
+    height: 100%;
+    width:100%;
+    transform: translate(0%, -100%) matrix(1,0,0,1,0,0);
+    overflow: hidden;
+}
+.menu-content{
+    width: 20%;
+    margin:0 auto;
+    padding:142px 0 122px;
+    height:auto;
+}
+.menu-content ul{
+    list-style: none;
+}
+.menu-content a{
+    display: flex;
+}
+.menu-content i{
+    color:#b4a69d;
+    font-weight: 400;
+    line-height: 22px;
+    margin-right:8px;
+    cursor: pointer;
+    font-family: 'Abel', sans-serif;
+    font-size: 15px;
+}
+.menu-content b {
+    font-family: 'TheinhardtLight';
+    line-height: 45px;
+    font-size: 30px;
+    font-weight: 100;
+    color:#333;
+    font-family: 'Cairo', sans-serif;
+}
+.social{
+    /* display: inline-flex; */
+    white-space: nowrap;
+    padding:0 4%;
+    line-height: 65px;
+}
+.social-content b{
+    font-family: 'Abel', sans-serif;
+    font-size: 14px;
+}
+.social-content b:after{
+    content: '';
+    height: 2px;
+    font-family: 'Abel', sans-serif;
+    font-size: 14px;
+    color:#63635f;
+}
+.icon-instagram-1:before{
+    content:'\f05d';
+    font-family: "fontello";
+    font-size: 14px;
+}
+
+/*Project Content*/
+/*最上層 文圖*/
+.page-content{
+    height: 100%;   /*我有問題 !! :請問高是需要一層一層設定的嗎??*/
+}
+.main-content{
+    height: 100%;
+}
+.primary{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.top-left{
+    height:100%;
+    display: flex;
+    width: 30%;
+    position: relative;
+}
+.top-left .title-box{
+    display: flex;
+    /* flex: 0 0 auto; */
+    flex-direction: column-reverse;
+    position: absolute;
+    left:15%;
+    top:65%;
+}
+.title-box h1, .title-box h2{
+    margin:0;
+}
+.pre-title{
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 15px;
+    padding: 5px 0;
+    color: #b4a69d;
+    font-family: 'Rajdhani', sans-serif;
+}
+.pre-title:after{
+    display: inline-block;
+    content: "";
+    width: 34px;
+    height: 2px;
+    margin: 2px 12px;
+    background: #b4a69d;
+}
+.title{
+    font-family: 'Caveat', cursive;
+    color:#282828;
+    font-size: 43px;
+    font-weight: 400;
+}
+.sub-title{
+    position: absolute;
+    transform: rotate(270deg) translateX(-1%);
+    color:rgba(40,40,40,.1);
+    font-size: 97px;
+    font-weight: 400;
+    align-self: flex-start;
+    letter-spacing: 2px;
+}
+.sub-title h3{
+    margin:0;
+}
+.top-right{
+    /*用background-image圖片可以自動填滿(img標籤要一直做調整)但SEO找不到*/    
+        height: 100%;
+        width:70%;
+        background-image: url(../img/1437164904_taylor-swift-blank-space-zoom.jpg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+/*VIP專區*/
+.row{
+    display: flex;
+    padding: 130px 0;
+}
+.left{
+    width:60%;
+}
+.left img{
+    width:85%;
+    margin:0 8%;
+}
+.right{
+    width:32%;
+    padding:4% 4% 4% 0;
+}
+.right article h3{
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+.right article p{
+    font-family: "Noto Sans CJK TC", sans-serif;
+    font-weight: 300;
+    text-align: justify;
+}
+
+
+
+
+
+
+/*PICS ZONE*/
+.pics section{
+    display: flex;
+    flex-direction: column;
+}
+.ani-entre{
+    width:70%;
+    align-self: center;
+    margin-bottom: 8%;
+}
+.content-img img{
+    height: 100%;
+    width: 100%;
+}
+.mobile figure{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 8%;
+}
+.mobile figure div{
+    margin:5% 2%;
+} 
+.mobile img{
+    width: 270px;
+}

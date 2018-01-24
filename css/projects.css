@@ -1,0 +1,747 @@
+div {
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+i{
+    font-style: normal;
+}
+
+/*Logo and Menu*/
+.nav{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top:4%;
+    height:65px;
+    z-index: 100;
+    transition: all 0.6s linear;
+    justify-content: space-between;
+}
+.nav-right{
+    display: flex;
+    width: 70%;
+}
+.hideUp{
+    /*For NAV*/
+    top:-155px;
+}
+.logo{
+    /*for圖片*/
+    /* -webkit-filter: invert(100%);
+    filter: invert(100%);  CSS3 */
+    padding: 0 0 0 4%;
+    padding-right:4px;
+    /*for 文字*/
+    font-family: 'Special Elite', cursive;/*打字機款*/
+    color:#282828; 
+}
+.logo h1{
+    margin:0 auto;
+    line-height: 65px;
+    color:#555;
+    font-size: 30px;
+}
+/* .logo img {
+    width: 80%;
+} */
+.burger-menu{
+    position: absolute;
+    left: 13%;
+    width: 44px;
+    height: 44px;
+    /* line-height: 65px; */
+    margin:10px 10px;
+    display:flex;
+    color:#282828;
+    cursor: pointer;
+    border:1px rgba(0,0,0,.2) solid;    
+}
+.line{
+    display: flex;
+    /* justify-content: center; */
+    justify-content: space-between;
+    padding:16px 0px;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+    height:102%;
+}
+.top, .middle, .bottom{
+    height: 1px;
+    background-color:#282828;
+    width:18px;
+}
+.menu-cover{
+    position:fixed;
+    top:0;
+    left: 0;
+    z-index: 99;
+    background:#fff;
+    height: 100%;
+    width:100%;
+    transform: translate(0%, -100%) matrix(1,0,0,1,0,0);
+    overflow: hidden;
+}
+.menu-content{
+    width: 20%;
+    margin:0 auto;
+    padding:142px 0 122px;
+    height:auto;
+}
+.menu-content ul{
+    list-style: none;
+}
+.menu-content a{
+    display: flex;
+}
+.menu-content i{
+    color:#b4a69d;
+    font-weight: 400;
+    line-height: 22px;
+    margin-right:8px;
+    cursor: pointer;
+    font-family: 'Abel', sans-serif;
+    font-size: 15px;
+}
+.menu-content b {
+    font-family: 'TheinhardtLight';
+    line-height: 45px;
+    font-size: 30px;
+    font-weight: 100;
+    color:#333;
+    font-family: 'Cairo', sans-serif;
+}
+.social{
+    display: flex;
+    align-items: center;
+    padding:0 4%;
+    white-space: nowrap;
+}
+.social-content b{
+    font-family: 'Abel', sans-serif;
+    font-size: 14px;
+    position: relative;
+    padding: 0 60px 0 0 ;
+    letter-spacing: 1px;
+}
+.social-content b:after{
+    content: '';
+    height: 2px;
+    font-family: 'Abel', sans-serif;
+    font-size: 14px;
+    background-color:#63635f;
+    position: absolute;
+    top: 50%;
+    right: 13px;
+    width: 34px;
+}
+.icon-instagram-1:before{
+    content:'\f05d';
+    font-family: "fontello";
+    font-size: 100%;
+    color:#63635f;
+}
+.icon-facebook:before{
+    content:'\6d';
+    font-family: "fontello";
+    font-size: 100%;
+    color:#63635f;
+}
+
+
+/*Project 專案列表*/
+.main-content{
+    padding-top: 150px;
+    width:100%;
+}
+.box-content{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;/*內容物斷行*/
+}
+.col-left{
+    width:50%;
+    height: auto;
+    position: relative;
+    margin:56px 0;
+}
+.box{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    width:100%;
+}
+.col-left:nth-child(1) .content-img{
+    width:66%;
+}
+.content-img{
+    width:53.5%;
+    height:100%;
+    position: relative;
+}
+.col-left:nth-child(3) .content-img{
+    width:40%;
+}
+
+.box-img{
+    width:320px;
+    height:216px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.overlay{
+    position: absolute;
+    top:0;
+    width:100%;
+    height: 100%;
+}
+.wrapper-text{
+    z-index: 9;
+    position: absolute;
+    left: 59%;
+    top:48%;
+    align-self: flex-end;
+}
+.box-content .col-left:nth-child(2) .wrapper-text{
+    left: 8%;
+    top:10%;
+}
+.box-content .col-left:nth-child(3) .wrapper-text{
+    left: 20%;
+    top:10%;
+}
+.box-title{
+    white-space: nowrap;
+}
+.box-title h1{   
+    font-family: 'Dosis', sans-serif;
+    color:#444;
+    font-weight: 200;
+    letter-spacing: 1px;
+    line-height: 1.4em;
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom:.5rem;
+}
+.box-title h1 b{
+    padding: 0 14px;
+    background: #FFF;
+}
+
+
+
+/*ipad*/
+/*橫*/
+@media screen and (max-width:1024px) and (max-height:768px) and (orientation:landscape){
+    /* .box-img{
+        width:243px;
+        height:164px;
+    } */
+    .nav{
+        top:3%;
+    }
+    .logo h1{
+        font-size: 28px;
+    }
+    .burger-menu{
+        position: absolute;
+        left:16%;
+    }
+    .menu-content {
+        width: 23%;
+        padding: 23% 0 122px;
+    }
+    .main-content {
+        padding-top: 120px;
+        width: 100%;
+    }
+    .col-left {
+        width: 50%;
+        height: auto;
+        position: relative;
+        margin: 45px 0;
+    }
+    .box-title h1{
+        font-size:25px
+    }
+    .wrapper-text{
+        left: 70%;
+        top: 54%;
+    }
+    .box-content .col-left:nth-child(2) .wrapper-text{
+        left: 16%;
+        top:10%;
+    }
+    .box-content .col-left:nth-child(3) .wrapper-text{
+        left: 21%;
+    }
+
+}
+/*IPAD PRO橫*/
+@media screen and (orientation:landscape) and (min-width:1366px) and (min-height:1024px){
+    .nav{
+        top:3%;
+    }
+    .logo h1{
+        font-size: 29px;
+    }
+    .main-content {
+        padding-top: 180px;
+        width: 100%;
+    }
+    .menu-content {
+        width: 17%;
+        padding: 18% 0 122px;
+    }
+}
+/*IPADPRO 直*/
+@media screen and (orientation:portrait) and (max-width:1024px) and (max-height:1366px){
+    .nav{
+        top:3%;
+    }
+    .logo h1 {
+        font-size: 29px;
+    }
+    .burger-menu{
+        position: absolute;
+        left: 17%;
+        margin:10px 10px;
+    }
+    .menu-content {
+        width: 23%;
+        padding: 27% 0 122px;
+    }
+    .main-content{
+        padding-top:150px;
+    }       
+    .col-left{
+        margin:50px 0;
+    }
+
+}
+/*IPAD*/
+/*直立*/
+@media screen and (orientation:portrait) and (max-width:768px) and (max-height:1024px){
+    .nav {
+        top: 3%;
+    }
+    .logo h1{
+        font-size: 28px;
+    }
+    .menu-content{
+        width: 30%;
+        padding: 27% 0 122px;
+    }
+    .burger-menu{
+        left:auto;
+        position: relative;
+    }
+    .main-content{
+        padding-top:130px;
+    }
+    .col-left{
+        width: 100%;
+        margin:32px 0;
+    }
+    .col-left:nth-child(odd) .content-img{
+        width:40%
+    }
+    .col-left:nth-child(even) .content-img{
+        width:60%;
+    }
+    .box-content .col-left:nth-child(2) .wrapper-text{
+        left: 14%;
+        top:10%;
+    }
+    .box-content .col-left:nth-child(3) .wrapper-text{
+        left: 59%;
+        top:10%;
+    }
+}
+/*1680*/
+@media screen and (orientation: landscape) and (max-width: 1680px) and (min-height:1050px){
+    .nav{
+        top:4%;
+    }
+    .nav-right{
+        width: 70%;
+    }
+    .burger-menu {
+        position: absolute;
+        left: 12%;
+        margin: 10px 10px;
+    }
+    .logo h1{
+        font-size: 30px;
+    }
+    .menu-content{
+        width:  13%;
+        padding:230px 0 122px;
+    }
+    .slider{
+        height:650px;
+    }
+    .col-left:nth-child(1) .content-img{
+        width:53%;
+    }
+    .col-left:nth-child(3) .content-img{
+        width:27%;
+    }
+    .box-content .col-left:nth-child(1) .wrapper-text {
+        left: 56%;
+        top: 48%;
+    }
+    .box-content .col-left:nth-child(2) .wrapper-text {
+        left: 12%;
+        top: 10%;
+    }
+    .box-content .col-left:nth-child(3) .wrapper-text{
+        left: 28%;
+        top: 10%;
+    }
+}
+/*1920以上*/
+@media screen and (orientation: landscape) and (min-width: 1920px) {
+    .logo h1{
+        font-size: 30px;
+    }
+    .nav{
+        top:4%;
+    }
+    .burger-menu {
+        position: absolute;
+        left: 11%;
+        margin: 10px 10px;
+    }
+    .menu-content{
+        padding:230px 0 122px;
+        width:  13%;
+    }
+    .col-left:nth-child(1) .content-img{
+        width:54%;
+    }
+    .col-left:nth-child(3) .content-img{
+        width: 25%;
+    }
+    .wrapper-text{
+        left: 52%;
+        top: 48%;
+    }
+    .box-content .col-left:nth-child(2) .wrapper-text {
+        left: 14%;
+        top: 10%;
+    }
+    .box-content .col-left:nth-child(3) .wrapper-text {
+        left: 28%;
+        top: 10%;
+    }
+}
+@media screen and (min-width:2060px){
+    .wrapper-text {
+        left: 43%;
+        top: 48%;
+    }
+    .col-left:nth-child(3) .content-img {
+        width: 0%;
+    }
+    .box-content .col-left:nth-child(3) .wrapper-text {
+        left: 44%;
+        top: 10%;
+    }
+    .box-content .col-left:nth-child(2) .wrapper-text {
+        left: 17%;
+        top: 10%;
+    }
+}
+/*-------------------------------------IPHONE橫*/
+@media screen and (orientation:landscape) and (max-width:812px) and (min-height:320px){
+    .nav{
+        top:4%;
+    }
+    .logo h1{
+        font-size: 26px;
+    }
+    .nav-right{
+        width:100%;
+        justify-content: space-between;
+        margin-left: 0;
+    }
+    .social{
+        display: none;
+    }
+    .burger-menu{
+        left:auto;
+        position: relative;
+        margin:10px 4%;
+    }
+    .main-content{
+        padding-top: 15%;
+    }
+    .menu-content{
+        padding:90px 0 90px;
+        width:27%;
+    }
+    .menu-content i{
+        font-size: 13px;
+    }
+    .menu-content b{
+        font-size: 26px;
+        line-height: 40px
+    }
+    .wrapper-text{
+        left: 75%;
+        top: 53%;
+    }
+    .col-left:nth-child(1) .content-img, .content-img{
+        width:auto;
+    }
+    .box-title h1{
+        margin-bottom: .3rem;
+        line-height: 1.3em;
+    }
+    .box-title h1 b{
+        font-size: 26px;
+    }
+    .box-content .col-left:nth-child(2) .wrapper-text {
+        left: -4%;
+        top: 3%;
+    }
+
+}
+/*i5橫*/
+@media screen and (orientation:landscape) and (min-width:568px) and (max-height:320px){
+    /*第一張圖的文字*/
+    .wrapper-text {
+        left: 65%;
+        top: 50%;
+    }
+    /*第二張*/
+    .box-content .col-left:nth-child(2) .wrapper-text {
+        left: 10%;
+        top: 7%;
+    }
+    /*第三張*/
+    .box-content .col-left:nth-child(3) .wrapper-text {
+        left: 64%;
+        top: 10%;
+    }
+}
+/*i6橫*/
+@media screen and (orientation:landscape) and (max-height:375px) and (max-width:667px){
+    .menu-content{
+        width: 32%;
+    }
+    .logo h1{
+        font-size: 26px;
+    }
+    .wrapper-text{
+        left: 66%;
+        top: 53%;
+    }
+    .box-content .col-left:nth-child(2) .wrapper-text {
+        left: 12%;
+        top: 9%;
+    }
+    .box-content .col-left:nth-child(3) .wrapper-text {
+        left: 66%;
+        top: 9%;
+    }
+}
+/*i6+橫*/
+@media screen and (orientation:landscape) and (max-width:736px) and (min-height:414px){
+    .nav{
+        top:4%;
+        white-space: nowrap;
+    }
+    .hideUp{
+        top:-150px;
+    }
+    .logo h1{
+        font-size: 27px;
+    }
+    .menu-content{
+        width: 27%;
+    }
+    .col-left:nth-child(odd) .content-img {
+        width: 32%;
+    }
+    .wrapper-text {
+        left: 69%;
+        top: 56%;
+    }
+    .box-content .col-left:nth-child(2) .wrapper-text {
+        left: 13%;
+        top: 8%;
+    }
+    .box-content .col-left:nth-child(3) .wrapper-text {
+        left: 69%;
+        top: 10%;
+    }
+}
+/*IX橫*/
+@media screen and (orientation:landscape) and (min-width:812px) and (max-height:375px){
+    .top-left .title-box{
+        left:12%;
+        top:76%;
+    }
+    .words{
+        height: 62%;
+    }
+    .menu-content{
+        width: 26%;
+    }
+}
+
+/*i6+直*/
+@media screen and (orientation:portrait) and (max-height:736px) and (max-width:414px){
+    .nav{
+        top:0;
+        white-space: nowrap;
+    }
+    .hideUp{
+        top:-150px;
+    }
+    .logo h1{
+        font-size: 27px;
+    }
+    .nav-right{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .burger-menu{
+        left:auto;
+        position: relative;
+    }
+    .social{
+        display: none;
+    }
+    .main-content{
+        padding-top: 15%;
+    }
+    .menu-content {
+        width: 50%;
+        margin: 0 auto;
+        padding: 120px 0 122px;
+    }
+    .menu-content i{
+        font-size: 13px;
+    }
+    .menu-content b{
+        font-size: 26px;
+    }
+    .col-left:nth-child(odd) .content-img{
+        width: auto;
+    }
+    .col-left:nth-child(even) .content-img{
+        width: auto;
+    }
+    .wrapper-text{
+        left:61%;
+        top:57%;
+    }
+    .box-content .col-left:nth-child(3) .wrapper-text, .box-content .col-left:nth-child(2) .wrapper-text{
+        left:3%;
+    }
+    .box-content .col-left:nth-child(2) .wrapper-text, .box-content .col-left:nth-child(3) .wrapper-text{
+        top:8%;
+    }
+    .box-title h1{
+        font-size: 27px;
+    }
+}
+/*I5直*/
+@media screen and (orientation:portrait) and (max-width:320px){
+    .col-left:nth-child(odd) .content-img{
+        width:100%;
+    }
+    .logo h1{
+        font-size: 25px;
+    }
+    .wrapper-text{
+        left:57%;
+        top:74%;
+    }
+    .box-title h1{
+        font-size: 23px;
+    }
+    .box-content .col-left:nth-child(2) .wrapper-text, .box-content .col-left:nth-child(3) .wrapper-text{
+        top:-8%;
+    }
+}
+/*I6直*/
+@media screen and (orientation:portrait) and (min-width:375px) and (max-width:667px){
+    .logo h1{
+        font-size: 27px;
+    }
+    .wrapper-text{
+        left:57%;
+        top:70%;
+    }
+    .box-content .col-left:nth-child(2) .wrapper-text, .box-content .col-left:nth-child(3) .wrapper-text{
+        top:-8%;
+    }
+}
+/*I10直*/
+@media screen and (orientation:portrait) and (max-height:812px) and (max-width:375px){
+    .nav{
+        top:0;
+        white-space: nowrap;
+    }
+    .hideUp{
+        top:-150px;
+    }
+    .logo h1{
+        font-size: 26px;
+    }
+    .nav-right{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .burger-menu{
+        position: relative;
+        left: auto;
+    }
+    .menu-content{
+        padding: 30% 20%;
+        width:auto;
+    }
+    .menu-content b{
+        font-size: 26px;
+    }
+    .menu-content i {
+        font-size: 13px;
+    }
+    .social{
+        display: none;
+    }
+    .main-content{
+        padding-top: 15%;
+    }
+    .col-left:nth-child(odd) .content-img{
+        width: auto;
+    }
+    .col-left:nth-child(even) .content-img{
+        width: auto;
+    }
+    .wrapper-text{
+        left:59%;
+        top:70%;
+    }
+    .box-content .col-left:nth-child(3) .wrapper-text, .box-content .col-left:nth-child(2) .wrapper-text{
+        left:3%;
+    }
+    .box-title h1{
+        font-size: 27px;
+    }
+}

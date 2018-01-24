@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" id="css">
-    <link rel="stylesheet" href="style1.css" id="css">
+    <link rel="stylesheet" href="css/style.css" id="css">
+    <link rel="stylesheet" href="css/style1.css" id="css">
     <link rel="stylesheet" href="css/fontello.css">
     <link href="https://fonts.googleapis.com/css?family=Abel|Cairo|Rajdhani|Roboto:300|Condensed:300|Special+Elite" rel="stylesheet">
 </head>
@@ -44,9 +44,9 @@
         <div class="menu-content">
             <ul>
                 <li>
-                    <a href=""> 
+                    <a href="./index.html"> 
                         <i>01</i>
-                        <b>Brand</b>
+                        <b>Home</b>
                     </a>
                 </li>
                 <li>
@@ -62,9 +62,9 @@
                     </a>
                 </li>
                 <li>
-                    <a href=""> 
+                    <a class="contact"> 
                         <i>04</i>
-                        <b>Contracts</b>
+                        <b>Contacts</b>
                     </a>
                 </li>
             </ul>
@@ -117,6 +117,7 @@
             <div class="row-one">
                 <div class="col-one">
                     <a href="">
+                        <!-- <div class="col-one-pic"></div> -->
                         <img src="img/photo-1509215453737-454a27b8613e.jpg" style="width:383px;height:455px">
                         <span class="flying"></span>
                     </a>
@@ -182,6 +183,7 @@
                 </div>
                 <div class="col-four">
                     <a href="">
+                        <!-- <div class="selfie"></div> -->
                         <img src="./img/10733978_732105590205203_345177223661048391_n.jpg" style="height:295px;width:394px">
                         <span class="flying"></span>
                     </a>
@@ -211,7 +213,7 @@
                                         </h1>
                                     </header>
                                     <div class="label-btn">
-                                        <div class="hidden touch">
+                                        <div class="hidden">
                                             <div class="covering">
                                                 <b>DISCOVER</b>
                                                 <span></span>
@@ -272,7 +274,7 @@
         </div>
     </section>
     <footer>
-        <div class="footer-container">
+        <div class="footer-container" name="toFoot" id="toFoot">
             <div class="footer-row">
                 <div class="col-last">
                     <ul>
@@ -289,7 +291,7 @@
                         <h3>+886 920XXXXXX</h3>
                     </div>
                     <div class="col-email">
-                        <h3>XXXX@gmail.com</h3>
+                        <h3>qoosc18@gmail.com</h3>
                     </div>
                 </div>
             </div>
@@ -302,30 +304,34 @@
     <script src="./jquery.transit-master/jquery.transit.js"></script>
     <script>
         /*MeNu*/
-        $('.burger-menu').click(function () {
-            if ($('.middle').css('display') == 'none') {
-                $('.top').css({
-                    'transform': '0'
-                })
-                $('.bottom').css({
-                    'transform': '0'
-                })
+        var navIsOpen = false
+            $('.burger-menu').click(function menu() {
+            if (navIsOpen) {
+                /*關*/
+                $('.top').css({'transform': '0'})
+                $('.bottom').css({'transform': '0'})
                 $('.middle').css('display', 'block')
-                $('.menu-cover').css({
-                    'transform': 'translate(0%,-100%)'
-                })
-            } else if ($('.middle').css('height') == '1px') {
-                $('.top').css({
-                    'transform': 'translate(0px,5px), rotate(45deg)'
-                })
+                $('.menu-cover').css({'transform': 'translate(0%,-100%)'})
+            } else {
+                /*開*/
+                $('.top').css({'transform': 'translate(0px,5px), rotate(45deg)'})
                 $('.middle').css('display', 'none')
-                $('.bottom').css({
-                    'transform': 'translate(1px, -5px), rotate(-45deg)'
-                })
-                $('.menu-cover').css({
-                    'transform': 'translate(0%,0%), matrix(1,0,0,1,0,0)'
-                })
-            } else {}
+                $('.bottom').css({'transform': 'translate(1px, -5px), rotate(-45deg)'})
+                $('.menu-cover').css({'transform': 'translate(0%,0%), matrix(1,0,0,1,0,0)'})
+            }
+            navIsOpen = !navIsOpen
+        })
+        /*Menu-Contact*/
+        $('.contact').click(function(){
+            console.log('mm')
+            // $("html, body").animate({ scrollTop:600}, 1000)
+            $('.top').css({'transform': '0'})
+            $('.bottom').css({'transform': '0'})
+            $('.middle').css('display', 'block')
+            $('.menu-cover').css({'transform': 'translate(0%,-100%)'})
+            $("html, body").animate({ scrollTop: $(document).height() }, 1300)
+            // 如果有a href標籤與click衝突-----加上return false;
+            navIsOpen = false
         })
         /*Nav*/
         var navClass = document.getElementsByClassName('nav')
@@ -556,31 +562,17 @@
                 */
                 console.log('firth')
                 /*我有問題!!! 一定要標示個別的CLASS嗎~*/
-                $('.col-two .pre-title span').stop().animate({
-                    left: '101%'
-                }, 500, function () {
-                    $('.col-two .pre-title').stop().animate({
-                        left: 0
-                    })
+                $('.col-two .pre-title span').stop().animate({left: '101%'}, 500, function () {
+                    $('.col-two .pre-title').stop().animate({left: 0})
                 })
 
-                $('.col-two .title span').stop().animate({
-                    left: '101%'
-                }, 500, function () {
-                    $('.col-two .title').stop().animate({
-                        left: 0
-                    })
+                $('.col-two .title span').stop().animate({left: '101%'}, 500, function () {
+                    $('.col-two .title').stop().animate({left: 0})
                 })
-                $('.col-two .label-btn').stop().animate({
-                    left: '0%'
-                }, 800)
+                $('.col-two .label-btn').stop().animate({left: '0%'}, 800)
                 /*底色不需要再往左偏移，會造成空白區塊*/
-                $('.col-one .flying').stop().animate({
-                    left: '0'
-                }, 500, function () {
-                    $('.col-one img').stop().animate({
-                        left: 0
-                    })
+                $('.col-one .flying').stop().animate({left: '0'}, 500, function () {
+                    $('.col-one img').stop().animate({left: 0})
                 })
 
                 /*第二欄-----designer*/
@@ -589,59 +581,31 @@
             } else if (now >= sectionMiddle - 690 && middleAnimated === false) {
                 middleAnimated = true
                 console.log('sec')
-                $('.col-three .pre-title span').stop().animate({
-                    left: '-101%'
-                }, 500, function () {
-                    $('.col-three .pre-title').stop().animate({
-                        left: 0
-                    })
+                $('.col-three .pre-title span').stop().animate({left: '-101%'}, 500, function () {
+                    $('.col-three .pre-title').stop().animate({left: 0})
                     // $('.col-three .label-btn').stop().animate({left:'0%'})
                 })
-                $('.col-three .title span').stop().animate({
-                    left: '-101%'
-                }, 500, function () {
-                    $('.col-three .title').stop().animate({
-                        left: 0
-                    })
+                $('.col-three .title span').stop().animate({left: '-101%'}, 500, function () {
+                    $('.col-three .title').stop().animate({left: 0})
                 })
-                $('.col-three .label-btn').stop().animate({
-                    left: '0%'
-                }, 800)
-                $('.col-four .flying').stop().animate({
-                    left: '0'
-                }, 500, function () {
-                    $('.col-four img').stop().animate({
-                        left: 0
-                    })
+                $('.col-three .label-btn').stop().animate({left: '0%'}, 800)
+                $('.col-four .flying').stop().animate({left: '0'}, 500, function () {
+                    $('.col-four img').stop().animate({left: 0})
                 })
 
                 /*第三欄*/
             } else if (now >= sectionBottom - 600 && bottomAnimated === false) {
                 bottomAnimated = true
                 console.log('third')
-                $('.col-six .pre-title span').animate({
-                    left: '101%'
-                }, 500, function () {
-                    $('.col-six .pre-title').animate({
-                        left: 0
-                    })
+                $('.col-six .pre-title span').animate({left: '101%'}, 500, function () {
+                    $('.col-six .pre-title').animate({left: 0})
                 })
-                $('.col-six .title span').stop().animate({
-                    left: '101%'
-                }, 500, function () {
-                    $('.col-six .title').stop().animate({
-                        left: 0
-                    })
+                $('.col-six .title span').stop().animate({left: '101%'}, 500, function () {
+                    $('.col-six .title').stop().animate({left: 0})
                 })
-                $('.col-six .label-btn').stop().animate({
-                    left: '0%'
-                }, 800)
-                $('.col-five .flying').stop().animate({
-                    left: '0'
-                }, 500, function () {
-                    $('.col-five img').stop().animate({
-                        left: 0
-                    })
+                $('.col-six .label-btn').stop().animate({left: '0%'}, 800)
+                $('.col-five .flying').stop().animate({left: '0'}, 500, function () {
+                    $('.col-five img').stop().animate({left: 0})
                 })
                 /*底部欄*/
                 /*我有問題!!底部不夠長ipad出不來!!!*/
@@ -649,18 +613,10 @@
             } else if (now + window.innerHeight >= sectionLast && lastAnimated === false) {
                 console.log('last')
                 lastAnimated = true
-                $('.col-bg').animate({
-                    left: 0
-                }, 500)
-                $('.col-title').animate({
-                    left: 0
-                }, 500)
-                $('.col-content').animate({
-                    left: 0
-                }, 500)
-                $('.col-btn').animate({
-                    left: 0
-                }, 500)
+                $('.col-bg').animate({left: 0}, 500)
+                $('.col-title').animate({left: 0}, 500)
+                $('.col-content').animate({left: 0}, 500)
+                $('.col-btn').animate({left: 0}, 500)
             }
             // $('.row-one').animate({
             //     'opacity':'100'
@@ -679,23 +635,30 @@
         })
 
 
-        /*hover效果*/
-        $('.touch').hover(function () {
-            console.log($(this))
+        /*hover效果--------後用CSS呈現*/
+        // $('.label-btn').hover(function () {
             //children()要直接子層才適用
             //closest()父層才適用
             // $(this).find('span').css({'transform':'translateX(100%)'},function(){
             // $(this).find('span').animate({left:'100%'},500,function(){
-            //     $(this).animate({left:'18px',width:'58%'},300)
-            // $(this).css({'transform':'translateX(-100%)'}) 立馬出現
-            // })
+        // })
 
 
-            // $(this).find('.covering').find('span').css({transform:'translate:0%'},100,function(){
-            //     $(this).animate({transform:'translate:88%'},100)
-            // })
+    /*Menu-Contact*/
 
-        })
+        // if(urlsplit='index.html'){
+        //     console.log('ppp')
+        //     $("html, body").animate({ scrollTop: $(document).height() }, 1300)
+        // }
+    function toFooter() {
+        console.log('l')
+        var url = window.location.pathname;
+        var urlsplit = url.split("/").slice(-1)[0];
+
+        var foot = document.getElementById('toFoot')
+        var footTop = foot.scrollTop().top
+        $("html, body").animate({ scrollTop: footTop }, 1300)
+    }    
     </script>
 </body>
 
