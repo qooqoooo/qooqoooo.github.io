@@ -774,7 +774,7 @@ i{
     }
 }
 /*IPAD PRO橫*/
-@media screen and (orientation:landscape) and (min-height:1024px) and (min-width:1366px){
+@media screen and (orientation:landscape) and (max-height:1024px) and (min-width:1366px){
     .nav{
         top:3%;
     }
@@ -796,14 +796,18 @@ i{
         margin: 10px 4%;
     }
     .top-left .title-box {
-        top: 75%;
-        left: 20%;
+        top: 65%;
+        left: 15%;
     }
     .sub-title{
         font-size: 82px;
     }
     .row {
         padding: 130px 0 170px 0;
+    }
+    .right {
+        width: 35%;
+        padding: 4% 2% 4% 2%;
     }
     .right article h3{
         font-size: 24px;
@@ -851,13 +855,7 @@ i{
 }
 
 /*PAD ASUS*/
-@media screen and (orientation: landscape) and (max-width: 1200px) and (max-height:800px) {
-    /* .nav{
-        top:4%;
-    } */
-    .nav-right{
-        width: 70%;
-    }
+/* @media screen and (orientation: landscape) and (min-width: 1366px) and (max-height:900px) {
     .hideUp{
         top:-150px;
     }
@@ -870,17 +868,21 @@ i{
         padding: 142px 0 122px;
         height: auto;
     }
-    .burger-menu{
-        position: absolute;
-        left: 14%;
-        margin:10px 10px ;
+    .nav-right{
+        width: 100%;
+        justify-content: space-between;
     }
-    /* .sub-title{
-        font-size: 97px;
-    } */
+    .burger-menu{
+        position: relative;
+        left: auto;
+        margin:10px 4% ;
+    }
+    .sub-title{
+        font-size: 82px;
+    }
     .right {
         width: 34%;
-        padding: 4% 0% 2% 1%;
+        padding: 4% 2% 4% 4%;
     }
     .right article h3{
         font-size: 22px;
@@ -897,7 +899,7 @@ i{
     .mobile img {
         width: 270px;
     }
-}
+} */
 /*1680*/
 @media screen and (orientation: landscape) and (min-width: 1680px) and (min-height:1050px){
     .logo h1{

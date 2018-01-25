@@ -636,7 +636,7 @@ footer{
     }
 }
 /*IPADPRO 直*/
-@media screen and (orientation:portrait) and (min-width:1024px) and (min-height:1366px){
+@media screen and (orientation:portrait) and (max-width:1024px) and (min-height:1366px){
     .logo h1{
         font-size: 29px;
     }
@@ -1081,7 +1081,7 @@ footer{
 
 }
 /*IPADPRO橫*/
-@media screen and (orientation:landscape) and (min-height:1024px) and (min-width:1366px){
+@media screen and (orientation:landscape) and (max-height:1024px) and (min-width:1366px){
     .logo h1{
         font-size: 29px;
     }
@@ -1095,14 +1095,14 @@ footer{
     }
 }
 /*1200 PAD*/
-@media screen and (orientation:landscape) and (min-width: 1200px) and (min-height:800px){
+/* @media screen and (orientation:landscape) and (min-width: 1200px) and (min-height:800px){
     .logo h1{
         font-size: 29px
     }
     .burger-menu{
         left:14%;
     }
-}
+} */
 /*1680*/
 @media screen and (orientation: landscape) and (min-width: 1680px) and (min-height:1050px){
     .nav{

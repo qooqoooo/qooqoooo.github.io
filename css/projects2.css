@@ -452,13 +452,28 @@ i{
     }
 }
 /*ipadpro橫*/
-@media screen and (orientation:landscape) and (min-width:1366px) and (min-height:1024px){
+@media screen and (orientation:landscape) and (min-width:1366px) and (max-height:1024px){
+    .nav{
+        top:3%;
+    }
     .logo h1{
         font-size: 29px;
+    }
+    .nav-right{
+        width:100%;
+        justify-content: space-between;
+    }
+    .burger-menu{
+        left:auto;
+        position: relative;
+        margin:10px 4%;
     }
     .menu-content {
         width: 17%;
         padding: 18% 0 122px;
+    }
+    .sub-title{
+        font-size: 82px;
     }
     .right{
         padding:4% 0 3% 2%

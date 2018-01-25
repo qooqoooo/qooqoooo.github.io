@@ -503,7 +503,7 @@ i{
     }
 }
 /*ipad pro 橫*/
-@media screen and (orientation:landscape) and (min-height:1024px) and (max-width:1366px) {
+@media screen and (orientation:landscape) and (max-height:1024px) and (min-width:1366px) {
     .nav{
         top:3%;
     }
@@ -528,7 +528,7 @@ i{
         height: 60%;
     }
     .top-left{
-        width:20%;
+        width:30%;
     }
     .top-left .title-box{
         left: 18%;
@@ -544,15 +544,15 @@ i{
         font-size: 97px;
     }
     .top-right{
-        width: 80%;
+        width: 70%;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
     .words{
         width: 420px;
-        margin-top:0;
+        margin-top: 110px;
         align-self: center;
-        width: 40%;
+        width: 56%;
         text-align: justify;
     }
     .words p{
@@ -1196,7 +1196,7 @@ i{
     }  
 }
 /*1200 PAD*/
-@media screen and (orientation:landscape) and (min-width: 1200px) and (min-height:800px){
+/* @media screen and (orientation:landscape) and (min-width: 1200px) and (min-height:800px){
     .logo h1{
         font-size: 29px
     }
@@ -1209,7 +1209,7 @@ i{
     .words {
         width: 50%;
     }
-}
+} */
 /*1680*/
 @media screen and (orientation: landscape) and (min-width: 1680px) and (min-height:1050px){
     .nav{
