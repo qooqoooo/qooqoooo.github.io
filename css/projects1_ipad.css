@@ -944,6 +944,10 @@ i{
         padding:230px 0 122px;
         width:  13%;
     }
+    .top-left .title-box {
+        top: 65%;
+        left: 15%;
+    }
     .pre-title{
         font-size: 14px;
     }
