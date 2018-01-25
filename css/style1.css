@@ -629,14 +629,14 @@ footer{
     }
     .menu-content {
         width: 23%;
-        padding: 23% 0 122px;
+        padding: 18% 0 122px;
     }
     .burger-menu{
         left:16%;
     }
 }
 /*IPADPRO 直*/
-@media screen and (orientation:portrait) and (max-width:1024px) and (min-height:1366px){
+@media screen and (orientation:portrait) and (max-width:1024px) and (max-height:1366px){
     .logo h1{
         font-size: 29px;
     }
@@ -1082,6 +1082,9 @@ footer{
 }
 /*IPADPRO橫*/
 @media screen and (orientation:landscape) and (max-height:1024px) and (min-width:1366px){
+    .nav{
+        top:3%;
+    }
     .logo h1{
         font-size: 29px;
     }

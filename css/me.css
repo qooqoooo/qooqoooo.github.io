@@ -308,7 +308,7 @@ i{
     }
     .menu-content {
         width: 23%;
-        padding: 23% 0 122px;
+        padding: 18% 0 122px;
     }
     .bg{
         width: 80%;
@@ -1145,56 +1145,6 @@ i{
 }
 
 
-
-/*FOR桌機版*/
-@media screen and (min-width:1440px){
-    .bg{
-        width: 90%;
-    }
-    .burger-menu {
-        position: absolute;
-        left: 11%;
-        margin: 10px 10px;
-    }
-    .menu-content{
-        padding:230px 0 122px;
-        width:  13%;
-    }
-    .title{
-        font-size: 36px;
-    }
-    .pre-title{
-        font-size: 14px;
-    }
-    .top-right{
-        justify-content: space-around;
-        flex-direction: row;
-    }
-    .words{
-        margin-top:0;
-        align-self:center;
-        width:46%;
-    }
-    .words h2{
-        letter-spacing: 2px;
-        font-size: 35px;
-    }
-    .words p{
-        font-size: 28px;
-        line-height: 33px;
-        letter-spacing: 1px;
-    }
-    .words .mail{
-        margin-top:80px;
-    }
-    .icon-mail{
-        font-size: 25px;
-        letter-spacing: 5px;
-    }
-    .div-img{
-        width: 34%;
-    }  
-}
 /*1200 PAD*/
 /* @media screen and (orientation:landscape) and (min-width: 1200px) and (min-height:800px){
     .logo h1{
