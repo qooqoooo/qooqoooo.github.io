@@ -341,7 +341,7 @@ i{
     }
 }
 /*ipad橫*/
-@media screen and (orientation:landscape) and (min-height:768px) and (min-width:1024px){
+@media screen and (orientation:landscape) and (min-height:768px) and (max-width:1024px){
     .nav{
         top:3%;/*會吃到筆電版*/
     }
@@ -473,10 +473,52 @@ i{
         padding:110px 0 160px 0;
     }
 }
-/*筆電*/
-@media screen and (orientation: landscape) and (min-width: 1200px) {
-    .right{
-        padding:3% 0 2% 2%;
+/*PAD ASUS*/
+@media screen and (orientation: landscape) and (max-width: 1200px) and (max-height:800px) {
+    /* .nav{
+        top:4%;
+    } */
+    .nav-right{
+        width: 70%;
+    }
+    .hideUp{
+        top:-150px;
+    }
+    .logo h1{
+        font-size: 29px
+    }
+    .menu-content {
+        width: 20%;
+        margin: 0 auto;
+        padding: 142px 0 122px;
+        height: auto;
+    }
+    .burger-menu{
+        position: absolute;
+        left: 14%;
+        margin:10px 10px ;
+    }
+    /* .sub-title{
+        font-size: 97px;
+    } */
+    .right {
+        width: 34%;
+        padding: 4% 0% 2% 1%;
+    }
+    .right article h3{
+        font-size: 22px;
+    }
+    .right article p{
+        font-size: 18px;
+    }
+    .row{
+        padding:110px 0 160px 0;
+    }
+    .mobile figure div {
+        margin: 5% 2%;
+    }
+    .mobile img {
+        width: 270px;
     }
 }
 /*1680*/
@@ -515,7 +557,7 @@ i{
     }
 }
 /*1920以上*/
-@media screen and (orientation: landscape) and (max-width: 1920px) and (max-height: 1200px){
+@media screen and (orientation: landscape) and (min-width:1800px) and (max-width: 1920px) and (max-height: 1200px){
     .nav{
         top:4%;
     }

@@ -369,6 +369,21 @@ i{
         top:10%;
     }
 }
+/*1200 PAD*/
+@media screen and (orientation:landscape) and (min-width: 1200px) and (min-height:800px){
+    .logo h1{
+        font-size: 29px
+    }
+    .burger-menu{
+        left:14%;
+    }
+    .menu-content {
+        width: 20%;
+        margin: 0 auto;
+        padding: 142px 0 122px;
+        height: auto;
+    }
+}
 /*1680*/
 @media screen and (orientation: landscape) and (max-width: 1680px) and (min-height:1050px){
     .nav{
@@ -412,7 +427,7 @@ i{
     }
 }
 /*1920以上*/
-@media screen and (orientation: landscape) and (min-width: 1920px) {
+@media screen and (orientation: landscape) and (min-width:1800px) and (min-width: 1920px) {
     .logo h1{
         font-size: 30px;
     }

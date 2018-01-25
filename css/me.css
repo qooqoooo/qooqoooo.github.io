@@ -1195,7 +1195,21 @@ i{
         width: 34%;
     }  
 }
-
+/*1200 PAD*/
+@media screen and (orientation:landscape) and (min-width: 1200px) and (min-height:800px){
+    .logo h1{
+        font-size: 29px
+    }
+    .burger-menu{
+        left:14%;
+    }
+    .title{
+        font-size:34px;
+    }
+    .words {
+        width: 50%;
+    }
+}
 /*1680*/
 @media screen and (orientation: landscape) and (min-width: 1680px) and (min-height:1050px){
     .nav{
@@ -1238,7 +1252,7 @@ i{
 
 }
 /*1920*/
-@media screen and (orientation: landscape) and (min-width: 1920px) and (min-height:1080px){
+@media screen and (orientation: landscape) and (min-width:1800px) and (min-width: 1920px) and (min-height:1080px){
     .nav{
         top:4%;
     }
