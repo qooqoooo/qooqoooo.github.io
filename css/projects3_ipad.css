@@ -723,7 +723,7 @@ i{
 
 }
 /*IPAD 橫式*/
-@media screen  and (orientation: landscape) and (min-height:768px) and (min-width:1024px){
+@media screen  and (orientation: landscape) and (min-height:768px) and (min-width:1024px) and (max-width: 1024px){
     .top-left{
         width: 30%;
     }
