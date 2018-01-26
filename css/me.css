@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+/* @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css); */
 
 div {
     box-sizing: border-box;
@@ -289,8 +289,8 @@ i{
 
 
 
-/*ipad 橫向*/
-@media screen and (orientation:landscape) and (max-height:768px) and (max-width:1024px){
+/*ipad橫、ASUS橫*/
+@media screen and (orientation:landscape) and (max-width:1200px) and (max-height:800px){
     .nav{
         top:3%;
     }
@@ -315,7 +315,7 @@ i{
         height: 60%;
     }
     .top-left{
-        width:27%;
+        width:25%;
     }
     .pre-title{
         font-size: 13px;
@@ -324,14 +324,16 @@ i{
         font-size: 28px;
     }
     .sub-title{
-        font-size: 82px;
+        font-size: 75px;
     }
     .top-right{
-        width: 73%;
+        width: 75%;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
     }
     .words{
+        top: 20%;
+        left: 10%;
         width: 56%;
         margin-top: 57px;
         align-self: center;
@@ -353,8 +355,8 @@ i{
         height: 100%;
     }
 }
-/*ipad直向*/
-@media screen and (orientation:portrait) and (max-width:768px) and (max-height:1024px){
+/*ipad直、ASUS直*/
+@media screen and (orientation:portrait) and (max-width:800px) and (max-height:1200px){
     .nav{
         top:3%;
     }
@@ -380,32 +382,32 @@ i{
         height: 66%;
     }
     .top-left {
-        width: 26%;
+        width: 25%;
     }
     .top-left .title-box {
         left: 21%;
         top: 83%;
     }
     .title{
-        font-size: 33px;
+        font-size: 28px;
     }
     .pre-title{
         font-size: 13px;
     }
     .sub-title{
-        font-size: 82px;
+        font-size: 75px;
         transform: rotate(270deg) translateX(7%);
     }
     .top-right {
         flex-direction: row;
         justify-content: flex-end;
-        width: 74%;
+        width: 75%;
     }
     .words{
         text-align: justify;
         position: absolute;
-        top: 250px;
-        left: 52px;
+        top: 20%;
+        left: 10%;
         align-self: center;
         width: 45%;
         margin-top: 0px;
@@ -422,11 +424,8 @@ i{
         letter-spacing: 3px;
     }
 }
-
-
-
-/*ipad pro 直*/
-@media screen and (max-width:1024px) and (min-height:1366px) and (orientation:portrait){
+/*ipadpro直、MINE直、MAC直*/
+@media screen and (orientation:portrait) and (min-width:768px) and (min-height:1366px){
     .nav{
         top:3%;
     }
@@ -502,8 +501,8 @@ i{
         width:auto;
     }
 }
-/*ipad pro 橫*/
-@media screen and (orientation:landscape) and (max-height:1024px) and (min-width:1366px) {
+/*ipadpro橫、MINE橫、MAC橫*/
+@media screen and (orientation:landscape) and (min-width:1366px) and (min-height:768px){
     .nav{
         top:3%;
     }
@@ -580,6 +579,93 @@ i{
         height: auto;
     }
 }
+/*1680*/
+@media screen and (orientation: landscape) and (min-width: 1680px) and (max-height:1200px){
+    .nav{
+        top:4%;
+    }
+    .logo h1{
+        font-size: 30px;
+    }
+    .nav-right{
+        width: 70%;
+    }
+    .burger-menu {
+        position: absolute;
+        left: 12%;
+        margin: 10px 10px;
+    }
+    .menu-content{
+        width:  13%;
+        padding:230px 0 122px;
+    }
+    .sub-title {
+        font-size: 97px;
+        left: 17%;
+    }
+    .top-right{
+        justify-content: space-between;
+    }
+    .words{
+        width:51%;
+    }
+    .words h2{
+        font-size: 33px;
+    }
+    .words p{
+        font-size: 25px;
+    }
+    .icon-mail{
+        font-size: 22px;
+    }
+
+}
+/*1920*/
+@media screen and (orientation: landscape) and (min-width:1800px) and (max-width: 1920px){
+    .nav{
+        top:4%;
+    }
+    .nav-right{
+        width:70%;
+    }
+    .logo h1{
+        font-size: 30px;
+    }
+    .burger-menu {
+        position: absolute;
+        left: 11%;
+        margin: 10px 10px;
+    }
+    .menu-content{
+        width:  13%;
+        padding:230px 0 122px;
+    }
+    .top-right{
+        justify-content: space-between;
+    }
+    .title{
+        font-size: 38px;
+    }
+    .pre-title{
+        font-size: 15px;
+    }
+    .words{
+        width:50%;
+    }
+    .words h2{
+        font-size: 36px;
+    }
+    .words p{
+        font-size: 28px;
+        line-height: 35px;
+    }
+    .icon-mail{
+        font-size: 25px;
+    }
+
+}
+
+
 
 /*FOR手機版 直*/
 @media screen and (orientation:portrait) and (min-width:320px) and (max-height:812px){
@@ -1142,106 +1228,4 @@ i{
     .sub-title{
         left: -7%;
     }
-}
-
-
-/*1200 PAD*/
-/* @media screen and (orientation:landscape) and (min-width: 1200px) and (min-height:800px){
-    .logo h1{
-        font-size: 29px
-    }
-    .burger-menu{
-        left:14%;
-    }
-    .title{
-        font-size:34px;
-    }
-    .words {
-        width: 50%;
-    }
-} */
-/*1680*/
-@media screen and (orientation: landscape) and (min-width: 1680px) and (min-height:1050px){
-    .nav{
-        top:4%;
-    }
-    .logo h1{
-        font-size: 30px;
-    }
-    .nav-right{
-        width: 70%;
-    }
-    .burger-menu {
-        position: absolute;
-        left: 12%;
-        margin: 10px 10px;
-    }
-    .menu-content{
-        width:  13%;
-        padding:230px 0 122px;
-    }
-    .sub-title {
-        font-size: 97px;
-        left: 17%;
-    }
-    .top-right{
-        justify-content: space-between;
-    }
-    .words{
-        width:51%;
-    }
-    .words h2{
-        font-size: 33px;
-    }
-    .words p{
-        font-size: 25px;
-    }
-    .icon-mail{
-        font-size: 22px;
-    }
-
-}
-/*1920*/
-@media screen and (orientation: landscape) and (min-width:1800px) and (min-width: 1920px) and (min-height:1080px){
-    .nav{
-        top:4%;
-    }
-    .nav-right{
-        width:70%;
-    }
-    .logo h1{
-        font-size: 30px;
-    }
-    .burger-menu {
-        position: absolute;
-        left: 11%;
-        margin: 10px 10px;
-    }
-    .menu-content{
-        width:  13%;
-        padding:230px 0 122px;
-    }
-    .top-right{
-        justify-content: space-between;
-    }
-    .title{
-        font-size: 38px;
-    }
-    .pre-title{
-        font-size: 15px;
-    }
-    .words{
-        width:50%;
-    }
-    .words h2{
-        font-size: 36px;
-    }
-    .words p{
-        font-size: 28px;
-        line-height: 35px;
-    }
-    .icon-mail{
-        font-size: 25px;
-    }
-
 }

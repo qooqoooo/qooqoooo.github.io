@@ -1,14 +1,11 @@
-/*   -----------------------    for ipad     ------------------------   */
-@media screen and (min-width:769px) and (max-width: 992px){
-
-
-
-div {
+/*   -----------------------    for ipadPRO  直   ------------------------   */
+@media screen and (orientation:portrait) and (min-width:768px) and (min-height:1366px){
+    
+div{
     box-sizing: border-box;
 }
-
 html,
-body {
+body{
     width: 100%;
     margin: 0;
     padding: 0;
@@ -49,7 +46,7 @@ i{
     margin:0 auto;
     line-height: 65px;
     color:#555;
-    font-size: 28px;
+    font-size: 29px;
 }
 .burger-menu{
     position: absolute;
@@ -63,7 +60,6 @@ i{
     color:#282828;
     cursor: pointer;
     border:1px rgba(0,0,0,.2) solid;
-    
 }
 .line{
     display: flex;
@@ -91,11 +87,15 @@ i{
     transform: translate(0%, -100%) matrix(1,0,0,1,0,0);
     overflow: hidden;
 }
-.menu-content{
+/* .menu-content{
     width: 33.5%;
     margin:0 auto;
     padding:280px 0 122px;
     height:auto;
+} */
+.menu-content {
+    width: 23%;
+    padding: 27% 0 122px;
 }
 .menu-content ul{
     list-style: none;
@@ -170,7 +170,6 @@ i{
     height: 500px;
     margin: auto;
 }
-
 .bg {
     width: 100%;
     height: 100%;
@@ -181,14 +180,12 @@ i{
     background-repeat: no-repeat;
     overflow: hidden;
 }
-
 .bg-modal {
     width: 100%;
     height: 100%;
     background-color: #909090;
     transform: translate(-100%, 0);
 }
-
 .text-box {
     position: absolute;
     top: 62%;
@@ -196,18 +193,15 @@ i{
     font-size: 2.5em;
     overflow: hidden;
 }
-
 .text-box-2 {
     top: 76%;
     font-size: 2.5em;
 }
-
 .text {
     display: inline-block;
     padding: 0 6px;
     background-color: #fff;
 }
-
 .text-modal {
     position: absolute;
     top: 0;
@@ -408,13 +402,12 @@ i{
     left:-58% !important;
     background: white !important;
 }
-
 .label-btn b:hover + .modal{
     left: 58%;
     transition: left 0.4s 
 }
-.row-one .label-btn span, .row-three .label-btn span{
-    position: absolute; /*我有問題::flex元素想要重疊物件*/
+/* .row-one .label-btn span, .row-three .label-btn span{
+    position: absolute;  我有問題::flex元素想要重疊物件
     top:9px;
     left:12px;
     height: 1em;
@@ -422,8 +415,12 @@ i{
     background: #b4a69d;
     opacity: .5;
     font-size: initial;
-} 
-
+} */
+.row-two .label-btn .covering span {
+    left: auto;
+    right: 18px;
+    width: 40.3%;
+}
 
 /*下方補充圖文區*/
 .bottom-area{
@@ -444,7 +441,6 @@ i{
     flex-direction: row;
 
 }
-
 .col-left, .col-right{
     display: flex;
     width: 50%;
@@ -452,18 +448,18 @@ i{
 .col-right{
     justify-content: flex-end;
 }
-.overlay{
+/* .overlay{
     display: flex;
     width: 100%;
     height: 100%;
     background-color:rgba(255,255,255,.7);
-}
-.col-left .col-bg, .col-right .col-bg{
+} */
+/* .col-left .col-bg, .col-right .col-bg{
     background-image: url(../img/10533800_700416273363434_8463850696732086619_n.jpg);
     width:20%;
     height:88%;
     align-self: center;
-}
+} */
 .col-bg{
     filter:grayscale(100%);
     background-size: cover;
@@ -514,7 +510,6 @@ i{
     background: #b4a69d;
     z-index: 1;
 }
-
 /*Footer*/
 footer{
     padding-bottom: 15px;
@@ -555,11 +550,11 @@ footer{
     display: inline-flex;
 }
 
-
 }
 
-/*IPAD直*/
-@media screen and (orientation:portrait) and (min-height:1024px) and (min-width:768px){
+
+/*IPAD直ASUS直*/
+@media screen and (orientation:portrait) and (max-width:800px) and (max-height:1200px){
     .nav{
         top:3%;
     }
@@ -619,8 +614,8 @@ footer{
         padding: 0 0;
     }
 }
-/*IPAD 橫式*/
-@media screen and (min-height:768px) and (max-width:1024px) and (orientation: landscape){
+/*IPAD橫(1024*768)、ASUS橫(1200*800暫定)*/
+@media screen and (orientation: landscape) and (max-width:1200px) and (max-height:800px){
     .nav{
         top:3%
     }
@@ -635,15 +630,12 @@ footer{
         left:16%;
     }
 }
-/*IPADPRO 直*/
-@media screen and (orientation:portrait) and (max-width:1024px) and (max-height:1366px){
-    .logo h1{
-        font-size: 29px;
-    }
-    .burger-menu{
+/*IPADPRO直 MINE直 MAC直*/
+@media screen and (orientation:portrait) and (min-width:768px) and (min-height:1366px){
+    /* .burger-menu{
         left:17%;
         position: absolute;
-    }
+    } */
     .menu-content {
         width: 23%;
         padding: 27% 0 122px;
@@ -658,6 +650,100 @@ footer{
         padding: 0 0;
     }
 }
+/*IPADPRO橫 MINE橫 MAC橫*/
+@media screen and (orientation:landscape) and (min-width:1366px) and (min-height:768px){
+    .nav{
+        top:3%;
+    }
+    .logo h1{
+        font-size: 29px;
+    }
+    .burger-menu{
+        position: absolute;
+        left:13%;
+    }
+    .menu-content {
+        width:17%;
+        padding: 18% 0 122px;
+    }
+}
+/*1680*/
+@media screen and (orientation: landscape) and (min-width: 1680px) and (max-height:1200px){
+    .nav{
+        top:4%;
+    }
+    .nav-right{
+        width: 70%;
+    }
+    .burger-menu {
+        position: absolute;
+        left: 12%;
+        margin: 10px 10px;
+    }
+    .logo h1{
+        font-size: 30px;
+    }
+    .menu-content{
+        width:  13%;
+        padding:230px 0 122px;
+    }
+    .slider{
+        height:650px;
+    }
+}
+/*1920以上*/
+@media screen and (orientation: landscape) and (min-width:1800px) and (min-width: 1920px){
+    .logo h1{
+        font-size: 30px;
+    }
+    .nav{
+        top:4%;
+    }
+    .slider{
+        height:700px;
+    }
+    .burger-menu {
+        position: absolute;
+        left: 11%;
+        margin: 10px 10px;
+    }
+    .menu-content{
+        padding:230px 0 122px;
+        width:  13%;
+    }
+
+}
+/*2560!!*/
+@media screen and (min-width:2500px){
+    .logo h1{
+        font-size: 35px;
+    }
+    .burger-menu {
+        position: absolute;
+        left: 10%;
+        margin: 10px 10px;
+    }
+    .pre-title{
+        font-size: 16px;
+    }
+    .col-text {
+        overflow: hidden;
+        width: 40%;
+    }
+    .col-last ul{
+        padding: 0;
+    }
+    .col-last a{
+        font-size: 25px;
+    }
+    .row-last h3{
+        font-size: 25px;
+    }
+    
+}
+
+
+
 
 /*-------------------------------------IPHONE直*/
 @media screen and (orientation:portrait) and (min-width:320px) and (max-height:812px){
@@ -927,7 +1013,7 @@ footer{
     }
 }
 /*I5橫*/
-@media screen and (orientation:landscape) and (max-height:320px) {
+@media screen and (orientation:landscape) and (max-height:320px){
     .nav{
         top:0;
     }
@@ -1079,104 +1165,4 @@ footer{
         width: 57.4%;/*長度73.036*/
     }
 
-}
-/*IPADPRO橫*/
-@media screen and (orientation:landscape) and (max-height:1024px) and (min-width:1366px){
-    .nav{
-        top:3%;
-    }
-    .logo h1{
-        font-size: 29px;
-    }
-    .burger-menu{
-        position: absolute;
-        left:13%;
-    }
-    .menu-content {
-        width:17%;
-        padding: 18% 0 122px;
-    }
-}
-/*1200 PAD*/
-/* @media screen and (orientation:landscape) and (min-width: 1200px) and (min-height:800px){
-    .logo h1{
-        font-size: 29px
-    }
-    .burger-menu{
-        left:14%;
-    }
-} */
-/*1680*/
-@media screen and (orientation: landscape) and (min-width: 1680px) and (min-height:1050px){
-    .nav{
-        top:4%;
-    }
-    .nav-right{
-        width: 70%;
-    }
-    .burger-menu {
-        position: absolute;
-        left: 12%;
-        margin: 10px 10px;
-    }
-    .logo h1{
-        font-size: 30px;
-    }
-    .menu-content{
-        width:  13%;
-        padding:230px 0 122px;
-    }
-    .slider{
-        height:650px;
-    }
-}
-/*1920以上*/
-@media screen and (orientation: landscape) and (min-width:1800px) and (min-width: 1920px) {
-    .logo h1{
-        font-size: 30px;
-    }
-    .nav{
-        top:4%;
-    }
-    .slider{
-        height:700px;
-    }
-    .burger-menu {
-        position: absolute;
-        left: 11%;
-        margin: 10px 10px;
-    }
-    .menu-content{
-        padding:230px 0 122px;
-        width:  13%;
-    }
-
-}
-/*2560!!*/
-@media screen and (min-width:2500px){
-    .logo h1{
-        font-size: 35px;
-    }
-    .burger-menu {
-        position: absolute;
-        left: 10%;
-        margin: 10px 10px;
-    }
-    .pre-title{
-        font-size: 16px;
-    }
-    .col-text {
-        overflow: hidden;
-        width: 40%;
-    }
-    .col-last ul{
-        padding: 0;
-    }
-    .col-last a{
-        font-size: 25px;
-    }
-    .row-last h3{
-        font-size: 25px;
-    }
-    
 }

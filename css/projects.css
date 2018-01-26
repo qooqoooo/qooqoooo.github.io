@@ -123,6 +123,7 @@ i{
 .social{
     display: flex;
     align-items: center;
+    text-align: center;
     padding:0 4%;
     white-space: nowrap;
 }
@@ -241,8 +242,7 @@ i{
 
 
 
-/*IPAD(1024*768)、ASUS(1200*800暫定)*/
-/*橫*/
+/*IPAD橫(1024*768)、ASUS橫(1200*800暫定)*/
 @media screen and (orientation:landscape) and (max-width:1200px) and (max-height:800px){
     /* .box-img{
         width:243px;
@@ -304,6 +304,10 @@ i{
         width: 17%;
         padding: 18% 0 122px;
     }
+    .wrapper-text{
+        left: 54%;
+        top: 48%;
+    }
 }
 /*IPADPRO直*/
 @media screen and (orientation:portrait) and (min-width:768px) and (min-height:1366px){
@@ -324,7 +328,10 @@ i{
     }
     .main-content{
         padding-top:150px;
-    }       
+    }
+    .wrapper-text{
+        left:71%;
+    }
     .col-left{
         margin:50px 0;
     }
@@ -411,7 +418,7 @@ i{
     }
 }
 /*1920以上*/
-@media screen and (orientation: landscape) and (min-width:1800px) and (max-width: 1920px) {
+@media screen and (orientation: landscape) and (min-width:1800px) and (max-width: 1920px){
     .logo h1{
         font-size: 30px;
     }
@@ -464,6 +471,8 @@ i{
         top: 10%;
     }
 }
+
+
 /*-------------------------------------IPHONE橫*/
 @media screen and (orientation:landscape) and (max-width:812px) and (min-height:320px){
     .nav{
@@ -602,7 +611,6 @@ i{
         width: 26%;
     }
 }
-
 /*i6+直*/
 @media screen and (orientation:portrait) and (max-height:736px) and (max-width:414px){
     .nav{
