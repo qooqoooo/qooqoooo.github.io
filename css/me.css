@@ -315,7 +315,7 @@ i{
         height: 60%;
     }
     .top-left{
-        width:25%;
+        width:30%;
     }
     .pre-title{
         font-size: 13px;
@@ -324,10 +324,10 @@ i{
         font-size: 28px;
     }
     .sub-title{
-        font-size: 75px;
+        font-size: 82px;
     }
     .top-right{
-        width: 75%;
+        width: 70%;
         flex-direction: row;
         justify-content: space-between;
     }
@@ -335,7 +335,7 @@ i{
         top: 20%;
         left: 10%;
         width: 56%;
-        margin-top: 57px;
+        margin-top: 12%;
         align-self: center;
     }
     .words p{
@@ -343,7 +343,7 @@ i{
         line-height: 22px;
     }
     .words .mail{
-        margin-top: 76px;
+        margin-top: 30%;
     }
     .div-img{
         width:36%;
@@ -379,14 +379,14 @@ i{
     }
     .bg{
         width: 80%;
-        height: 66%;
+        height: 65%;
     }
     .top-left {
         width: 25%;
     }
     .top-left .title-box {
         left: 21%;
-        top: 83%;
+        top: 79%;
     }
     .title{
         font-size: 28px;
@@ -395,8 +395,9 @@ i{
         font-size: 13px;
     }
     .sub-title{
-        font-size: 75px;
+        font-size: 82px;
         transform: rotate(270deg) translateX(7%);
+        left:190%;
     }
     .top-right {
         flex-direction: row;
@@ -407,13 +408,15 @@ i{
         text-align: justify;
         position: absolute;
         top: 20%;
-        left: 10%;
+        left: 8%;
         align-self: center;
         width: 45%;
         margin-top: 0px;
     }
     .div-img{
-        align-self: flex-end;
+        align-self: center;
+        margin-top:80%;
+        width:55%;
     }
     .words .mail{
         margin-top: 70px;
@@ -448,34 +451,37 @@ i{
     .bg{
         width: 80%;
         height: 65%;
-        top:161px;
+        top:13%;/*直的！所以只有IPADPRO會呈現出來!*/
     }
     .top-left{
-        width:23%;
+        width:30%;
     }
     .top-left .title-box {
         left: 30%;
         top: 80%;
     }   
     .pre-title{
-        font-size: 13px;
+        font-size: 14px;
     }
     .title{
-        font-size: 34px;
+        font-size: 32px;
     }
     .sub-title{
         font-size: 82px;
-        
+        left:190%;
     }
     .top-right{
-        flex-direction: column;
+        flex-direction: row;
         justify-content: flex-end;
-        width: 77%;
+        width: 70%;
     }
     .words{
         margin-top:0;
+        position: absolute;
+        top:23%;
+        left: 10%;
         align-self: flex-start;
-        width: 67%;
+        width: 50%;
         text-align: justify;
     }
     .words h2{
@@ -494,11 +500,12 @@ i{
         letter-spacing: 3px;
     }
     .div-img{
-        display: flex;
-        align-self: flex-end;
+        width:50%;
+        align-self: center;
+        margin-top:80%;
     }
     .div-img img{
-        width:auto;
+        width:100%;
     }
 }
 /*ipadpro橫、MINE橫、MAC橫*/
@@ -537,21 +544,23 @@ i{
         font-size: 14px;
     }
     .title{
-        font-size: 30px;
+        font-size: 32px;
     }
     .sub-title{
-        font-size: 97px;
+        font-size: 82px;
     }
     .top-right{
         width: 70%;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: flex-end;
     }
     .words{
-        width: 420px;
+        position: absolute;
+        top:10%;
+        left:29%;
+        width: 40%;
         margin-top: 110px;
         align-self: center;
-        width: 56%;
         text-align: justify;
     }
     .words p{
@@ -560,19 +569,19 @@ i{
         letter-spacing: 0.05em;
     }
     .words .mail{
-        margin-top:160px; 
+        margin-top:0; 
+        position: absolute;
+        top: 140%;
+        left: 20%;
     }
     .icon-mail{
-        position: absolute;
-        top: 81%;
-        left: 34%;
         font-size: 24px;
         letter-spacing: 4px;
     }
     .div-img{
-        width:33%;
+        width:37%;
         align-self: center;
-        margin: 20% 0 0 0;
+        margin: 27% 0 0 0;
     }
     .div-img img{
         width:100%;
@@ -599,15 +608,19 @@ i{
         width:  13%;
         padding:230px 0 122px;
     }
+    .top-left{
+        width:30%;
+    }
     .sub-title {
         font-size: 97px;
         left: 17%;
     }
     .top-right{
-        justify-content: space-between;
+        width:70%;
+        justify-content: flex-end;
     }
     .words{
-        width:51%;
+        width:38%;
     }
     .words h2{
         font-size: 33px;
@@ -621,12 +634,15 @@ i{
 
 }
 /*1920*/
-@media screen and (orientation: landscape) and (min-width:1800px) and (max-width: 1920px){
+@media screen and (orientation: landscape) and (min-width:1680px) and (max-width: 2560px){
     .nav{
         top:4%;
     }
     .nav-right{
         width:70%;
+    }
+    .bg{
+        height: 70%;
     }
     .logo h1{
         font-size: 30px;
@@ -641,7 +657,11 @@ i{
         padding:230px 0 122px;
     }
     .top-right{
-        justify-content: space-between;
+        justify-content: flex-end;
+    }
+    .top-left .title-box {
+        left: 15%;
+        top: 70%;
     }
     .title{
         font-size: 38px;
@@ -650,7 +670,8 @@ i{
         font-size: 15px;
     }
     .words{
-        width:50%;
+        width:35%;
+        text-align: justify;
     }
     .words h2{
         font-size: 36px;
@@ -689,6 +710,9 @@ i{
     }
     .pre-title:after{
         background:#b4a69d;
+    }
+    .div-img img{
+        height:100%;
     }
 
 }

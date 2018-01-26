@@ -275,6 +275,9 @@ i{
     .box-title h1{
         font-size:25px
     }
+    .col-left:nth-child(1) .content-img{
+        width:53.5%;
+    }
     .wrapper-text{
         left: 70%;
         top: 54%;
