@@ -1,5 +1,8 @@
 
 .icon-facebook:before { content: '\6d'; } /* 'm' */
+.icon-mail:before { content: '\e800'; } /* '' */
 .icon-instagram-1:before { content: '\f05d'; } /* '' */
+.icon-paper-plane:before { content: '\f1d8'; } /* '' */
+.icon-paper-plane-empty:before { content: '\f1d9'; } /* '' */
 .icon-facebook-official:before { content: '\f230'; } /* '' */
 .icon-instagram:before { content: '\f32d'; } /* '' */

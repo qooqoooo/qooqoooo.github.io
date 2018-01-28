@@ -421,7 +421,7 @@ i{
     }
 }
 /*1920以上*/
-@media screen and (orientation: landscape) and (min-width:1800px) and (max-width: 1920px){
+@media screen and (orientation: landscape) and (min-width:1680px) and (max-width: 1920px){
     .logo h1{
         font-size: 30px;
     }

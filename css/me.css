@@ -13,6 +13,9 @@ body {
 a{
     text-decoration: none;
 }
+h2,p{
+    cursor: default;
+}
 i{
     font-style: normal;
 }
@@ -175,11 +178,11 @@ i{
 }
 .top-left .title-box{
     display: flex;
-    /* flex: 0 0 auto; */
+    cursor: default;
     flex-direction: column-reverse;
     position: absolute;
-    left:14%;
-    top:63%;
+    left:15%;
+    top:73%;
     white-space: nowrap;
 }
 .title-box h1, .title-box h2{
@@ -207,7 +210,7 @@ i{
     font-family: 'Caveat', cursive;
     font-family: 'Crafty Girls', cursive;
     color:#282828;
-    font-size: 36px;
+    font-size: 31px;
     font-weight: 400;
 }
 .sub-title{
@@ -218,6 +221,7 @@ i{
     font-weight: 400;
     align-self: flex-start;
     letter-spacing: 2px;
+    cursor: default;
 }
 .sub-title h3{
     margin:0;
@@ -259,7 +263,8 @@ i{
     /* font-weight: 400; */
     color:white;
     letter-spacing: 2px;
-    font-size: 30px;
+    font-size: 28px;
+    line-height: 34px;
 }
 .words p{
     font-family: "Roboto", "Noto Sans TC", "Noto Sans CJK TC", sans-serif;
@@ -267,21 +272,22 @@ i{
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; 
     margin:0;
-    line-height: 22px;
-    font-size: 18px;
+    line-height: 21px;
+    font-size: 17px;
     letter-spacing: 0.03em;
 }
 .words .mail{
+    cursor: default;;
     margin:0px;
     text-align: center;
     margin-top: 43px;
 }
-.icon-mail{
-    letter-spacing: 2px;
+.icon-paper-plane{
+    letter-spacing: 3px;
     font-weight: 400;
     font-size: 19px;
-    line-height: 20px;
-    color:black;   
+    line-height: 23px;
+    color:#282828;   
     font-family: 'Special Elite', cursive;
     font-family: 'Crafty Girls', cursive;
 }
