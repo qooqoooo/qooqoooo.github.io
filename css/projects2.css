@@ -235,7 +235,7 @@ i{
     margin:0 8%;
 }
 .right{
-    width:32%;
+    width:34%;
     padding:4% 4% 4% 0;
 }
 .right article h3{
@@ -251,7 +251,6 @@ i{
     text-align: justify;
     font-size: 18px;
 }
-
 
 
 
@@ -283,8 +282,8 @@ i{
 }
 
 
-/*ipad直橫*/
-@media screen and (min-width:768px) and (max-height:1024px) and (max-width:768px){
+/*ipad ASUS直橫*/
+@media screen and (min-width:800px) and (max-width: 1200px) and (max-height:1200px){
     .nav{
         top:3%;
     }
@@ -297,7 +296,6 @@ i{
     }
     .burger-menu{
         position: relative;
-        /* left: 20%; */
         left:auto;
         margin:10px 4%;
     }
@@ -341,7 +339,7 @@ i{
     }
 }
 /*ipad橫*/
-@media screen and (orientation:landscape) and (min-height:768px) and (max-width:1024px){
+@media screen and (orientation:landscape) and (max-width:1200px) and (max-height:800px){
     .nav{
         top:3%;/*會吃到筆電版*/
     }
@@ -407,9 +405,7 @@ i{
     }
 
 }
-
-
-/*ipadpro直*/
+/*ipadpro直 MINE直 MAC直*/
 @media screen and (orientation:portrait) and (min-width:1024px) and (min-height:1366px){
     .nav{
         top:3%;
@@ -451,8 +447,8 @@ i{
         font-size: 82px;
     }
 }
-/*ipadpro橫*/
-@media screen and (orientation:landscape) and (min-width:1366px) and (max-height:1024px){
+/*ipadpro橫 MINE橫 MAC橫*/
+@media screen and (orientation:landscape) and (min-width:1366px) and (min-height:768px){
     .nav{
         top:3%;
     }
@@ -488,56 +484,8 @@ i{
         padding:110px 0 160px 0;
     }
 }
-/*PAD ASUS*/
-@media screen and (orientation: landscape) and (max-width: 1200px) and (max-height:800px) {
-    /* .nav{
-        top:4%;
-    } */
-    .nav-right{
-        width: 70%;
-    }
-    .hideUp{
-        top:-150px;
-    }
-    .logo h1{
-        font-size: 29px
-    }
-    .menu-content {
-        width: 20%;
-        margin: 0 auto;
-        padding: 142px 0 122px;
-        height: auto;
-    }
-    .burger-menu{
-        position: absolute;
-        left: 14%;
-        margin:10px 10px ;
-    }
-    /* .sub-title{
-        font-size: 97px;
-    } */
-    .right {
-        width: 34%;
-        padding: 4% 0% 2% 1%;
-    }
-    .right article h3{
-        font-size: 22px;
-    }
-    .right article p{
-        font-size: 18px;
-    }
-    .row{
-        padding:110px 0 160px 0;
-    }
-    .mobile figure div {
-        margin: 5% 2%;
-    }
-    .mobile img {
-        width: 270px;
-    }
-}
 /*1680*/
-@media screen and (orientation: landscape) and (min-width: 1680px) and (min-height:1050px){
+@media screen and (orientation: landscape) and (min-width: 1680px) and (max-height:1200px){
     .nav{
         top:4%;
     }
@@ -572,7 +520,7 @@ i{
     }
 }
 /*1920以上*/
-@media screen and (orientation: landscape) and (min-width:1800px) and (max-width: 1920px) and (max-height: 1200px){
+@media screen and (orientation: landscape) and (min-width: 1920px) and (max-height: 1200px){
     .nav{
         top:4%;
     }
@@ -625,13 +573,41 @@ i{
     .logo h1{
         font-size: 35px;
     }
+    .hideUp{
+        top:-150px;
+    }
     .burger-menu {
         position: absolute;
-        left: 10%;
+        left: 11%;
         margin: 10px 10px;
+    }
+    .menu-content {
+        width: 10%;
+        padding: 18% 0 122px;
+    }
+    .menu-content i {
+        font-size: 18px;
+    }
+    .menu-content b {
+        line-height: 50px;
+        font-size: 38px;
     }
     .sub-title{
         font-size: 120px;
+        left:17%;
+    }
+    .row {
+        padding: 260px 0;
+    }
+    .right {
+        width: 35%;
+        padding: 6% 2% 4% 2%;
+    }
+    .right article h3 {
+        font-size: 30px;
+    }
+    .right article p {
+        font-size: 25px;
     }
     .title{
         font-size: 50px;
@@ -644,12 +620,13 @@ i{
     }
     
 }
+
 @media screen and (orientation:portrait) and (max-width:992px){
-    /* .burger-menu{
+    .burger-menu{
         position: relative;
         left:auto;
-        margin:10px 10px;
-    } */
+        margin:10px 4%;
+    }
     .nav-right{
         width: 100%;
         justify-content: space-between;

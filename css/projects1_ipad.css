@@ -446,10 +446,10 @@ i{
     .right p{
         font-size: 16px;
     }
-    .top-left .title-box{
+    /* .top-left .title-box{
         left:25%;
         top:68%;
-    }
+    } */
     .right h3{
         font-size: 18px;
         text-align: center;
@@ -718,6 +718,10 @@ i{
     .menu-content b{
         font-size: 30px;
     }
+    .top-left .title-box {
+        top: 68%;
+        left: 25%;
+    }
     .title{
         font-size: 40px;
     }
@@ -788,7 +792,7 @@ i{
         margin: 5% 5%;
     }
 }
-/*IPADPRO MAC MINE 橫*/
+/*IPADPRO橫 MAC橫 MINE橫*/
 @media screen and (orientation:landscape) and (min-width:1366px) and (min-height:768px){
     .nav{
         top:3%;
@@ -832,11 +836,6 @@ i{
     }
     .mobile figure div {
         margin: 5% 4%;
-    }
-}
-@media screen and (orientation: portrait) and (min-width: 992px) {
-    .box:after {
-        content: 'portrait > 992';
     }
 }
 /*1680*/

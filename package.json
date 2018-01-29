@@ -1,0 +1,24 @@
+{
+  "name": "qooqoooo.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qooqoooo/qooqoooo.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qooqoooo/qooqoooo.github.io/issues"
+  },
+  "homepage": "https://github.com/qooqoooo/qooqoooo.github.io#readme",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1"
+  }
+}

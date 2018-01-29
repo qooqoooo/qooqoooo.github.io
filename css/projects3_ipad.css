@@ -1,7 +1,7 @@
 /*------------------------ for ipad --------------------------*/
 
-/*IPAD PRO直式*/
-@media screen and (orientation:portrait) and (max-width:1024px) and (max-height:1366px){
+/*IPAD PRO直 MAC直 MINE直*/
+@media screen and (orientation:portrait) and (min-height:1366px) and (min-width:768px){
 
 div {
     box-sizing: border-box;
@@ -421,7 +421,27 @@ i{
 
 
 
-
+/* @media screen and (orientation: portrait) and (min-width: 992px) {
+    .box:after {
+        content: 'portrait > 992';
+    }
+    .sub-title{
+        font-size: 82px;
+    }
+    .menu-content i{
+        font-size: 15px;
+    }
+    .menu-content b{
+        font-size: 30px;
+    }
+    .logo h1{
+        white-space: nowrap;
+        font-size: 29px;
+    }
+    .right p{
+        font-size: 16px;
+    }
+} */
 @media screen and (orientation: portrait) and (max-width:992px){
     .box:after {
         content: 'portrait < 768';
@@ -438,15 +458,15 @@ i{
     .burger-menu{
         left:auto;
         position: relative;
-        margin:10px 10px;
+        margin:10px 4%;
     }
     .sub-title{
-        font-size: 45px;
+        font-size: 82px;
     }
-    .top-left .title-box{
+    /* .top-left .title-box{
         left:25%;
         top:68%;
-    }
+    } */
     .right h3{
         font-size: 18px;
         text-align: center;
@@ -659,8 +679,11 @@ i{
         font-size: 18px;
     }
 }
-/*IPAD 直 IPADPRO直 橫*/
-@media screen and (min-width:768px) and (max-width: 1024px) and (max-height:1024px){
+
+
+
+/*IPAD ASUS 直橫*/
+@media screen and (min-width:800px) and (max-width: 1200px) and (max-height:1200px){
     .nav{
         top:3%;
     }
@@ -689,6 +712,10 @@ i{
     }
     .menu-content b{
         font-size: 30px;
+    }
+    .top-left .title-box {
+        top: 68%;
+        left: 25%;
     }
     .title{
         font-size: 40px;
@@ -722,8 +749,8 @@ i{
     }
 
 }
-/*IPAD 橫式*/
-@media screen  and (orientation: landscape) and (min-height:768px) and (min-width:1024px) and (max-width: 1024px){
+/*IPAD ASUS 橫式*/
+@media screen  and (orientation: landscape) and (max-width:1200px) and (max-height:800px){
     .top-left{
         width: 30%;
     }
@@ -762,8 +789,8 @@ i{
         margin: 5% 5%;
     }
 }
-/*IPAD PRO 橫*/
-@media screen and (orientation:landscape) and (max-height:1024px) and (min-width:1366px){
+/*IPADPRO橫 MAC橫 MINE橫*/
+@media screen and (orientation:landscape) and (min-width:1366px) and (min-height:768px){
     .nav{
         top:3%;
     }
@@ -804,101 +831,8 @@ i{
         margin: 5% 4%;
     }
 }
-
-
-
-
-
-
-
-
-
-@media screen and (orientation: portrait) and (min-width: 992px) {
-    .box:after {
-        content: 'portrait > 992';
-    }
-    .sub-title{
-        font-size: 82px;
-    }
-    .menu-content i{
-        font-size: 15px;
-    }
-    .menu-content b{
-        font-size: 30px;
-    }
-    .logo h1{
-        white-space: nowrap;
-        font-size: 29px;
-    }
-    .right p{
-        font-size: 16px;
-    }
-}
-@media screen and (orientation:landscape) and (min-width:1200px){
-    /* .logo h1 {
-        font-size: 30px;
-    } */
-    .right{
-        padding:4% 0 2% 2%;;
-    }
-    .right article h3{
-        font-size: 22px;
-    }
-    .right article p{
-        font-size: 18px;
-    }
-}
-/*MACPRO*/
-@media screen and (orientation: landscape) and (min-width: 1440px) and (min-height:900px){
-    .nav{
-        top:4%;
-    }
-    .hideUp{
-        top:-150px;
-    }
-    .logo h1{
-        font-size: 30px
-    }
-    .menu-content{
-        padding:142px 0 122px; 
-        width:20%;
-    }
-    .nav-right{
-        width: 70%;
-    }
-    .burger-menu{
-        position: absolute;
-        left: 13%;
-        margin:10px 10px ;
-    }
-    .sub-title{
-        font-size: 97px;
-    }
-    .right{
-        width:30%;
-        padding:4% 0;
-    }
-    .right article h3{
-        font-size: 22px;
-    }
-    .right article p{
-        font-size: 18px;
-    }
-    .row{
-        padding: 150px 0; /*GPO封面圖比較大張*/
-    }
-    .mobile figure div {
-        margin: 5% 2%;
-    }
-    .mobile img {
-        width: 270px;
-    }
-    
-    
-
-}
 /*1680*/
-@media screen and (orientation: landscape) and (min-width: 1680px) and (min-height:1050px){
+@media screen and (orientation: landscape) and (min-width: 1680px) and (max-height:1200px){
     .logo h1{
         font-size: 30px;
     }
@@ -936,7 +870,7 @@ i{
     }
 }
 /*1920以上*/
-@media screen and (orientation: landscape) and (min-width:1800px) and (max-width: 1920px) and (max-height: 1200px){
+@media screen and (orientation: landscape) and (min-width: 1920px) and (max-height: 1200px){
     .logo h1{
         font-size: 30px;
     }
@@ -1008,9 +942,6 @@ i{
     
 }
 
-
-
-
 @media screen and (orientation: landscape) {
     .box:after {
         content: 'landscape < 768';
@@ -1029,7 +960,7 @@ i{
         width: 70%;
     }
 }
-@media screen and (orientation: landscape) and (min-width: 768px) {
+/* @media screen and (orientation: landscape) and (min-width: 768px) {
     .box:after {
         content: 'landscape > 768';
     }
@@ -1038,4 +969,4 @@ i{
     .box:after {
         content: 'landscape > 992';
     }
-}
+} */
