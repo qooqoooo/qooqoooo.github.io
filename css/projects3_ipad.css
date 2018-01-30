@@ -37,7 +37,7 @@ i{
 }
 .hideUp{
     /*For NAV*/
-    top:-155px;
+    transform: translateY(-150px);;
 }
 .logo{
     /*for圖片*/
@@ -288,7 +288,7 @@ i{
         font-size: 28px;
     }
     .hideUp{
-        top:-150px
+        transform: translateY(-150px);
     }
     .nav-right {
         width: 100%;
@@ -576,7 +576,7 @@ i{
         font-size: 25px;
     }
     .nav.hideUp{
-        top:-150px;
+        transform: translateY(-150px);;
     }
     .nav-right{
         width:100%;
@@ -727,7 +727,7 @@ i{
         justify-content: space-between
     }
     .nav.hideUp{
-        top:-150px;
+        transform: translateY(-150px);;
     }
     .logo h1{
         font-size: 27px;
@@ -896,7 +896,7 @@ i{
         justify-content: space-between
     }
     .nav.hideUp{
-        top:-150px;
+        transform: translateY(-150px);;
     }
     .nav-right {
         width: 100%;

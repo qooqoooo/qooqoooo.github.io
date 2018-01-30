@@ -32,7 +32,7 @@ i{
 }
 .hideUp{
     /*For NAV*/
-    top:-155px;
+    transform: translateY(-150px);;
 }
 .logo{
     /*for圖片*/
@@ -628,7 +628,7 @@ i{
         white-space: nowrap;
     }
     .hideUp{
-        top:-150px;
+        transform: translateY(-150px);;
     }
     .logo h1{
         font-size: 27px;
@@ -721,7 +721,7 @@ i{
         white-space: nowrap;
     }
     .hideUp{
-        top:-150px;
+        transform: translateY(-150px);;
     }
     .logo h1{
         font-size: 26px;

@@ -34,7 +34,7 @@ i{
 }
 .hideUp{
     /*For NAV*/
-    top:-155px;
+    transform: translateY(-150px);;
     -webkit-overflow-scrolling: touch;
 }
 .logo{
