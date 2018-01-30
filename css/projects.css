@@ -479,10 +479,10 @@ i{
 /*-------------------------------------IPHONE橫*/
 @media screen and (orientation:landscape) and (max-width:812px) and (min-height:320px){
     .nav{
-        top:4%;
+        top:0%;
     }
     .logo h1{
-        font-size: 26px;
+        font-size: 25px;
     }
     .nav-right{
         width:100%;
@@ -500,26 +500,29 @@ i{
     .main-content{
         padding-top: 15%;
     }
+    .col-left{
+        width:100%;
+    }
     .menu-content{
-        padding:90px 0 90px;
-        width:27%;
+        padding:80px 0 90px;
+        width:37%;/*I5*/
     }
     .menu-content i{
         font-size: 13px;
     }
     .menu-content b{
         font-size: 26px;
-        line-height: 40px
+        line-height: 36px
     }
     .wrapper-text{
         left: 75%;
         top: 53%;
     }
-    .col-left:nth-child(1) .content-img, .content-img{
+    .col-left:nth-child(1) .content-img, .content-img, .col-left:nth-child(3) .content-img{
         width:auto;
     }
     .box-title h1{
-        margin-bottom: .3rem;
+        margin-bottom: .6rem;
         line-height: 1.3em;
     }
     .box-title h1 b{
@@ -550,7 +553,7 @@ i{
     }
 }
 /*i6橫*/
-@media screen and (orientation:landscape) and (max-height:375px) and (max-width:667px){
+@media screen and (orientation:landscape) and (min-height:375px) and (max-width:667px){
     .menu-content{
         width: 32%;
     }
@@ -562,7 +565,7 @@ i{
         top: 53%;
     }
     .box-content .col-left:nth-child(2) .wrapper-text {
-        left: 12%;
+        left: 17%;
         top: 9%;
     }
     .box-content .col-left:nth-child(3) .wrapper-text {
@@ -572,13 +575,6 @@ i{
 }
 /*i6+橫*/
 @media screen and (orientation:landscape) and (max-width:736px) and (min-height:414px){
-    .nav{
-        top:4%;
-        white-space: nowrap;
-    }
-    .hideUp{
-        top:-150px;
-    }
     .logo h1{
         font-size: 27px;
     }
@@ -588,12 +584,15 @@ i{
     .col-left:nth-child(odd) .content-img {
         width: 32%;
     }
+    .content-img{
+        width:53.5%;
+    }
     .wrapper-text {
         left: 69%;
         top: 56%;
     }
     .box-content .col-left:nth-child(2) .wrapper-text {
-        left: 13%;
+        left: 16%;
         top: 8%;
     }
     .box-content .col-left:nth-child(3) .wrapper-text {
@@ -606,6 +605,14 @@ i{
     .top-left .title-box{
         left:12%;
         top:76%;
+    }
+    .wrapper-text {
+        left: 62%;
+        top: 53%;
+    }
+    .box-content .col-left:nth-child(2) .wrapper-text {
+        left: 22%;
+        top: 11%;
     }
     .words{
         height: 62%;

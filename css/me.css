@@ -1045,7 +1045,10 @@ i{
 /*-------------------------------------IPHONE橫*/
 @media screen and (orientation:landscape) and (max-width:812px) and (min-height:320px){
     .nav{
-        top:4%;
+        top:0%;
+    }
+    .nav.hideUp{
+        top:-150px;
     }
     .logo h1{
         font-size: 26px;
@@ -1064,28 +1067,28 @@ i{
         margin:10px 4%;
     }
     .menu-content{
-        padding:90px 0 90px;
-        width:27%;
+        padding:80px 0 90px;
+        width:37%; /*I5*/
     }
     .menu-content i{
         font-size: 13px;
     }
     .menu-content b{
         font-size: 26px;
-        line-height: 40px
+        line-height: 36px
     }
 }
 /*i6~i6+~IX 橫*/
 @media screen and  (orientation:landscape) and (max-height:414px) and (max-width:812px){
-    .nav.hideUp{
-        top:-150px;
-    }
     .logo h1{
         font-size: 27px;
     }
     .bg{
         height: 83%;
         top: 50px;
+    }
+    .menu-content{
+        width: 27%;/*I6+*/
     }
     .top-left{
         width:20%;
@@ -1135,7 +1138,7 @@ i{
         line-height: 19px
     }
     .words .mail{
-        margin-top:20px;
+        margin-top: 35px;
         text-align: center;
         position: relative;
     }
@@ -1150,13 +1153,6 @@ i{
 }
 /*i5橫*/
 @media screen and (orientation:landscape) and (max-height:320px) and (min-width:568px){
-    .nav{
-        top:0;
-        justify-content: space-between
-    }
-    .nav.hideUp{
-        top:-150px;
-    }
     .logo h1{
         font-size: 25px;
     }
@@ -1249,6 +1245,9 @@ i{
 }
 /*IX橫*/
 @media screen and (orientation:landscape) and (min-width:812px) and (max-height:375px){
+    .logo h1{
+        font-size: 26px;
+    }
     .top-left .title-box{
         left:12%;
         top:76%;
