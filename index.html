@@ -305,19 +305,21 @@
     <script>
         /*MeNu*/
         var navIsOpen = false
-            $('.burger-menu').click(function menu() {
+            $('.burger-menu').click(function () {
             if (navIsOpen) {
                 /*關*/
                 $('.top').css({'transform': '0'})
                 $('.bottom').css({'transform': '0'})
                 $('.middle').css('display', 'block')
                 $('.menu-cover').css({'transform': 'translate(0%,-100%)'})
+                $('body').css('overflow-y','auto')
             } else {
                 /*開*/
                 $('.top').css({'transform': 'translate(0px,5px), rotate(45deg)'})
                 $('.middle').css('display', 'none')
                 $('.bottom').css({'transform': 'translate(1px, -5px), rotate(-45deg)'})
                 $('.menu-cover').css({'transform': 'translate(0%,0%), matrix(1,0,0,1,0,0)'})
+                $('body').css('overflow-y','hidden')
             }
             navIsOpen = !navIsOpen
         })
@@ -377,11 +379,10 @@
         window.addEventListener('scroll', function () {
             delta = checkScrollSpeed()
             /*如果差值小於10就不做動作*/
-            if (Math.abs(delta) < 5) {
-                return
-            }
-
-            if (delta >= 0) {
+            // if (Math.abs(delta) < 0) {
+            //     return
+            // }
+            if (delta > 0) {
                 $('.nav').addClass('hideUp')
             } else {
                 $('.nav').removeClass('hideUp')
@@ -673,7 +674,11 @@
             // console.log('sectionTop',sectionTop)
         })
 
+        /*馬上來!!!*/
         $('.coming').click(function(){
+            alert('Coming soon!')
+        })
+        $('.col-one').click(function(){
             alert('Coming soon!')
         })
         /*hover效果--------後用CSS呈現*/
@@ -685,19 +690,19 @@
         // })
 
 
-    /*Menu-Contact*/
-
-        // if(urlsplit='index.html'){
-        //     console.log('ppp')
-        //     $("html, body").animate({ scrollTop: $(document).height() }, 1300)
-        // }
     function toFooter() {
-        console.log('l')
-        var url = window.location.pathname;
-        var urlsplit = url.split("/").slice(-1)[0];
-
+        bottomAnimated = true
+        lastAnimated = true
+        // var url = window.location.pathname;
+        // var urlsplit = url.split("/").slice(-1)[0];
         var foot = document.getElementById('toFoot')
         var footTop = foot.scrollTop().top
+
+
+        // var topAnimated = false
+        // var middleAnimated = false
+        // var bottomAnimated = false
+        // var lastAnimated = false
         $("html, body").animate({ scrollTop: footTop }, 1300)
     }    
     </script>

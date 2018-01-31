@@ -28,7 +28,7 @@ i{
 }
 .hideUp{
     /*For NAV*/
-    transform: translateY(-150px);;
+    transform: translateY(-150px);
 }
 .nav-right{
     display: flex;
@@ -188,7 +188,8 @@ i{
     background: #b4a69d;
 }
 .title{
-    font-family: 'Caveat', cursive;
+    /* font-family: 'Caveat', monospace; */
+    font-family: 'Dosis', sans-serif;
     color:#282828;
     font-size: 43px;
     font-weight: 400;

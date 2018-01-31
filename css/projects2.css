@@ -28,7 +28,7 @@ i{
 }
 .hideUp{
     /*For NAV*/
-    transform: translateY(-150px);;
+    transform: translateY(-150px);
 }
 .nav-right{
     display: flex;
@@ -190,7 +190,8 @@ i{
     background: #b4a69d;
 }
 .title{
-    font-family: 'Caveat', cursive;
+    font-family: 'Caveat', monospace;
+    font-family: 'Dosis', sans-serif;
     color:#282828;
     font-size: 43px;
     font-weight: 400;
@@ -283,7 +284,7 @@ i{
 
 
 /*ipad ASUS直橫*/
-@media screen and (min-width:800px) and (max-width: 1200px) and (max-height:1200px){
+@media screen and (min-width:800px) and (max-width: 1280px) and (max-height:1280px){
     .nav{
         top:3%;
     }
@@ -339,12 +340,12 @@ i{
     }
 }
 /*ipad橫*/
-@media screen and (orientation:landscape) and (max-width:1200px) and (max-height:800px){
+@media screen and (orientation:landscape) and (max-width:1280px) and (max-height:800px){
     .nav{
         top:3%;/*會吃到筆電版*/
     }
     .hideUp{
-        transform: translateY(-150px);;
+        transform: translateY(-150px);
     }
     .logo h1{
         font-size: 28px;
@@ -360,8 +361,8 @@ i{
         margin:10px 4%;
     }
     .menu-content {
-        width: 23%;
-        padding: 18% 0 122px;
+        width: 19%;
+        padding: 16% 0 122px;
     }
     .menu-content i{
         font-size: 15px;
@@ -406,12 +407,12 @@ i{
 
 }
 /*ipadpro直 MINE直 MAC直*/
-@media screen and (orientation:portrait) and (min-width:1024px) and (min-height:1366px){
+@media screen and (orientation:portrait) and (min-width:768px) and (min-height:1366px){
     .nav{
         top:3%;
     }
     .hideUp{
-        transform: translateY(-150px);;
+        transform: translateY(-150px);
     }
     .nav-right{
         width: 100%;
@@ -574,7 +575,7 @@ i{
         font-size: 35px;
     }
     .hideUp{
-        transform: translateY(-150px);;
+        transform: translateY(-150px);
     }
     .burger-menu {
         position: absolute;
@@ -642,7 +643,7 @@ i{
         justify-content: space-between
     }
     .nav.hideUp{
-        transform: translateY(-150px);;
+        transform: translateY(-150px);
     }
     .logo h1{
         font-size: 27px;
@@ -702,7 +703,7 @@ i{
         width: 100%;
     }
     .right article{
-        padding: 5% 14%;
+        padding: 5% 8%;
         text-align: justify;
     }
     .right article p{
@@ -729,7 +730,7 @@ i{
         position: relative;
     }
     .logo h1{
-        font-size: 25px;
+        font-size: 22px;
     }
     .menu-content {
         padding: 120px 0 122px;
@@ -752,7 +753,7 @@ i{
         justify-content: space-between
     }
     .nav.hideUp{
-        transform: translateY(-150px);;
+        transform: translateY(-150px);
     }
     .nav-right {
         width: 100%;
@@ -807,10 +808,10 @@ i{
         top:0;
     }
     .nav.hideUp{
-        transform: translateY(-150px);;
+        transform: translateY(-150px);
     }
     .logo h1{
-        font-size: 25px;
+        font-size: 22px;
     }
     .nav-right{
         width:100%;

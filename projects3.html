@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Ailie.hou</title>
     <link rel="stylesheet" href="css/projects3.css" id="css">
     <link rel="stylesheet" href="css/projects3_ipad.css">
     <link rel="stylesheet" href="css/animation.css">
@@ -59,7 +59,7 @@
                     </a> 
                 </li>
                 <li>
-                    <a href=""> 
+                    <a class="contact" href="./index.html#toFoot" onclick="toFooter()"> 
                         <i>04</i>
                         <b>Contacts</b>
                     </a> 
@@ -158,22 +158,48 @@
         navIsOpen = !navIsOpen
     })
 
-    /*Nav*/
-    var navClass= document.getElementsByClassName('nav')
-        lastScrollY = 0;
-    window.addEventListener('scroll', function(){
-        var st = this.scrollY;
-        // 判斷是向上捲動，而且捲軸超過 200px
-        console.log(st)
-        if( st < lastScrollY) {
-            //往上
-            navClass[0].classList.remove('hideUp')
-        }else{
-            //往下
-            navClass[0].classList.add('hideUp')
+
+
+
+        /*算 NAV SCROLL 加速度 NAV動畫精緻版!!!*/
+        var checkScrollSpeed = (function (settings) {
+        settings = settings || {};
+
+        var lastPos, newPos, timer, delta,
+                delay = settings.delay || 50;
+
+        function clear() {
+            lastPos = null;
+            delta = 0;
         }
-        lastScrollY = st;
-    });
+
+        clear();
+
+        return function () {
+            newPos = window.scrollY;
+            if (lastPos != null) {
+                delta = newPos - lastPos;
+            }
+            lastPos = newPos;
+            clearTimeout(timer);
+            timer = setTimeout(clear, delay);
+            return delta;
+        };
+    })();
+    window.addEventListener('scroll', function () {
+        delta = checkScrollSpeed()
+        /*如果差值小於10就不做動作*/
+        // if (Math.abs(delta) < 0) {
+        //     return
+        // }
+        if (delta > 0) {
+            $('.nav').addClass('hideUp')
+        } else {
+            $('.nav').removeClass('hideUp')
+        }
+    })
+
+ 
     </script>
 
 

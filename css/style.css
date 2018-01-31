@@ -13,6 +13,7 @@ body {
 a{
     text-decoration: none;
     cursor: pointer;
+    display: inline-block;
 }
 i{
     font-style: normal;
@@ -30,11 +31,12 @@ i{
 }
 .nav-right{
     display: flex;
+    justify-content: flex-start;
     width: 70%;
 }
 .hideUp{
     /*For NAV*/
-    transform: translateY(-150px);;
+    transform: translateY(-150px);
     -webkit-overflow-scrolling: touch;
 }
 .logo{
@@ -42,9 +44,9 @@ i{
     padding-right:4px;
     font-family: 'Special Elite', cursive;/*打字機款*/
     color:#282828;
+    white-space: nowrap;
 }
 .logo h1{
-    white-space:nowrap;
     margin:0 auto;
     line-height: 65px;
     color:#555;
@@ -56,10 +58,10 @@ i{
     width: 44px;
     height: 44px;
     margin:10px 10px;
-    display:flex;
+    /* display:flex;
     justify-content: flex-end;
-    flex-wrap: wrap;
-    color:#282828;
+    flex-wrap: wrap; */
+    color:#030101;
     cursor: pointer;
     border:1px rgba(0,0,0,.2) solid;
     
@@ -427,7 +429,7 @@ i{
 .title{
     white-space: normal;
     /* font-family: 'Rajdhani', sans-serif; */
-    font-family: 'Caveat', cursive;
+    font-family: 'Caveat';
     color:#282828;
     margin-bottom:10px;
     font-size: 35px;
@@ -583,7 +585,7 @@ i{
     z-index: 2;
 }
 .col-title{
-    /* font-family:'Caveat', cursive; 不適合*/
+    /* font-family:'Caveat', monospace; 不適合*/
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 14px;
     font-weight: 400;
