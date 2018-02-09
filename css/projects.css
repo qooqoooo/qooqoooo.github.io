@@ -498,7 +498,7 @@ i{
         margin:10px 4%;
     }
     .main-content{
-        padding-top: 15%;
+        padding-top: 12%;
     }
     .col-left{
         width:100%;
@@ -558,7 +558,7 @@ i{
         width: 32%;
     }
     .logo h1{
-        font-size: 26px;
+        font-size: 24px;
     }
     .wrapper-text{
         left: 66%;
@@ -576,10 +576,13 @@ i{
 /*i6+橫*/
 @media screen and (orientation:landscape) and (max-width:736px) and (min-height:414px){
     .logo h1{
-        font-size: 27px;
+        font-size: 24px;
     }
     .menu-content{
         width: 27%;
+    }
+    .main-content{
+        top:10%;
     }
     .col-left:nth-child(odd) .content-img {
         width: 32%;
@@ -621,6 +624,12 @@ i{
         width: 26%;
     }
 }
+/*直的手機*/
+@media screen and (orientation:portrait){
+    .logo h1{
+        font-size: 24px;
+    }
+}
 /*i6+直*/
 @media screen and (orientation:portrait) and (max-height:736px) and (max-width:414px){
     .nav{
@@ -631,7 +640,7 @@ i{
         transform: translateY(-150px);
     }
     .logo h1{
-        font-size: 27px;
+        font-size: 24px;
     }
     .nav-right{
         width: 100%;
@@ -665,7 +674,7 @@ i{
         width: auto;
     }
     .wrapper-text{
-        left:61%;
+        left:64%;
         top:57%;
     }
     .box-content .col-left:nth-child(3) .wrapper-text, .box-content .col-left:nth-child(2) .wrapper-text{
@@ -675,7 +684,7 @@ i{
         top:8%;
     }
     .box-title h1{
-        font-size: 27px;
+        font-size: 25px;
     }
 }
 /*I5直*/
@@ -705,12 +714,12 @@ i{
     }
 }
 /*I6直*/
-@media screen and (orientation:portrait) and (min-width:375px) and (max-width:667px){
+@media screen and (orientation:portrait) and (min-width:375px) and (min-width:667px){
     .hideUp{
         transform: translateY(-150px);
     }
     .logo h1{
-        font-size: 27px;
+        font-size: 24px;
     }
     .wrapper-text{
         left:57%;
@@ -721,7 +730,7 @@ i{
     }
 }
 /*I10直*/
-@media screen and (orientation:portrait) and (max-height:812px) and (min-width:375px){
+@media screen and (orientation:portrait) and (min-height:812px) and (min-width:375px){
     .nav{
         top:0;
         white-space: nowrap;
@@ -730,7 +739,7 @@ i{
         transform: translateY(-150px);
     }
     .logo h1{
-        font-size: 26px;
+        font-size: 24px;
     }
     .nav-right{
         width: 100%;

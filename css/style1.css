@@ -12,6 +12,7 @@ body{
 }
 a{
     text-decoration: none;
+    display:block;
 }
 i{
     font-style: normal;
@@ -666,6 +667,15 @@ footer{
         width:17%;
         padding: 18% 0 122px;
     }
+    .row-one .label-btn .covering span{
+        width:80%;
+    }
+    .row-two .label-btn .covering span{
+        width:38%;
+    }
+    .row-three .label-btn span{
+        width:62%;
+    }
 }
 /*1680*/
 @media screen and (orientation: landscape) and (min-width: 1680px) and (max-height:1200px){
@@ -754,7 +764,7 @@ footer{
         transform: translateY(-150px);
     }
     .logo h1{
-        font-size:26px;
+        font-size:22px;
     }
     .burger-menu{
         position: relative;
@@ -847,9 +857,9 @@ footer{
     }
 }
 /*I6直*/
-@media screen and (orientation:portrait) and (max-width:375px) and (min-height:667px){
+@media screen and (orientation:portrait) and (min-width:375px) and (max-height:667px){
     .logo h1{
-        font-size: 26px;
+        font-size: 24px;
     }
     .menu-content {
         width: 50%;
@@ -877,9 +887,9 @@ footer{
     }
 }
 /*I6+直*/
-@media screen and (orientation:portrait) and (max-width:414px) and (min-height:736px){
+@media screen and (orientation:portrait) and (max-width:414px) and (max-height:736px){
     .logo h1{
-        font-size: 27px;
+        font-size: 24px;
     }
     .menu-content {
         width: 50%;
@@ -899,17 +909,17 @@ footer{
         top:76%
     }
     .row-two .label-btn .covering span {
-        width: 48%;
+        width: 60%;
     }
     .row-three .label-btn .covering span {
-        width: 57.4%;
+        width: 80%;
     }
 
 }
 /*IX直*/
 @media screen and (orientation:portrait) and (min-height:812px) and (max-width:375px){
     .logo h1{
-        font-size: 26px;
+        font-size: 24px;
     }
     .burger-menu{
         position: relative;
@@ -1050,7 +1060,7 @@ footer{
 /*I6橫 I10橫*/
 @media screen and (orientation:landscape) and (min-width:667px) and (max-height:375px){
     .logo h1{
-        font-size:26px;
+        font-size:24px;
     }
     .menu-content{
         width: 32%;
@@ -1088,12 +1098,18 @@ footer{
 
 }
 /*I6+橫*/
-@media screen and (orientation:landscape) and (min-height:414px) and (max-width:736px){
+@media screen and (orientation:landscape) and (max-height:414px) and (max-width:736px){
     .logo h1{
-        font-size: 27px;
+        font-size: 24px;
     }
     .menu-content{
         width: 27%;
+    }
+    .row-two .label-btn .covering span{
+        width:45%;
+    }
+    .row-three .label-btn span{
+        width:73%;
     }
     .footer-container{
         padding: 0 8%;

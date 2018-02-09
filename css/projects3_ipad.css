@@ -644,7 +644,7 @@ i{
 /*iphone6+、iphone6 橫式*/
 @media screen and (orientation:landscape) and (min-height:375px) and (max-height:414px) and (max-width:736px){
     .logo h1 {
-        font-size: 26px;
+        font-size: 24px;
     }
     .sub-title{
         font-size: 50px;
@@ -681,7 +681,7 @@ i{
 /*I6+橫*/
 @media screen and (orientation: landscape) and (max-width:736px) and (min-height: 414px)  {
     .logo h1 {
-        font-size: 27px;
+        font-size: 24px;
     }
     .menu-content{
         width: 27%;/*I6+*/
@@ -731,7 +731,7 @@ i{
         transform: translateY(-150px);
     }
     .logo h1{
-        font-size: 27px;
+        font-size: 24px;
     }
     .menu-content {
         width: 50%;
@@ -815,7 +815,7 @@ i{
     }
     .logo h1{
         white-space: nowrap;
-        font-size: 26px;
+        font-size: 24px;
     }
     .sub-title{
         font-size: 45px;
@@ -837,7 +837,7 @@ i{
     }
     .logo h1{
         white-space: nowrap;
-        font-size: 27px;
+        font-size: 24px;
     }
     .right p{
         font-size: 15px;
@@ -854,7 +854,7 @@ i{
     }
     .logo h1{
         white-space: nowrap;
-        font-size: 25px;
+        font-size: 22px;
     }
     .nav-right{
         width: 100%;
@@ -904,7 +904,7 @@ i{
         justify-content: space-between;
     }
     .logo h1{
-        font-size: 26px;
+        font-size: 24px;
     }
     .burger-menu{
         position: relative;

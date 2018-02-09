@@ -237,20 +237,21 @@ i{
 }
 .right{
     width:34%;
-    padding:4% 4% 4% 0;
+    padding:4%;
 }
 .right article h3{
     font-family: 'Rajdhani', sans-serif;
     font-weight: 600;
     text-align: center;
-    font-size: 22px;
+    font-size: 20px;
+    white-space: nowrap;
     margin:15px 0;
 }
 .right article p{
     font-family: "Noto Sans CJK TC", sans-serif;
     font-weight: 300;
     text-align: justify;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 
@@ -646,7 +647,7 @@ i{
         transform: translateY(-150px);
     }
     .logo h1{
-        font-size: 27px;
+        font-size: 24px;
     }
     .nav-right{
         width: 100%;
@@ -760,7 +761,7 @@ i{
         justify-content: space-between;
     }
     .logo h1{
-        font-size: 26px;
+        font-size: 24px;
     }
     .burger-menu{
         position: relative;
@@ -880,7 +881,7 @@ i{
 /*iphone6+、iphone6 橫式*/
 @media screen and (orientation:landscape) and (min-height:375px) and (max-height:414px) and (max-width:736px){
     .logo h1{
-        font-size: 26px;
+        font-size: 24px;
     }
     .menu-content{
         width: 32%;
@@ -905,7 +906,7 @@ i{
 /*I6+橫*/
 @media screen and (orientation: landscape) and (min-height: 414px) and (max-width:746px){
     .logo h1 {
-        font-size: 27px;
+        font-size: 24px;
     }
     .menu-content{
         width: 27%;
