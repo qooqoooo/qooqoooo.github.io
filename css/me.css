@@ -341,7 +341,7 @@ i{
         justify-content: space-between;
     }
     .words{
-        margin-top:110%;
+        margin-top:20%;
         left: 10%;
         width: 56%;
         align-self: center;
@@ -416,9 +416,10 @@ i{
         text-align: justify;
         position: absolute;
         left: 8%;
+        top:20%;
         align-self: center;
         width: 45%;
-        margin-top: 110%;
+        margin-top: 0%;
     }
     .div-img{
         align-self: center;
@@ -483,8 +484,9 @@ i{
         width: 70%;
     }
     .words{
-        margin-top:110%;
+        margin-top:0%;
         position: absolute;
+        top:23%;
         left: 10%;
         align-self: flex-start;
         width: 50%;
@@ -564,8 +566,8 @@ i{
         position: absolute;
         left:29%;
         width: 40%;
-        margin-top: 110%;
-        align-self: center;
+        margin-top: 15%;
+        align-self: flex-start;
         text-align: justify;
     }
     .words p{
@@ -603,6 +605,7 @@ i{
     }
     .nav-right{
         width: 70%;
+        justify-content: baseline;
     }
     .menu-content{
         width:  13%;
@@ -617,10 +620,12 @@ i{
     }
     .top-right{
         width:70%;
-        justify-content: flex-end;
+        justify-content: space-between;
     }
     .words{
         width:38%;
+        margin-top:20%;
+        position: relative;
     }
     .words h2{
         font-size: 33px;
@@ -652,7 +657,8 @@ i{
         padding:230px 0 122px;
     }
     .top-right{
-        justify-content: flex-end;
+        width:70%;
+        justify-content: space-between
     }
     .top-left .title-box {
         left: 15%;
@@ -665,7 +671,9 @@ i{
         font-size: 15px;
     }
     .words{
-        width:35%;
+        width:50%;
+        left:0;
+        margin-top:0;
         text-align: justify;
     }
     .words h2{
@@ -675,12 +683,30 @@ i{
         font-size: 28px;
         line-height: 35px;
     }
+    .words .mail{
+        margin-top:20%;
+        top:100%;
+    }
     .icon-paper-plane{
         font-size: 25px;
     }
 
 }
-
+@media screen and (min-width:2580px){
+    .top-right{
+        justify-content: space-around;
+    }
+    .words {
+        margin-top: 0;
+        width: 37%;
+        text-align: justify;
+        align-self: center;
+        position: initial;
+    }
+    .div-img{
+        width:30%;
+    }
+}
 
 
 /*FOR手機版 直*/
@@ -795,7 +821,7 @@ i{
 
 }
 /*iphone6 直*/
-@media screen and (orientation:portrait) and (max-height:667px) and (max-width:375px){
+@media screen and (orientation:portrait) and (max-height:667px) and (min-width:360px){
     .logo h1{
         font-size: 24px;
     }
@@ -806,7 +832,7 @@ i{
     }
     .bg{
         width: 100%;
-        height: 98%;
+        height: 720px;
         top: 44%;
     }
     .top-left{
@@ -833,10 +859,10 @@ i{
     }
     .words{
         margin: 3%;
-        margin-top:110%;
+        margin-top:130%;
         left:0;
         text-align: justify;
-        width: 350px;
+        width: 340px;
     }
     .words h2{
         font-size: 24px;
@@ -853,12 +879,13 @@ i{
     .div-img{
         width:70%;
         margin:0;
+        margin-top:5%;
         align-self: center
     }
 
 }
 /*iphone6+ 直*/
-@media screen and (orientation:portrait) and (max-height:736px) and (max-width:414px){
+@media screen and (orientation:portrait) and (min-height:670px) and (min-width:400px){
     .logo h1{
         font-size: 24px;
     }
@@ -902,8 +929,8 @@ i{
     }
     .words{
         padding: 3%;
-        /* margin-top:15%; */
-        margin-top:110%;
+        margin:0;
+        margin-top:140%;
         left:0%;
         text-align: justify;
         width: 350px;
@@ -911,7 +938,7 @@ i{
     .words h2{
         font-size: 24px;
         line-height:30px;
-        margin-bottom:8px;
+        margin-bottom:5px;
     }
     .words p{
         font-size: 15px;
@@ -965,7 +992,7 @@ i{
     .words{
         width:88%;
         margin:6%;
-        margin-top:110%;
+        margin-top:120%;
         left:0;
     }
     .words div{
@@ -1033,7 +1060,7 @@ i{
         font-size: 24px;
     }
     .bg{
-        height: 90%;
+        height: 325px;
         top: 45px;
     }
     .menu-content{
@@ -1042,6 +1069,8 @@ i{
     .top-left{
         width:25%;
         height:100%;
+        display: flex;
+        justify-content: baseline;
     }
     .top-right{
         width: 75%;
@@ -1052,8 +1081,10 @@ i{
     }
     .top-left .title-box{
         left: 8%;
-        margin-bottom: 4%;
-        top: 75%;
+        margin-top: 160%;
+        position: relative;
+        height:50px;
+        top:0;
     }
     .pre-title:after{
         width:25px;
@@ -1073,7 +1104,7 @@ i{
         margin: 0;
         position: relative;
         left:0;
-        margin-top:15%;
+        margin-top:13%;
         align-self: flex-start;
         text-align: justify;
     }
@@ -1127,7 +1158,7 @@ i{
     .top-left .title-box{
         right: 0;
         margin-bottom: 4%;
-        top: 72%;
+        align-self: end;
     }
     .title{
         font-size: 18px;
