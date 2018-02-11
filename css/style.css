@@ -458,6 +458,9 @@ i{
     left:-100%;
     /* transform: translate3d(90px, 0px, 0px); */
 }
+.row-one .label-btn, .row-three .label-btn{
+    left:-100%;
+}
 /*for the outter div covering the span*/
 .covering{
     padding:8px 10px;
@@ -509,7 +512,7 @@ i{
     opacity: .5;
     font-size: initial;
 } 
-.row-one .covering span{
+.row-one .covering span, .row-three .covering span{
     width: 80%;
 }
 .row-two .label-btn .covering span{
@@ -517,10 +520,6 @@ i{
     right: 18px;
     width: 42%;
 }
-.row-two .covering span:after{
-    left: 100%; 
-}
-
 .row-two .hidden:hover .covering span:after{
     left: -100% ;
     transition: left 1.3s;
