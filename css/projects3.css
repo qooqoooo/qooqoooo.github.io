@@ -38,7 +38,7 @@ i{
     /*for圖片*/
     /* -webkit-filter: invert(100%);
     filter: invert(100%);  CSS3 */
-    padding: 0 0 0 4%;
+    padding: 0 0 0 15px;
     padding-right:4px;
     /*for 文字*/
     font-family: 'Special Elite', cursive;/*打字機款*/
@@ -51,8 +51,7 @@ i{
     font-size: 30px;
 }
 .burger-menu{
-    position: absolute;
-    left: 13%;
+    position: relative;
     width: 44px;
     height: 44px;
     /* line-height: 65px; */

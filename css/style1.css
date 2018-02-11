@@ -38,7 +38,7 @@ i{
     transform: translateY(-150px);
 }
 .logo{
-    /* padding: 0 0 0 4%; */
+    /* padding: 0 0 0 15px; */
     padding-right:4px;
     font-family: 'Special Elite', cursive;/*打字機款*/
     color:#282828;
@@ -50,8 +50,7 @@ i{
     font-size: 29px;
 }
 .burger-menu{
-    position: absolute;
-    left: 20%;
+    position: relative;
     width: 44px;
     height: 44px;
     margin:10px 10px;
@@ -420,7 +419,7 @@ i{
 .row-two .label-btn .covering span {
     left: auto;
     right: 18px;
-    width: 40.3%;
+    width: 100%;
 }
 
 /*下方補充圖文區*/
@@ -569,10 +568,6 @@ footer{
         width: 30%;
         padding: 27% 0 122px;
     }
-    .burger-menu{
-        left:20%;
-        position: absolute;
-    }
     .slider{
         width: 85%;
         height: 500px;
@@ -599,12 +594,6 @@ footer{
         font-size: 37px;
         top:75%
     }
-    .row-two .label-btn .covering span{
-        width: 40.4%;
-    }
-    .row-three .label-btn span{
-        width:57.4%;
-    }
     .bottom-area{
         display: block;
     }
@@ -627,16 +616,9 @@ footer{
         width: 19%;
         padding: 16% 0 122px;
     }
-    .burger-menu{
-        left: 15%;
-    }
 }
 /*IPADPRO直 MINE直 MAC直*/
 @media screen and (orientation:portrait) and (min-width:768px) and (min-height:1366px){
-    /* .burger-menu{
-        left:17%;
-        position: absolute;
-    } */
     .menu-content {
         width: 23%;
         padding: 27% 0 122px;
@@ -659,22 +641,9 @@ footer{
     .logo h1{
         font-size: 29px;
     }
-    .burger-menu{
-        position: absolute;
-        left:13%;
-    }
     .menu-content {
         width:17%;
         padding: 18% 0 122px;
-    }
-    .row-one .label-btn .covering span{
-        width:80%;
-    }
-    .row-two .label-btn .covering span{
-        width:38%;
-    }
-    .row-three .label-btn span{
-        width:62%;
     }
 }
 /*1680*/
@@ -684,11 +653,6 @@ footer{
     }
     .nav-right{
         width: 70%;
-    }
-    .burger-menu {
-        position: absolute;
-        left: 12%;
-        margin: 10px 10px;
     }
     .logo h1{
         font-size: 30px;
@@ -712,11 +676,6 @@ footer{
     .slider{
         height:700px;
     }
-    .burger-menu {
-        position: absolute;
-        left: 11%;
-        margin: 10px 10px;
-    }
     .menu-content{
         padding:230px 0 122px;
         width:  13%;
@@ -727,11 +686,6 @@ footer{
 @media screen and (min-width: 1920px) and (max-width:2500px){
     .logo h1{
         font-size: 35px;
-    }
-    .burger-menu {
-        position: absolute;
-        left: 10%;
-        margin: 10px 10px;
     }
     .pre-title{
         font-size: 16px;
@@ -765,10 +719,6 @@ footer{
     }
     .logo h1{
         font-size:22px;
-    }
-    .burger-menu{
-        position: relative;
-        left: auto;
     }
     .menu-content {
         width: 50%;
@@ -812,11 +762,8 @@ footer{
         font-size: 25px;
         top:78%
     }
-    .row-three .label-btn .covering span{
-        width:68%;
-    }
-    .row-two .label-btn .covering span{
-        width:66%;
+    .row-one .label-btn .covering span, .row-two .label-btn .covering span, .row-three .label-btn .covering span{
+        width:100%;
     }
     .bottom-area{
         display: none;
@@ -849,15 +796,9 @@ footer{
     .title b{
         font-size: 30px
     }
-    .row-two .label-btn .covering span {
-        width: 70%;
-    }
-    .row-three .label-btn .covering span {
-        width: 80%;
-    }
 }
 /*I6直*/
-@media screen and (orientation:portrait) and (max-width:375px) and (max-height:667px){
+@media screen and (orientation:portrait) and (min-width:375px) and (max-height:667px){
     .logo h1{
         font-size: 24px;
     }
@@ -878,13 +819,7 @@ footer{
     .text-box-2{
         top:76%;
     }
-    /*維持在寬73px左右*/
-    .row-two .label-btn .covering span {
-        width: 58%;
-    }
-    .row-three .label-btn .covering span {
-        width: 80%;
-    }
+
 }
 /*I6+直*/
 @media screen and (orientation:portrait) and (min-width:380px) and (max-width:414px) and (max-height:736px){
@@ -908,12 +843,6 @@ footer{
     .text-box-2{
         top:76%
     }
-    .row-two .label-btn .covering span {
-        width: 60%;
-    }
-    .row-three .label-btn .covering span {
-        width: 80%;
-    }
 
 }
 /*IX直*/
@@ -921,20 +850,9 @@ footer{
     .logo h1{
         font-size: 24px;
     }
-    .burger-menu{
-        position: relative;
-        left: auto;
-    }
     .menu-content{
         padding: 30% 20%;
         width:auto;
-    }
-    /*維持在寬73px左右*/
-    .row-two .label-btn .covering span {
-        width: 53%;
-    }
-    .row-three .label-btn .covering span {
-        width: 58%;
     }
 }
 /*-------------------------------------IPHONE橫*/
@@ -956,11 +874,6 @@ footer{
     .social{
         display: none;
     }
-    .burger-menu{
-        left:auto;
-        position: relative;
-        margin:10px 4%;
-    }
     .menu-content{
         padding:80px 0 90px;
         width:37%;
@@ -974,9 +887,6 @@ footer{
     }
     .slider-area{
         padding-top:150px;
-    }
-    .row-one .label-btn span{
-        width: 80%;
     }
     .row-one .label-btn span, .row-three .label-btn span{
         top: 17px;
@@ -1014,12 +924,6 @@ footer{
 @media screen and (orientation:landscape) and (max-height:320px){
     .menu-content{
         padding: 80px 0 122px;
-    }
-    .row-three .label-btn span{
-        width: 57.4%;
-    }
-    .row-two .label-btn span{
-        width: 38.4%;
     }
     .slider-area{
         padding-top: 100px;
@@ -1071,12 +975,6 @@ footer{
     .text-box{
         left:-13%;
     }
-    .row-two .label-btn .covering span {
-        width: 40.3%;
-    }
-    .row-three .label-btn span{
-        width: 57.5%;
-    }
     .bottom-area{
         width: 80%;
     }
@@ -1105,12 +1003,6 @@ footer{
     .menu-content{
         width: 27%;
     }
-    .row-two .label-btn .covering span{
-        width:45%;
-    }
-    .row-three .label-btn span{
-        width:73%;
-    }
     .footer-container{
         padding: 0 8%;
         width: 100%;
@@ -1137,9 +1029,6 @@ footer{
 @media screen and (orientation:landscape) and (min-width:812px) and (max-height:375px){
     .menu-content{
         width: 27%;
-    }
-    .row-three .label-btn span {
-        width: 57.4%;/*長度73.036*/
     }
     .text-box-1{
         font-size: 32px;

@@ -279,10 +279,10 @@
                 <div class="col-last">
                     <ul>
                         <li>
-                            <a href="">PRIVACY</a>
+                            <a href="javascript:;">PRIVACY</a>
                         </li>
                         <li>
-                            <a href="">CREDITS</a>
+                            <a href="javascript:;">CREDITS</a>
                         </li>
                     </ul>
                 </div>
@@ -325,15 +325,11 @@
         })
         /*Menu-Contact*/
         $('.contact').click(function(){
-            console.log('mm')
-            // $("html, body").animate({ scrollTop:600}, 1000)
-            $('.top').css({'transform': '0'})
-            $('.bottom').css({'transform': '0'})
-            $('.middle').css('display', 'block')
-            $('.menu-cover').css({'transform': 'translate(0%,-100%)'})
+            if(navIsOpen){
+                $('.burger-menu').trigger('click')
+            }
             $("html, body").animate({ scrollTop: $(document).height() }, 1300)
             // 如果有a href標籤與click衝突-----加上return false;
-            navIsOpen = false
         })
         /*Nav*/
 /*        var navClass = document.getElementsByClassName('nav')
@@ -690,21 +686,24 @@
         // })
 
 
-    function toFooter() {
-        bottomAnimated = true
-        lastAnimated = true
+    // function toFooter() {
+    //     topAnimated = true
+    //     middleAnimated = true
+    //     bottomAnimated = true
+    //     lastAnimated = true
         // var url = window.location.pathname;
         // var urlsplit = url.split("/").slice(-1)[0];
-        var foot = document.getElementById('toFoot')
-        var footTop = foot.scrollTop().top
+    //     var foot = document.getElementById('toFoot')
+    //     var footTop = foot.scrollTop().top
 
-
-        // var topAnimated = false
-        // var middleAnimated = false
-        // var bottomAnimated = false
-        // var lastAnimated = false
-        $("html, body").animate({ scrollTop: footTop }, 1300)
-    }    
+    //     $("html, body").animate({ scrollTop: footTop }, 1300)
+    //     $('html, body').css('overflow-y', 'visible')
+    // }
+    </script>
+    <script>
+        if(window.location.hash==="#contact"){
+            $('.contact').trigger('click')
+        }
     </script>
 </body>
 

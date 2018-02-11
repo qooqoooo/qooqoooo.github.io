@@ -38,7 +38,7 @@ i{
     /*for圖片*/
     /* -webkit-filter: invert(100%);
     filter: invert(100%);  CSS3 */
-    padding: 0 0 0 4%;
+    padding: 0 0 0 15px;
     padding-right:4px;
     /*for 文字*/
     font-family: 'Special Elite', cursive;/*打字機款*/
@@ -54,8 +54,7 @@ i{
     width: 80%;
 } */
 .burger-menu{
-    position: absolute;
-    left: 13%;
+    position: relative;
     width: 44px;
     height: 44px;
     /* line-height: 65px; */
@@ -254,10 +253,6 @@ i{
     .logo h1{
         font-size: 28px;
     }
-    .burger-menu{
-        position: absolute;
-        left:16%;
-    }
     .menu-content {
         width: 19%;
         padding: 16% 0 122px;
@@ -320,11 +315,6 @@ i{
     .logo h1 {
         font-size: 29px;
     }
-    .burger-menu{
-        position: absolute;
-        left: 17%;
-        margin:10px 10px;
-    }
     .menu-content {
         width: 23%;
         padding: 27% 0 122px;
@@ -351,10 +341,6 @@ i{
     .menu-content{
         width: 30%;
         padding: 27% 0 122px;
-    }
-    .burger-menu{
-        left:auto;
-        position: relative;
     }
     .main-content{
         padding-top:130px;
@@ -385,11 +371,6 @@ i{
     }
     .nav-right{
         width: 70%;
-    }
-    .burger-menu {
-        position: absolute;
-        left: 12%;
-        margin: 10px 10px;
     }
     .logo h1{
         font-size: 30px;
@@ -427,11 +408,6 @@ i{
     }
     .nav{
         top:4%;
-    }
-    .burger-menu {
-        position: absolute;
-        left: 11%;
-        margin: 10px 10px;
     }
     .menu-content{
         padding:230px 0 122px;
@@ -495,7 +471,7 @@ i{
     .burger-menu{
         left:auto;
         position: relative;
-        margin:10px 4%;
+        margin: 10px 15px;
     }
     .main-content{
         padding-top: 12%;
@@ -624,12 +600,6 @@ i{
         width: 26%;
     }
 }
-/*直的手機*/
-@media screen and (orientation:portrait){
-    .logo h1{
-        font-size: 24px;
-    }
-}
 /*i6+直*/
 @media screen and (orientation:portrait) and (max-height:736px) and (max-width:414px){
     .nav{
@@ -714,7 +684,7 @@ i{
     }
 }
 /*I6直*/
-@media screen and (orientation:portrait) and (min-width:375px) and (min-width:667px){
+@media screen and (orientation:portrait) and (min-width:375px) and (max-width:667px){
     .hideUp{
         transform: translateY(-150px);
     }
@@ -730,7 +700,7 @@ i{
     }
 }
 /*I10直*/
-@media screen and (orientation:portrait) and (min-height:812px) and (min-width:375px){
+@media screen and (orientation:portrait) and (min-height:812px) and (max-width:375px){
     .nav{
         top:0;
         white-space: nowrap;

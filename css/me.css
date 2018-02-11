@@ -43,7 +43,7 @@ i{
     /*for圖片*/
     /* -webkit-filter: invert(100%);
     filter: invert(100%);  CSS3 */
-    padding: 0 0 0 4%;
+    padding: 0 0 0 15px;
     padding-right:4px;
     /*for 文字*/
     font-family: 'Special Elite', cursive;/*打字機款*/
@@ -57,8 +57,7 @@ i{
     font-size: 30px;
 }
 .burger-menu{
-    position: absolute;
-    left: 13%;
+    position: relative;
     width: 44px;
     height: 44px;
     /* line-height: 65px; */
@@ -307,7 +306,7 @@ i{
     .burger-menu{
         position: relative;
         left: auto;
-        margin:10px 4%;
+        margin: 10px 15px;
     }
     .logo h1{
         font-size: 28px;
@@ -381,7 +380,7 @@ i{
         position: relative;
         /* left: 20%; */
         left:auto;
-        margin:10px 4%;
+        margin: 10px 15px;
     }
     .menu-content{
         width: 30%;
@@ -451,7 +450,7 @@ i{
     .burger-menu{
         position: relative;
         left: auto;
-        margin:10px 4%;
+        margin: 10px 15px;
     }
     .menu-content {
         width: 23%;
@@ -531,7 +530,7 @@ i{
     .burger-menu{
         position: relative;
         left:auto;
-        margin:10px 4%; 
+        margin: 10px 15px; 
     }
     .menu-content {
         width:17%;
@@ -606,11 +605,6 @@ i{
     .nav-right{
         width: 70%;
     }
-    .burger-menu {
-        position: absolute;
-        left: 12%;
-        margin: 10px 10px;
-    }
     .menu-content{
         width:  13%;
         padding:230px 0 122px;
@@ -653,11 +647,6 @@ i{
     }
     .logo h1{
         font-size: 30px;
-    }
-    .burger-menu {
-        position: absolute;
-        left: 11%;
-        margin: 10px 10px;
     }
     .menu-content{
         width:  13%;
@@ -711,7 +700,7 @@ i{
     .burger-menu{
         position: relative;
         left: auto;
-        margin:10px 4%;
+        margin: 10px 15px;
     }
     .menu-content {
         width: 50%;
@@ -747,12 +736,6 @@ i{
         width: 50%;
         margin: 0 auto;
         padding: 120px 0 122px;
-    }
-    .menu-content b{
-        font-size: 26px;
-    }
-    .menu-content i {
-        font-size: 13px;
     }
     .primary{
         flex-direction: column;
@@ -1031,7 +1014,7 @@ i{
     .burger-menu{
         left:auto;
         position: relative;
-        margin:10px 4%;
+        margin: 10px 15px;
     }
     .menu-content{
         padding:80px 0 90px;
