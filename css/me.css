@@ -342,7 +342,7 @@ i{
         justify-content: space-between;
     }
     .words{
-        top: 20%;
+        margin-top:110%;
         left: 10%;
         width: 56%;
         margin-top: 12%;
@@ -417,11 +417,10 @@ i{
     .words{
         text-align: justify;
         position: absolute;
-        top: 20%;
         left: 8%;
         align-self: center;
         width: 45%;
-        margin-top: 0px;
+        margin-top: 110%;
     }
     .div-img{
         align-self: center;
@@ -486,9 +485,8 @@ i{
         width: 70%;
     }
     .words{
-        margin-top:0;
+        margin-top:110%;
         position: absolute;
-        top:23%;
         left: 10%;
         align-self: flex-start;
         width: 50%;
@@ -566,10 +564,9 @@ i{
     }
     .words{
         position: absolute;
-        top:10%;
         left:29%;
         width: 40%;
-        margin-top: 110px;
+        margin-top: 110%;
         align-self: center;
         text-align: justify;
     }
@@ -733,6 +730,9 @@ i{
     .pre-title:after{
         background:#b4a69d;
     }
+    .words{
+        left:0;
+    }
     .div-img img{
         height:100%;
     }
@@ -788,7 +788,7 @@ i{
     }
     .words{
         margin: 3%;
-        top:80%;
+        margin-top:110%;
         left:0;
         text-align: justify;
         width: 350px;
@@ -851,7 +851,7 @@ i{
     }
     .words{
         margin: 3%;
-        top:88%;
+        margin-top:110%;
         left:0;
         text-align: justify;
         width: 350px;
@@ -921,8 +921,8 @@ i{
     .words{
         padding: 3%;
         /* margin-top:15%; */
-        top:106%;
-        left:2%;
+        margin-top:110%;
+        left:0%;
         text-align: justify;
         width: 350px;
     }
@@ -983,7 +983,8 @@ i{
     .words{
         width:88%;
         margin:6%;
-        margin-top:80px;
+        margin-top:110%;
+        left:0;
     }
     .words div{
         margin-bottom: 20px;
@@ -1090,7 +1091,7 @@ i{
         margin: 0;
         position: relative;
         left:0;
-        top:20%;
+        margin-top:15%;
         align-self: flex-start;
         text-align: justify;
     }
