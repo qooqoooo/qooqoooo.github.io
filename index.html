@@ -126,7 +126,7 @@
                     <article>
                         <div>
                             <div class="hidden">
-                                <a class="coming">
+                                <a class="toComing">
                                     <header>
                                         <h3 class="pre-title">
                                             <b>MOOD</b>
@@ -140,7 +140,7 @@
                                     <div class="label-btn">
                                         <div class="hidden">
                                             <div class="covering">
-                                                <b class="coming">DISCOVER</b>
+                                                <b class="toComing">DISCOVER</b>
                                                 <span></span>
                                             </div>
                                         </div>
@@ -182,7 +182,7 @@
                     </article>
                 </div>
                 <div class="col-four">
-                    <a href="">
+                    <a href="./me.html">
                         <!-- <div class="selfie"></div> -->
                         <img src="./img/10733978_732105590205203_345177223661048391_n.jpg" style="height:295px;width:394px">
                         <span class="flying"></span>
@@ -191,7 +191,7 @@
             </div>
             <div class="row-three">
                 <div class="col-five">
-                    <a href="">
+                    <a href="./projects.html">
                             <img src="img/photo-1423034816855-245e5820ff8c.jpg" style="height:455px;width:383px">
                             <span class="flying"></span>
                         </a>
@@ -243,7 +243,7 @@
                             Dal 27 al 30 settembre, Exteta esibirà l’evento con i suoi più icone progetti di yacht Sunseeker.
                         </div>
                         <div class="col-btn">
-                            <a href="">
+                            <a href="" class="toComing">
                                 <b>FIND OUT</b>    <!--b包span寬無法顯示-->
                                 <span></span>
                             </a>
@@ -260,7 +260,7 @@
                             Dal 21 al 26 settemb massimo della sofisticatezza nautica, ma anche il meglio del confort.
                         </div>
                         <div class="col-btn">
-                            <a href="">
+                            <a href="" class="toComing">
                                 <b>FIND OUT</b>
                                 <span></span>
                             </a>
@@ -274,7 +274,7 @@
         </div>
     </section>
     <footer>
-        <div class="footer-container" name="toFoot" id="toFoot">
+        <div class="footer-container">
             <div class="footer-row">
                 <div class="col-last">
                     <ul>
@@ -671,11 +671,14 @@
         })
 
         /*馬上來!!!*/
-        $('.coming').click(function(){
+        $('.toComing').click(function(){
             alert('Coming soon!')
         })
         $('.col-one').click(function(){
             alert('Coming soon!')
+        })
+        $('.toProjects').click(function(){
+
         })
         /*hover效果--------後用CSS呈現*/
         // $('.label-btn').hover(function () {
@@ -686,23 +689,10 @@
         // })
 
 
-    // function toFooter() {
-    //     topAnimated = true
-    //     middleAnimated = true
-    //     bottomAnimated = true
-    //     lastAnimated = true
-        // var url = window.location.pathname;
-        // var urlsplit = url.split("/").slice(-1)[0];
-    //     var foot = document.getElementById('toFoot')
-    //     var footTop = foot.scrollTop().top
-
-    //     $("html, body").animate({ scrollTop: footTop }, 1300)
-    //     $('html, body').css('overflow-y', 'visible')
-    // }
     </script>
     <script>
         if(window.location.hash==="#contact"){
-            $('.contact').trigger('click')
+            $('.contact').trigger('click') //呼叫前面的Menu-Contact click事件(326行)
         }
     </script>
 </body>
