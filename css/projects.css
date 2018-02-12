@@ -180,13 +180,13 @@ i{
     justify-content: center;
     width:100%;
 }
-.col-left:nth-child(1) .content-img{
-    width:66%;
-}
 .content-img{
     width:53.5%;
     height:100%;
     position: relative;
+}
+.col-left:nth-child(2) .content-img{
+    width:66%;
 }
 .col-left:nth-child(3) .content-img{
     width:40%;
