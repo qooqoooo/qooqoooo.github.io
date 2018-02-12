@@ -124,28 +124,7 @@ i{
 }
 .social{
     display: none;
-    /* display: inline-flex; */
-    padding:0 4%;
-    line-height: 65px;
 }
-.social-content b{
-    font-family: 'Abel', sans-serif;
-    font-size: 14px;
-}
-.social-content b:after{
-    content: '';
-    height: 2px;
-    font-family: 'Abel', sans-serif;
-    font-size: 14px;
-    color:#63635f;
-}
-.icon-instagram-1:before{
-    content:'\f05d';
-    font-family: "fontello";
-    font-size: 14px;
-}
-
-
 /*Project Content*/
 /*橫幅*/
 .page-content{
@@ -317,7 +296,8 @@ i{
     }
     .bg{
         width: 80%;
-        height: 60%;
+        height: 70%;
+        top:100px;
     }
     .top-left{
         width:30%;
@@ -424,7 +404,7 @@ i{
     .div-img{
         align-self: center;
         margin-top:80%;
-        width:55%;
+        width:53%;
     }
     .words .mail{
         margin-top: 70px;
@@ -885,7 +865,7 @@ i{
 
 }
 /*iphone6+ 直*/
-@media screen and (orientation:portrait) and (min-height:670px) and (min-width:400px){
+@media screen and (orientation:portrait) and (min-height:670px) and (max-width:414px){
     .logo h1{
         font-size: 24px;
     }
@@ -901,7 +881,7 @@ i{
     }
     .bg{
         width: 100%;
-        height: 120%;
+        height: 95%;
         top: 55%;
     }
     .top-left{

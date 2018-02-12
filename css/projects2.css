@@ -117,27 +117,6 @@ i{
     color:#333;
     font-family: 'Cairo', sans-serif;
 }
-.social{
-    /* display: inline-flex; */
-    padding:0 4%;
-    line-height: 65px;
-}
-.social-content b{
-    font-family: 'Abel', sans-serif;
-    font-size: 14px;
-}
-.social-content b:after{
-    content: '';
-    height: 2px;
-    font-family: 'Abel', sans-serif;
-    font-size: 14px;
-    color:#63635f;
-}
-.icon-instagram-1:before{
-    content:'\f05d';
-    font-family: "fontello";
-    font-size: 14px;
-}
 
 /*Project Content*/
 /*最上層 文圖*/
