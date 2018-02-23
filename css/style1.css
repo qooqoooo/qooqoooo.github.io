@@ -38,7 +38,7 @@ i{
     transform: translateY(-150px);
 }
 .logo{
-    /* padding: 0 0 0 15px; */
+    /* padding: 0 0 0 20px; */
     padding-right:4px;
     font-family: 'Special Elite', cursive;/*打字機款*/
     color:#282828;
@@ -53,7 +53,7 @@ i{
     position: relative;
     width: 44px;
     height: 44px;
-    margin:10px 10px;
+    margin:10px 15px;
     display:flex;
     justify-content: flex-end;
     flex-wrap: wrap;
@@ -124,7 +124,7 @@ i{
     width:27%;
     display: flex;
     align-self: center;
-    padding:0 4%;
+    padding:0 2%;
 }
 .social-content b{
     font-family: 'Abel', sans-serif;

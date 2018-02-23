@@ -43,7 +43,7 @@ i{
     /*for圖片*/
     /* -webkit-filter: invert(100%);
     filter: invert(100%);  CSS3 */
-    padding: 0 0 0 15px;
+    padding: 0 0 0 20px;
     padding-right:4px;
     /*for 文字*/
     font-family: 'Special Elite', cursive;/*打字機款*/
@@ -61,7 +61,7 @@ i{
     width: 44px;
     height: 44px;
     /* line-height: 65px; */
-    margin:10px 10px;
+    margin:10px 15px;
     display:flex;
     color:#282828;
     cursor: pointer;
@@ -192,6 +192,7 @@ i{
     font-weight: 400;
 }
 .sub-title{
+    font-family: 'Noto Serif', serif;
     position: absolute;
     transform: rotate(270deg) translateX(-1%);
     color:rgba(40,40,40,.1);
@@ -245,7 +246,7 @@ i{
     line-height: 34px;
 }
 .words p{
-    font-family: "Roboto", "Noto Sans TC", "Noto Sans CJK TC", sans-serif;
+    font-family: "ROBOTO","Noto Sans TC", sans-serif;
     font-weight: 300;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; 
@@ -321,7 +322,7 @@ i{
         justify-content: space-between;
     }
     .words{
-        margin-top:20%;
+        margin-top:15%;
         left: 10%;
         width: 56%;
         align-self: center;
@@ -653,7 +654,7 @@ i{
     .words{
         width:50%;
         left:0;
-        margin-top:0;
+        margin-top:15%;
         text-align: justify;
     }
     .words h2{
@@ -674,7 +675,7 @@ i{
 }
 @media screen and (min-width:2580px){
     .top-right{
-        justify-content: space-around;
+        justify-content: baseline;
     }
     .words {
         margin-top: 0;

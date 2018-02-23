@@ -39,7 +39,7 @@ i{
     /*for圖片*/
     /* -webkit-filter: invert(100%);
     filter: invert(100%);  CSS3 */
-    padding: 0 0 0 15px;
+    padding: 0 0 0 20px;
     padding-right:4px;
     /*for 文字*/
     font-family: 'Special Elite', cursive;/*打字機款*/
@@ -219,7 +219,7 @@ i{
     font-size: 20px;
 }
 .right article p{
-    font-family: "Noto Sans CJK TC", sans-serif;
+    font-family: "Noto Sans TC", sans-serif;
     font-weight: 300;
     text-align: justify;
     font-size: 16px;
@@ -234,7 +234,7 @@ i{
 .ani-entre{
     width:70%;
     align-self: center;
-    margin-bottom: 8%;
+    margin-bottom: 100px;
 }
 .content-img img{
     height: 100%;
@@ -247,7 +247,7 @@ i{
     margin: 0 8%;
 }
 .mobile figure div{
-    margin:5% 4%;
+    margin:25px;
 } 
 .mobile img{
     width: 270px;
@@ -261,7 +261,7 @@ i{
 
 
 /*IPAD ASUS 直橫*/ /*注意!!PROJECTS內頁有點不一樣*/
-@media screen and (min-width:800px) and (max-width: 1280px) and (max-height:1280px){
+@media screen and (min-width:768px) and (max-width: 1280px) and (max-height:1280px){
     .nav{
         top:3%;
     }
@@ -673,7 +673,7 @@ i{
 
 
 /*主要是給Responsive不會MENU亂跑*/
-@media screen and (orientation: portrait) and (max-width:992px){
+@media screen and (orientation: portrait) and (max-width:500px){
     .nav{
         top:0;
         justify-content: space-between

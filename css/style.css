@@ -40,7 +40,7 @@ i{
     -webkit-overflow-scrolling: touch;
 }
 .logo{
-    padding: 0 0 0 15px;
+    padding: 0 0 0 20px;
     padding-right:4px;
     font-family: 'Special Elite', cursive;/*打字機款*/
     color:#282828;
@@ -57,7 +57,7 @@ i{
     /* left: 13%; */
     width: 44px;
     height: 44px;
-    margin:10px 10px;
+    margin:10px 15px;
     /* display:flex;
     justify-content: flex-end;
     flex-wrap: wrap; */
@@ -126,7 +126,7 @@ i{
     display: flex;
     align-self: center;
     text-align: center;
-    padding:0 4%;
+    padding:0 2%;
     white-space: nowrap;
 }
 .social-content b{
@@ -382,6 +382,8 @@ i{
 .col-one, .col-three, .col-five{
     width:50%;
     text-align:-webkit-right;
+    text-align: -moz-right;
+    text-align: -moz-right;
     overflow: hidden;   /*先讓中間線出來! 之後再調整*/
 }
 .col-two, .col-four, .col-six{
