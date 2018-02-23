@@ -776,6 +776,7 @@ i{
     }
     .ani-entre{
         width: 95%;
+        margin-bottom:50px;
     }
     /*注意和project2有些微不一樣喔 多了手機版*/
     .mobile img{
