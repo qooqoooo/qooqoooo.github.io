@@ -305,7 +305,7 @@ i{
 }
 .col-one a, .col-five a{
     position: relative;/*設相對位置來讓animate left作用*/
-    display: block;
+    display: inline-block;
     overflow: hidden;
     height: 455px;
     width: 383px;
@@ -314,7 +314,7 @@ i{
 .col-four a{
     overflow: hidden;
     position: relative;
-    display: block;
+    display: inline-block;
     width:394px;
 }
 /* .selfie{

@@ -374,6 +374,7 @@ i{
     }
     .nav-right{
         width: 70%;
+        justify-content: baseline;
     }
     .logo h1{
         font-size: 30px;
@@ -411,6 +412,9 @@ i{
     }
     .nav{
         top:4%;
+    }
+    .nav-right{
+        justify-content: baseline;
     }
     .menu-content{
         padding:230px 0 122px;

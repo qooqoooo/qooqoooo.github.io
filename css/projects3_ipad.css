@@ -403,6 +403,7 @@ i{
     }
     .nav-right{
         width: 70%;
+        justify-content: baseline;
     }
     .menu-content{
         width:  13%;
@@ -433,6 +434,9 @@ i{
 @media screen and (orientation: landscape) and (min-width: 1920px) and (max-height: 1200px){
     .logo h1{
         font-size: 30px;
+    }
+    .nav-right{
+        justify-content: baseline;
     }
     .menu-content{
       width:  13%;

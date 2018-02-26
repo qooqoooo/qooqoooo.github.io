@@ -406,6 +406,7 @@ i{
     }
     .nav-right{
         width: 70%;
+        justify-content: baseline;
     }
     .sub-title {
         font-size: 97px;
@@ -432,6 +433,9 @@ i{
 @media screen and (orientation: landscape) and (min-width: 1920px) and (max-height: 1200px){
     .logo h1{
         font-size: 30px;
+    }
+    .nav-right{
+        justify-content: baseline;
     }
     .menu-content{
         padding:230px 0 122px;

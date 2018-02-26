@@ -451,6 +451,7 @@ i{
     }
     .nav-right{
         width: 70%;
+        justify-content: baseline;
     }
     .logo h1{
         font-size: 30px;
@@ -481,6 +482,7 @@ i{
     }
     .nav-right{
         width:70%;
+        justify-content: baseline;
     }
     .logo h1{
         font-size: 30px;
