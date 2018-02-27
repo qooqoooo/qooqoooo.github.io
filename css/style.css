@@ -132,6 +132,7 @@ i{
 .social-content b{
     font-family: 'Abel', sans-serif;
     font-size: 14px;
+    font-weight: 600;
     position: relative;
     padding: 0 60px 0 0 ;
     letter-spacing: 1px;
@@ -383,7 +384,7 @@ i{
     width:50%;
     text-align:-webkit-right;
     text-align: -moz-right;
-    text-align: -moz-right;
+    text-align: right;
     overflow: hidden;   /*先讓中間線出來! 之後再調整*/
 }
 .col-two, .col-four, .col-six{
@@ -486,7 +487,7 @@ i{
     width: 100%;
     background: #b4a69d;
     opacity: .5;
-    font-size: initial;
+    font-size: 16px;
     /* transition: width 2s; Hover與改變的對象要一致才能作用 */
 }
 
@@ -581,6 +582,7 @@ i{
     height:100%;
     align-self: center;
     filter:grayscale(100%);
+    filter: gray;
     background-size: cover;
     opacity: .8;
 }
