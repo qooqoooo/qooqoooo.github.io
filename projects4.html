@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Allie.hou</title>
+    <link rel="stylesheet" href="css/projects3.css" id="css">
+    <link rel="stylesheet" href="css/projects3_ipad.css">
+    <link rel="stylesheet" href="css/fontello.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Abel|Cairo|Rajdhani|Roboto|Noto+Serif:700|Roboto+Condensed:300|Special+Elite|Source+Sans+Pro:200,300|Dosis:200" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav-right">
+            <div class="logo">
+                <a href="./index.html"> <h1>Heyy Hey</h1> </a>
+            </div>
+            <div class="burger-menu">
+                <div class="line">
+                    <span class="top"></span>
+                    <span class="middle"></span>
+                    <span class="bottom"></span>
+                </div>
+            </div>
+        </div>    
+        <!-- <div class="social">
+            <div class="social-content">
+                <b>Follow More</b>
+                <a href="https://www.facebook.com/EdSheeranMusic/">
+                    <i class="icon-instagram-1"></i>
+                </a>
+                <a href="https://www.instagram.com/lurehsu/" class="icon-instagram-1"></a>
+            </div>
+        </div> -->
+        
+    </nav>
+    <div class="menu-cover">
+        <div class="menu-content">
+            <ul>
+                <li>
+                    <a href="./index.html"> 
+                        <i>01</i>
+                        <b>Home</b>
+                    </a> 
+                </li>
+                <li>
+                    <a href="./me.html"> 
+                        <i>02</i>
+                        <b>About</b>
+                    </a> 
+                </li>
+                <li>
+                    <a href="./projects.html"> 
+                        <i>03</i>
+                        <b>Projects</b>
+                    </a> 
+                </li>
+                <li>
+                    <a class="contact" href="index.html#contact"> 
+                        <i>04</i>
+                        <b>Contacts</b>
+                    </a> 
+                </li>
+            </ul>
+        </div>    
+    </div>
+    
+    <div class="page-content">
+        <div class="main-content">
+            <div class="primary">
+                <div class="top-left">
+                    <div class="title-box">
+                        <h1 class="title">CTBC BANK</h1>
+                        <h2 class="pre-title">PROJECT</h2>
+                    </div>
+                    <div class="sub-title">
+                        <h3>PROJECT</h3>
+                    </div>
+                </div>
+                <div class="top-right">
+                    <!-- <img src="img/1437164904_taylor-swift-blank-space-zoom.jpg" alt=""> -->
+                </div>
+            </div>
+            <div class="pics">
+                <div class="row">
+                    <div class="left">
+                        <img src="img/bank/01.png" alt="">
+                    </div>
+                    <div class="right">
+                        <article>
+                            <h3>VueJS</h3>
+                            <p>於接案公司參與的大項目，中國信託的官網，負責RWD各畫面及互動動畫。</p>
+                        </article>
+                    </div>
+                </div>
+                <section>
+                    <figure class="ani-entre">
+                        <div class="content-img">
+                            <img src="img/bank/02.png" alt="">
+                        </div>
+                    </figure>
+                    <figure class="ani-entre">
+                        <div class="content-img">
+                            <img src="img/bank/03.png" alt="">
+                        </div>
+                    </figure>
+                    <figure class="ani-entre">
+                        <div class="content-img">
+                            <img src="img/bank/04.png" alt="">
+                        </div>
+                    </figure>
+                    <figure class="ani-entre">
+                        <div class="content-img">
+                            <img src="img/bank/05.png" alt="">
+                        </div>
+                    </figure>
+                </section>
+        <!--        <section class="mobile">
+                    <figure>
+                        <div class="">
+                            <img src="img/GPO/１.png" alt="">
+                        </div>
+                        <div class="">
+                            <img src="img/GPO/２.png" alt="">
+                        </div>
+                        <div class="">
+                            <img src="img/GPO/３.png" alt="">
+                        </div>
+                        <div class="">
+                            <img src="img/GPO/４.png" alt="">
+                        </div>
+                        <div class="">
+                            <img src="img/GPO/６.png" alt="">
+                        </div>
+                        <div>
+                            <img src="img/GPO/５.png" alt="">
+                                
+                        </div>
+                    </figure>    
+                </section> -->
+            </div>               
+        </div>
+    </div>
+
+  
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./jquery.transit-master/jquery.transit.js"></script>
+    <script>
+    /*MeNu*/
+    var navIsOpen = false
+    $('.burger-menu').click(function(){
+        if(navIsOpen){
+            $('.top').css({'transform':'0'})
+            $('.bottom').css({'transform':'0'})
+            $('.middle').css('display','block')
+            $('.menu-cover').css({'transform':'translate(0%,-100%)'})
+        }else{
+            $('.top').css({'transform':'translate(0px,5px), rotate(45deg)'})
+            $('.middle').css('display','none')
+            $('.bottom').css({'transform':'translate(1px, -5px), rotate(-45deg)'})
+            $('.menu-cover').css({'transform':'translate(0%,0%), matrix(1,0,0,1,0,0)'})            
+        }
+        navIsOpen = !navIsOpen
+    })
+
+
+
+
+        /*算 NAV SCROLL 加速度 NAV動畫精緻版!!!*/
+        var checkScrollSpeed = (function (settings) {
+        settings = settings || {};
+
+        var lastPos, newPos, timer, delta,
+                delay = settings.delay || 50;
+
+        function clear() {
+            lastPos = null;
+            delta = 0;
+        }
+
+        clear();
+
+        return function () {
+            newPos = window.scrollY;
+            if (lastPos != null) {
+                delta = newPos - lastPos;
+            }
+            lastPos = newPos;
+            clearTimeout(timer);
+            timer = setTimeout(clear, delay);
+            return delta;
+        };
+    })();
+    window.addEventListener('scroll', function () {
+        delta = checkScrollSpeed()
+        /*如果差值小於10就不做動作*/
+        // if (Math.abs(delta) < 0) {
+        //     return
+        // }
+        if (delta > 0) {
+            $('.nav').addClass('hideUp')
+        } else {
+            $('.nav').removeClass('hideUp')
+        }
+    })
+
+ 
+    </script>
+
+
+</body>
+
+</html>
