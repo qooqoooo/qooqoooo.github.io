@@ -3,6 +3,7 @@
 div {
     box-sizing: border-box;
 }
+
 html,
 body {
     height: 100%;
@@ -10,202 +11,244 @@ body {
     margin: 0;
     padding: 0;
 }
-a{
+
+a {
     text-decoration: none;
 }
-h2,p{
+
+h2,
+p {
     cursor: default;
 }
-i{
+
+i {
     font-style: normal;
 }
 
+
 /*Logo and Menu*/
-.nav{
+
+.nav {
     display: flex;
     position: fixed;
     width: 100%;
-    top:4%;
-    height:65px;
+    top: 4%;
+    height: 65px;
     z-index: 100;
     transition: all 0.6s linear;
     /* transition: top .6s ease-in-out; */
 }
-.hideUp{
+
+.hideUp {
     /*For NAV*/
     transform: translateY(-150px);
 }
-.nav-right{
+
+.nav-right {
     width: 70%;
     display: flex;
 }
-.logo{
+
+.logo {
     /*for圖片*/
     /* -webkit-filter: invert(100%);
     filter: invert(100%);  CSS3 */
     padding: 0 0 0 20px;
-    padding-right:4px;
+    padding-right: 4px;
     /*for 文字*/
-    font-family: 'Special Elite', cursive;/*打字機款*/
-    color:#282828; 
+    font-family: 'Special Elite', cursive;
+    /*打字機款*/
+    color: #282828;
 }
-.logo h1{
+
+.logo h1 {
     white-space: nowrap;
-    margin:0 auto;
+    margin: 0 auto;
     line-height: 65px;
-    color:#555;
+    color: #555;
     font-size: 30px;
 }
-.burger-menu{
+
+.burger-menu {
     position: relative;
     width: 44px;
     height: 44px;
     /* line-height: 65px; */
-    margin:10px 15px;
-    display:flex;
-    color:#282828;
+    margin: 10px 15px;
+    display: flex;
+    color: #282828;
     cursor: pointer;
-    border:1px rgba(0,0,0,.2) solid;    
+    border: 1px rgba(0, 0, 0, .2) solid;
 }
-.line{
+
+.line {
     display: flex;
     /* justify-content: center; */
     justify-content: space-between;
-    padding:16px 0px;
+    padding: 16px 0px;
     flex-direction: column;
     align-items: center;
-    width:100%;
-    height:102%;    
+    width: 100%;
+    height: 102%;
 }
-.top, .middle, .bottom{
+
+.top,
+.middle,
+.bottom {
     height: 1px;
-    background-color:#282828;
-    width:18px;
+    background-color: #282828;
+    width: 18px;
 }
-.menu-cover{
-    position:fixed;
-    top:0;
+
+.menu-cover {
+    position: fixed;
+    top: 0;
     left: 0;
     z-index: 99;
-    background:#fff;
+    background: #fff;
     height: 100%;
-    width:100%;
-    transform: translate(0%, -100%) matrix(1,0,0,1,0,0);
+    width: 100%;
+    transform: translate(0%, -100%) matrix(1, 0, 0, 1, 0, 0);
     overflow: hidden;
 }
-.menu-content{
+
+.menu-content {
     width: 20%;
-    margin:0 auto;
-    padding:142px 0 122px;
-    height:auto;
+    margin: 0 auto;
+    padding: 142px 0 122px;
+    height: auto;
 }
-.menu-content ul{
+
+.menu-content ul {
     list-style: none;
 }
-.menu-content a{
+
+.menu-content a {
     display: flex;
 }
-.menu-content i{
-    color:#b4a69d;
+
+.menu-content i {
+    color: #b4a69d;
     font-weight: 400;
     line-height: 22px;
-    margin-right:8px;
+    margin-right: 8px;
     cursor: pointer;
     font-family: 'Abel', sans-serif;
     font-size: 15px;
 }
+
 .menu-content b {
     font-family: 'TheinhardtLight';
     line-height: 45px;
     font-size: 30px;
     font-weight: 100;
-    color:#333;
+    color: #333;
     font-family: 'Cairo', sans-serif;
 }
-.social{
+
+.social {
     display: none;
 }
+
+
 /*Project Content*/
+
+
 /*橫幅*/
-.page-content{
-    height: 100%;   /*我有問題 !! :請問高是需要一層一層設定的嗎??*/
+
+.page-content {
+    height: 100%;
+    /*我有問題 !! :請問高是需要一層一層設定的嗎??*/
 }
-.main-content{
+
+.main-content {
     height: 100%;
 }
-.primary{
+
+.primary {
     height: 100%;
     display: flex;
     /* justify-content: space-between; */
     flex-direction: row;
 }
-.bg{
+
+.bg {
     background: #b4a69d;
     /* background: yellowgreen; */
-    opacity:.7;
+    opacity: .7;
     width: 85%;
     height: 75%;
     position: absolute;
-    top:140px;
+    top: 140px;
 }
-.top-left{
-    height:100%;
+
+.top-left {
+    height: 100%;
     display: flex;
     width: 30%;
     position: relative;
 }
-.top-left .title-box{
+
+.top-left .title-box {
     display: flex;
     cursor: default;
     flex-direction: column-reverse;
     position: absolute;
-    left:15%;
-    top:73%;
+    left: 15%;
+    top: 73%;
     white-space: nowrap;
 }
-.title-box h1, .title-box h2{
-    margin:0;
+
+.title-box h1,
+.title-box h2 {
+    margin: 0;
 }
-.pre-title{
+
+.pre-title {
     font-size: 13px;
     line-height: 20px;
     margin-bottom: 15px;
     padding: 5px 0;
     /* color: #b4a69d; */
-    color:dimgray;
+    color: dimgray;
     font-family: 'Rajdhani', sans-serif;
 }
-.pre-title:after{
+
+.pre-title:after {
     display: inline-block;
     content: "";
     width: 34px;
     height: 2px;
     margin: 2px 12px;
     /* background: #b4a69d; */
-    background:dimgray;
+    background: dimgray;
 }
-.title{
+
+.title {
     font-family: 'Caveat', monospace;
     font-family: 'Crafty Girls', cursive;
-    color:#282828;
+    color: #282828;
     font-size: 31px;
     font-weight: 400;
 }
-.sub-title{
+
+.sub-title {
     font-family: 'Noto Serif', serif;
     position: absolute;
     transform: rotate(270deg) translateX(-1%);
-    color:rgba(40,40,40,.1);
+    color: rgba(40, 40, 40, .1);
     font-size: 97px;
     font-weight: 400;
     align-self: flex-start;
     letter-spacing: 2px;
     cursor: default;
 }
-.sub-title h3{
-    margin:0;
+
+.sub-title h3 {
+    margin: 0;
 }
-.top-right{
+
+.top-right {
     flex-wrap: wrap;
     flex-direction: row;
     display: flex;
@@ -215,158 +258,167 @@ i{
     z-index: 5;
 }
 
-.div-img{
+.div-img {
     align-self: center;
 }
-.top-right img{
+
+.top-right img {
     width: 100%;
     /* height:500px; */
 }
 
-.words{
+.words {
     margin-top: 12%;
     width: 47%;
     text-align: justify;
     align-self: center;
 }
-.words div{
-    margin-bottom:20px;
+
+.words div {
+    margin-bottom: 20px;
 }
-.words h1{
+
+.words h1 {
     font-family: 'Special Elite', cursive;
-    color:dimgrey; 
+    color: dimgrey;
 }
-.words h2{
-    margin:0 0 10px 0;
+
+.words h2 {
+    margin: 0 0 10px 0;
     font-family: 'Rajdhani', sans-serif;
     /* font-weight: 400; */
-    color:white;
+    color: white;
     letter-spacing: 2px;
     font-size: 28px;
     line-height: 34px;
 }
-.words p{
-    font-family: "ROBOTO","Noto Sans TC", sans-serif;
+
+.words p {
+    font-family: "ROBOTO", "Noto Sans TC", sans-serif;
     font-weight: 300;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale; 
-    margin:0;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
     line-height: 21px;
     font-size: 17px;
     letter-spacing: 0.03em;
 }
-.words .mail{
+
+.words .mail {
     cursor: default;
-    margin:0px;
+    margin: 0px;
     text-align: center;
     margin-top: 43px;
 }
-.icon-paper-plane{
+
+.icon-paper-plane {
     letter-spacing: 3px;
     font-weight: 400;
     font-size: 20px;
     line-height: 23px;
-    color:#282828;   
+    color: #282828;
     font-family: 'Special Elite', cursive;
     font-family: 'Crafty Girls', cursive;
 }
 
 
-
-
 /*ipad橫、ASUS橫*/
-@media screen and (orientation:landscape) and (max-width:1280px) and (max-height:800px){
-    .nav{
-        top:3%;
+
+@media screen and (orientation:landscape) and (max-width:1280px) and (max-height:800px) {
+    .nav {
+        top: 3%;
     }
-    .nav-right{
+    .nav-right {
         width: 100%;
         justify-content: space-between;
     }
-    .burger-menu{
+    .burger-menu {
         position: relative;
         left: auto;
         margin: 10px 15px;
     }
-    .logo h1{
+    .logo h1 {
         font-size: 28px;
     }
     .menu-content {
         width: 19%;
         padding: 16% 0 122px;
     }
-    .bg{
+    .bg {
         width: 80%;
         height: 70%;
-        top:100px;
+        top: 100px;
     }
-    .top-left{
-        width:30%;
+    .top-left {
+        width: 30%;
     }
-    .top-left .title-box{
+    .top-left .title-box {
         left: 15%;
         top: 65%;
     }
-    .pre-title{
+    .pre-title {
         font-size: 13px;
     }
-    .title{
+    .title {
         font-size: 28px;
     }
-    .sub-title{
+    .sub-title {
         font-size: 82px;
     }
-    .top-right{
+    .top-right {
         width: 70%;
         flex-direction: row;
         justify-content: space-between;
     }
-    .words{
-        margin-top:15%;
+    .words {
+        margin-top: 15%;
         left: 10%;
         width: 56%;
         align-self: center;
     }
-    .words p{
+    .words p {
         font-size: 20px;
         line-height: 22px;
     }
-    .words .mail{
-        margin-top: 30%;
+    .words .mail {
+        margin-top: 20%;
     }
-    .div-img{
-        width:36%;
+    .div-img {
+        width: 36%;
         align-self: center;
         margin: 33% 0 0 0;
     }
-    .div-img img{
-        width:100%;
+    .div-img img {
+        width: 100%;
         height: 100%;
     }
 }
+
+
 /*ipad直、ASUS直*/
-@media screen and (orientation:portrait) and (max-width:800px) and (max-height:1280px){
-    .nav{
-        top:3%;
+
+@media screen and (orientation:portrait) and (max-width:800px) and (max-height:1280px) {
+    .nav {
+        top: 3%;
     }
-    .logo h1{
+    .logo h1 {
         font-size: 28px;
     }
     .nav-right {
         width: 100%;
         justify-content: space-between;
     }
-    .burger-menu{
+    .burger-menu {
         position: relative;
         /* left: 20%; */
-        left:auto;
+        left: auto;
         margin: 10px 15px;
     }
-    .menu-content{
+    .menu-content {
         width: 30%;
         padding: 27% 0 122px;
     }
-    .bg{
+    .bg {
         width: 80%;
         height: 65%;
     }
@@ -377,58 +429,61 @@ i{
         left: 21%;
         top: 79%;
     }
-    .title{
+    .title {
         font-size: 28px;
     }
-    .pre-title{
+    .pre-title {
         font-size: 13px;
     }
-    .sub-title{
+    .sub-title {
         font-size: 82px;
         transform: rotate(270deg) translateX(7%);
-        left:190%;
+        left: 190%;
     }
     .top-right {
         flex-direction: row;
         justify-content: flex-end;
         width: 75%;
     }
-    .words{
+    .words {
         text-align: justify;
         position: absolute;
         left: 8%;
-        top:20%;
+        top: 20%;
         align-self: center;
         width: 45%;
         margin-top: 0%;
     }
-    .div-img{
+    .div-img {
         align-self: center;
-        margin-top:80%;
-        width:53%;
+        margin-top: 80%;
+        width: 53%;
     }
-    .words .mail{
+    .words .mail {
         margin-top: 70px;
         text-align: -webkit-auto;
     }
-    .icon-paper-plane{
+    .icon-paper-plane {
         font-size: 20px;
         letter-spacing: 3px;
     }
 }
+
+
 /*ipadpro直、MINE直、MAC直*/
-@media screen and (orientation:portrait) and (min-width:768px) and (min-height:1366px){
-    .nav{
-        top:3%;
+
+@media screen and (orientation:portrait) and (min-width:768px) and (min-height:1366px) {
+    .nav {
+        top: 3%;
     }
-    .nav-right{
-        width:100%;
+    .nav-right {
+        width: 100%;
         justify-content: space-between;
     }
-    .logo h1{
+    .logo h1 {
         font-size: 29px
     }
-    .burger-menu{
+    .burger-menu {
         position: relative;
         left: auto;
         margin: 10px 15px;
@@ -437,244 +492,253 @@ i{
         width: 23%;
         padding: 27% 0 122px;
     }
-    .bg{
+    .bg {
         width: 80%;
         height: 65%;
-        top:13%;/*直的！所以只有IPADPRO會呈現出來!*/
+        top: 13%;
+        /*直的！所以只有IPADPRO會呈現出來!*/
     }
-    .top-left{
-        width:30%;
+    .top-left {
+        width: 30%;
     }
     .top-left .title-box {
         left: 30%;
         top: 80%;
-    }   
-    .pre-title{
+    }
+    .pre-title {
         font-size: 14px;
     }
-    .title{
+    .title {
         font-size: 32px;
     }
-    .sub-title{
+    .sub-title {
         font-size: 82px;
-        left:190%;
+        left: 190%;
     }
-    .top-right{
+    .top-right {
         flex-direction: row;
         justify-content: flex-end;
         width: 70%;
     }
-    .words{
-        margin-top:0%;
+    .words {
+        margin-top: 0%;
         position: absolute;
-        top:23%;
+        top: 23%;
         left: 10%;
         align-self: flex-start;
         width: 50%;
         text-align: justify;
     }
-    .words h2{
-        letter-spacing:2px;
+    .words h2 {
+        letter-spacing: 2px;
     }
-    .words p{
+    .words p {
         font-size: 22px;
         line-height: 28px;
     }
-    .words .mail{
-        margin-top:100px;
-        text-align: left; 
+    .words .mail {
+        margin-top: 100px;
+        text-align: left;
     }
-    .icon-paper-plane{
+    .icon-paper-plane {
         font-size: 23px;
         letter-spacing: 3px;
     }
-    .div-img{
-        width:50%;
+    .div-img {
+        width: 50%;
         align-self: center;
-        margin-top:80%;
+        margin-top: 80%;
     }
-    .div-img img{
-        width:100%;
+    .div-img img {
+        width: 100%;
     }
 }
+
+
 /*ipadpro橫、MINE橫、MAC橫*/
-@media screen and (orientation:landscape) and (min-width:1366px) and (min-height:768px){
-    .nav{
-        top:3%;
+
+@media screen and (orientation:landscape) and (min-width:1366px) and (min-height:768px) {
+    .nav {
+        top: 3%;
     }
-    .logo h1{
+    .logo h1 {
         font-size: 29px;
-    } 
-    .nav-right{
+    }
+    .nav-right {
         width: 100%;
         justify-content: space-between;
     }
-    .burger-menu{
+    .burger-menu {
         position: relative;
-        left:auto;
-        margin: 10px 15px; 
+        left: auto;
+        margin: 10px 15px;
     }
     .menu-content {
-        width:17%;
+        width: 17%;
         padding: 18% 0 122px;
     }
-    .bg{
+    .bg {
         width: 89%;
         height: 60%;
     }
-    .top-left{
-        width:30%;
+    .top-left {
+        width: 30%;
     }
-    .top-left .title-box{
+    .top-left .title-box {
         left: 18%;
         top: 60%;
     }
-    .pre-title{
+    .pre-title {
         font-size: 14px;
     }
-    .title{
+    .title {
         font-size: 32px;
     }
-    .sub-title{
+    .sub-title {
         font-size: 82px;
     }
-    .top-right{
+    .top-right {
         width: 70%;
         flex-direction: row;
         justify-content: flex-end;
     }
-    .words{
+    .words {
         position: absolute;
-        left:29%;
+        left: 29%;
         width: 40%;
         margin-top: 15%;
         align-self: flex-start;
         text-align: justify;
     }
-    .words p{
+    .words p {
         font-size: 22px;
         line-height: 28px;
         letter-spacing: 0.05em;
     }
-    .words .mail{
-        margin-top:0; 
+    .words .mail {
+        margin-top: 0;
         position: absolute;
         top: 140%;
         left: 20%;
     }
-    .icon-paper-plane{
+    .icon-paper-plane {
         font-size: 24px;
         letter-spacing: 4px;
     }
-    .div-img{
-        width:37%;
+    .div-img {
+        width: 37%;
         align-self: center;
         margin: 27% 0 0 0;
     }
-    .div-img img{
-        width:100%;
+    .div-img img {
+        width: 100%;
         height: auto;
     }
 }
+
+
 /*1680*/
-@media screen and (orientation: landscape) and (min-width: 1680px) and (max-height:1200px){
-    .nav{
-        top:4%;
+
+@media screen and (orientation: landscape) and (min-width: 1680px) and (max-height:1200px) {
+    .nav {
+        top: 4%;
     }
-    .logo h1{
+    .logo h1 {
         font-size: 30px;
     }
-    .nav-right{
+    .nav-right {
         width: 70%;
         justify-content: baseline;
     }
-    .menu-content{
-        width:  13%;
-        padding:230px 0 122px;
+    .menu-content {
+        width: 13%;
+        padding: 230px 0 122px;
     }
-    .top-left{
-        width:30%;
+    .top-left {
+        width: 30%;
     }
     .sub-title {
         font-size: 97px;
         left: 17%;
     }
-    .top-right{
-        width:70%;
+    .top-right {
+        width: 70%;
         justify-content: space-between;
     }
-    .words{
-        width:38%;
-        margin-top:20%;
+    .words {
+        width: 38%;
+        margin-top: 20%;
         position: relative;
     }
-    .words h2{
+    .words h2 {
         font-size: 33px;
     }
-    .words p{
+    .words p {
         font-size: 25px;
     }
-    .icon-paper-plane{
+    .icon-paper-plane {
         font-size: 22px;
     }
-
 }
+
+
 /*1920*/
-@media screen and (orientation: landscape) and (min-width:1680px) and (max-width: 2560px){
-    .nav{
-        top:4%;
+
+@media screen and (orientation: landscape) and (min-width:1680px) and (max-width: 2560px) {
+    .nav {
+        top: 4%;
     }
-    .nav-right{
-        width:70%;
+    .nav-right {
+        width: 70%;
     }
-    .bg{
+    .bg {
         height: 70%;
     }
-    .logo h1{
+    .logo h1 {
         font-size: 30px;
     }
-    .menu-content{
-        width:  13%;
-        padding:230px 0 122px;
+    .menu-content {
+        width: 13%;
+        padding: 230px 0 122px;
     }
-    .top-right{
-        width:70%;
+    .top-right {
+        width: 70%;
         justify-content: space-between
     }
     .top-left .title-box {
         left: 15%;
         top: 70%;
     }
-    .title{
+    .title {
         font-size: 38px;
     }
-    .pre-title{
+    .pre-title {
         font-size: 15px;
     }
-    .words{
-        width:50%;
-        left:0;
-        margin-top:15%;
+    .words {
+        width: 50%;
+        left: 0;
+        margin-top: 15%;
         text-align: justify;
     }
-    .words h2{
+    .words h2 {
         font-size: 36px;
     }
-    .words p{
+    .words p {
         font-size: 28px;
         line-height: 35px;
     }
-    .words .mail{
-        margin-top:20%;
-        top:100%;
+    .words .mail {
+        margin-top: 20%;
+        top: 100%;
     }
-    .icon-paper-plane{
+    .icon-paper-plane {
         font-size: 25px;
     }
-
 }
-@media screen and (min-width:2580px){
-    .top-right{
+
+@media screen and (min-width:2580px) {
+    .top-right {
         justify-content: baseline;
     }
     .words {
@@ -684,26 +748,27 @@ i{
         align-self: center;
         position: initial;
     }
-    .div-img{
-        width:30%;
+    .div-img {
+        width: 30%;
     }
 }
 
 
 /*FOR手機版 直*/
-@media screen and (orientation:portrait) and (min-width:320px) and (max-height:812px){
-    .nav{
-        top:0%;
+
+@media screen and (orientation:portrait) and (min-width:320px) and (max-height:812px) {
+    .nav {
+        top: 0%;
         justify-content: space-between
     }
-    .nav.hideUp{
+    .nav.hideUp {
         transform: translateY(-150px);
     }
-    .nav-right{
+    .nav-right {
         width: 100%;
         justify-content: space-between;
     }
-    .burger-menu{
+    .burger-menu {
         position: relative;
         left: auto;
         margin: 10px 15px;
@@ -713,29 +778,31 @@ i{
         margin: 0 auto;
         padding: 120px 0 122px;
     }
-    .menu-content i{
+    .menu-content i {
         font-size: 13px;
     }
-    .menu-content b{
+    .menu-content b {
         font-size: 26px;
     }
-    .pre-title{
-        color:#b4a69d;
+    .pre-title {
+        color: #b4a69d;
     }
-    .pre-title:after{
-        background:#b4a69d;
+    .pre-title:after {
+        background: #b4a69d;
     }
-    .words{
-        left:0;
+    .words {
+        left: 0;
     }
-    .div-img img{
-        height:100%;
+    .div-img img {
+        height: 100%;
     }
-
 }
+
+
 /*iphoneX 直*/
-@media screen and (orientation:portrait) and (max-height:812px) and (max-width:375px){
-    .logo h1{
+
+@media screen and (orientation:portrait) and (max-height:812px) and (max-width:375px) {
+    .logo h1 {
         font-size: 24px;
     }
     .menu-content {
@@ -743,131 +810,135 @@ i{
         margin: 0 auto;
         padding: 120px 0 122px;
     }
-    .primary{
+    .primary {
         flex-direction: column;
         height: 100%;
         width: 100%;
     }
-    .bg{
+    .bg {
         width: 100%;
         height: 98%;
         top: 44%;
     }
-    .top-left{
+    .top-left {
         width: 100%;
         height: 32%;
         margin-bottom: 6%;
         flex-direction: row-reverse;
     }
-    .top-left .title-box{
+    .top-left .title-box {
         left: 6%;
         top: 66%;
     }
-    .title{
+    .title {
         font-size: 27px;
     }
-    .sub-title{
+    .sub-title {
         font-size: 45px;
-        left:43%;
+        left: 43%;
     }
-    .top-right{
+    .top-right {
         width: 100%;
         flex-direction: column-reverse;
         justify-content: flex-end;
     }
-    .words{
+    .words {
         margin: 3%;
-        margin-top:110%;
-        left:0;
+        margin-top: 110%;
+        left: 0;
         text-align: justify;
         width: 350px;
     }
-    .words h2{
+    .words h2 {
         font-size: 24px;
     }
-    .words p{
+    .words p {
         font-size: 15px;
         line-height: 20px
     }
-    .words .mail{
+    .words .mail {
         margin-top: 70px;
         margin-bottom: 6%;
         text-align: center;
     }
-    .div-img{
-        width:70%;
-        margin:0;
+    .div-img {
+        width: 70%;
+        margin: 0;
         align-self: center
     }
-
 }
+
+
 /*iphone6 直*/
-@media screen and (orientation:portrait) and (max-height:667px) and (min-width:360px){
-    .logo h1{
+
+@media screen and (orientation:portrait) and (max-height:667px) and (min-width:360px) {
+    .logo h1 {
         font-size: 24px;
     }
-    .primary{
+    .primary {
         flex-direction: column;
         height: 100%;
         width: 100%;
     }
-    .bg{
+    .bg {
         width: 100%;
         height: 720px;
         top: 44%;
     }
-    .top-left{
+    .top-left {
         width: 100%;
         height: 32%;
         margin-bottom: 6%;
         flex-direction: row-reverse;
     }
-    .top-left .title-box{
+    .top-left .title-box {
         left: 6%;
         top: 66%;
     }
-    .title{
+    .title {
         font-size: 27px;
     }
-    .sub-title{
+    .sub-title {
         font-size: 45px;
-        left:43%;
+        left: 43%;
     }
-    .top-right{
+    .top-right {
         width: 100%;
         flex-direction: column-reverse;
         justify-content: flex-end;
     }
-    .words{
+    .words {
         margin: 3%;
-        margin-top:130%;
-        left:0;
+        margin-top: 130%;
+        left: 0;
         text-align: justify;
         width: 340px;
     }
-    .words h2{
+    .words h2 {
         font-size: 24px;
     }
-    .words p{
+    .words p {
         font-size: 15px;
         line-height: 20px
     }
-    .words .mail{
+    .words .mail {
         margin-top: 70px;
         margin-bottom: 6%;
         text-align: center;
     }
-    .div-img{
-        width:70%;
-        margin:0;
-        margin-top:5%;
+    .div-img {
+        width: 70%;
+        margin: 0;
+        margin-top: 5%;
         align-self: center
     }
-
 }
+
+
 /*iphone6+ 直*/
-@media screen and (orientation:portrait) and (min-height:670px) and (max-width:414px){
-    .logo h1{
+
+@media screen and (orientation:portrait) and (min-height:670px) and (max-width:414px) {
+    .logo h1 {
         font-size: 24px;
     }
     .menu-content {
@@ -875,358 +946,378 @@ i{
         margin: 0 auto;
         padding: 120px 0 122px;
     }
-    .primary{
+    .primary {
         flex-direction: column;
         height: 100%;
         width: 100%;
     }
-    .bg{
+    .bg {
         width: 100%;
         height: 95%;
         top: 55%;
     }
-    .top-left{
+    .top-left {
         width: 100%;
         height: 30%;
         margin-bottom: 7%;
         flex-direction: row-reverse;
     }
-    .top-left .title-box{
+    .top-left .title-box {
         left: 6%;
         top: 66%;
     }
-    .title{
+    .title {
         font-size: 27px;
     }
-    .sub-title{
+    .sub-title {
         font-size: 50px;
-        left:45%;
+        left: 45%;
     }
-    .top-right{
+    .top-right {
         width: 100%;
-        height:60%;
+        height: 60%;
         flex-direction: column-reverse;
-        justify-content:flex-end;
+        justify-content: flex-end;
     }
-    .words{
+    .words {
         padding: 3%;
-        margin:0;
-        margin-top:140%;
-        left:0%;
+        margin: 0;
+        margin-top: 140%;
+        left: 0%;
         text-align: justify;
         width: 350px;
     }
-    .words h2{
+    .words h2 {
         font-size: 24px;
-        line-height:30px;
-        margin-bottom:5px;
+        line-height: 30px;
+        margin-bottom: 5px;
     }
-    .words p{
+    .words p {
         font-size: 15px;
         line-height: 20px;
         letter-spacing: 0.03em;
     }
-    .words .mail{
+    .words .mail {
         margin-top: 68px;
         margin-bottom: 6%;
         text-align: center;
     }
-    .div-img{
-        width:70%;
-        margin:0;
+    .div-img {
+        width: 70%;
+        margin: 0;
         align-self: center
     }
 }
-/*i5直*/ /*改好的喔!!別再改了!!*/
-@media screen and (orientation:portrait) and (max-width:320px){
-    .logo h1{
+
+
+/*i5直*/
+
+
+/*改好的喔!!別再改了!!*/
+
+@media screen and (orientation:portrait) and (max-width:320px) {
+    .logo h1 {
         font-size: 22px;
     }
     .menu-content {
         padding: 120px 0 122px;
         width: 65%;
     }
-    .sub-title{
+    .sub-title {
         left: 36%;
         font-size: 44px;
     }
-    .title{
+    .title {
         font-size: 25px;
         line-height: 22px;
     }
-    .primary{
+    .primary {
         flex-direction: column;
         height: 100%;
         width: 100%;
     }
-    .bg{
-        height:145%;
+    .bg {
+        height: 145%;
     }
-    .top-right{
+    .top-right {
         width: 100%;
         flex-direction: column-reverse;
         justify-content: flex-end;
     }
-    .div-img{
+    .div-img {
         padding-top: 3%;
     }
-    .words{
-        width:88%;
-        margin:6%;
-        margin-top:120%;
-        left:0;
+    .words {
+        width: 88%;
+        margin: 6%;
+        margin-top: 120%;
+        left: 0;
     }
-    .words div{
+    .words div {
         margin-bottom: 20px;
     }
-    .words h2{
+    .words h2 {
         font-size: 24px;
         margin-bottom: 5px
     }
-    .words p{
+    .words p {
         font-size: 15px;
         line-height: 20px;
-        letter-spacing:0.03em;
+        letter-spacing: 0.03em;
     }
-    .words .mail{
+    .words .mail {
         margin-top: 43px;
         margin-bottom: 6%;
         text-align: center;
     }
-    .icon-paper-plane{
+    .icon-paper-plane {
         font-size: 18px;
     }
-
 }
 
+
 /*-------------------------------------IPHONE橫*/
-@media screen and (orientation:landscape) and (max-width:812px) and (min-height:320px){
-    .nav{
-        top:0%;
+
+@media screen and (orientation:landscape) and (max-width:812px) and (min-height:320px) {
+    .nav {
+        top: 0%;
     }
-    .nav.hideUp{
+    .nav.hideUp {
         transform: translateY(-150px);
     }
-    .logo h1{
+    .logo h1 {
         font-size: 24px;
     }
-    .nav-right{
-        width:100%;
+    .nav-right {
+        width: 100%;
         justify-content: space-between;
         margin-left: 0;
     }
-    .social{
+    .social {
         display: none;
     }
-    .burger-menu{
-        left:auto;
+    .burger-menu {
+        left: auto;
         position: relative;
         margin: 10px 15px;
     }
-    .menu-content{
-        padding:80px 0 90px;
-        width:37%; /*I5*/
+    .menu-content {
+        padding: 80px 0 90px;
+        width: 37%;
+        /*I5*/
     }
-    .menu-content i{
+    .menu-content i {
         font-size: 13px;
     }
-    .menu-content b{
+    .menu-content b {
         font-size: 26px;
         line-height: 36px
     }
 }
+
+
 /*i6~i6+~IX 橫*/
-@media screen and  (orientation:landscape) and (max-height:414px) and (max-width:812px){
-    .logo h1{
+
+@media screen and (orientation:landscape) and (max-height:414px) and (max-width:812px) {
+    .logo h1 {
         font-size: 24px;
     }
-    .bg{
+    .bg {
         height: 325px;
         top: 45px;
     }
-    .menu-content{
-        width: 27%;/*I6+*/
+    .menu-content {
+        width: 27%;
+        /*I6+*/
     }
-    .top-left{
-        width:25%;
-        height:100%;
+    .top-left {
+        width: 25%;
+        height: 100%;
         display: flex;
         justify-content: baseline;
     }
-    .top-right{
+    .top-right {
         width: 75%;
         height: 100%;
         justify-content: space-between;
         flex-direction: row;
         flex-wrap: nowrap;
     }
-    .top-left .title-box{
+    .top-left .title-box {
         left: 8%;
         margin-top: 160%;
         position: relative;
-        height:50px;
-        top:0;
+        height: 50px;
+        top: 0;
     }
-    .pre-title:after{
-        width:25px;
+    .pre-title:after {
+        width: 25px;
         margin: 2px 8px;
         display: none;
     }
-    .title{
+    .title {
         font-size: 22px;
         line-height: 22px;
     }
-    .sub-title{
+    .sub-title {
         font-size: 61px;
     }
-    .words{
+    .words {
         width: 60%;
         height: 65%;
         margin: 0;
         position: relative;
-        left:0;
-        margin-top:13%;
+        left: 0;
+        margin-top: 13%;
         align-self: flex-start;
         text-align: justify;
     }
-    .words div{
+    .words div {
         margin-bottom: 5px;
     }
-    .words div h2{
+    .words div h2 {
         margin-bottom: 0;
     }
-    .words h2{
+    .words h2 {
         font-size: 23px;
         font-weight: 400;
     }
-    .words p{
+    .words p {
         font-size: 14px;
         line-height: 19px
     }
-    .words .mail{
+    .words .mail {
         margin-top: 25px;
         text-align: center;
         position: relative;
     }
-    .icon-paper-plane{
+    .icon-paper-plane {
         font-size: 16px;
     }
-    .div-img{
-        width:35%;
-        margin:0;
+    .div-img {
+        width: 35%;
+        margin: 0;
         align-self: flex-end;
     }
 }
+
+
 /*i5橫*/
-@media screen and (orientation:landscape) and (max-height:320px) and (max-width:568px){
-    .logo h1{
+
+@media screen and (orientation:landscape) and (max-height:320px) and (max-width:568px) {
+    .logo h1 {
         font-size: 22px;
     }
-    .menu-content{
-        width:37%;
+    .menu-content {
+        width: 37%;
     }
-    .bg{
+    .bg {
         height: 82%;
-        top:42px;
+        top: 42px;
     }
-    .top-left{
-        width:25%;
+    .top-left {
+        width: 25%;
     }
-    .top-right{
-        width:75%;
-        justify-content:space-between;
+    .top-right {
+        width: 75%;
+        justify-content: space-between;
     }
-    .top-left .title-box{
+    .top-left .title-box {
         right: 0;
         margin-bottom: 4%;
         align-self: end;
     }
-    .title{
+    .title {
         font-size: 18px;
     }
-    .sub-title{
+    .sub-title {
         font-size: 48px;
         left: -29%;
     }
-    .pre-title{
+    .pre-title {
         font-size: 12px
     }
-    .pre-title:after{
+    .pre-title:after {
         display: none;
     }
-    .words{
-        width:62%;
-        left:0;
+    .words {
+        width: 62%;
+        left: 0;
     }
-    .words div{
+    .words div {
         margin-bottom: 2px;
     }
-    .words h2{
+    .words h2 {
         font-size: 20px;
         line-height: 24px;
     }
-    .words p{
+    .words p {
         font-size: 12px;
         line-height: 18px
     }
-    .words .mail{
+    .words .mail {
         left: 0;
         margin-top: 0px;
         text-align: center;
         position: relative;
     }
-    .icon-paper-plane{
+    .icon-paper-plane {
         font-size: 15px;
         line-height: 50px;
     }
-    .div-img{
-        width:33%;
-        margin:0;
+    .div-img {
+        width: 33%;
+        margin: 0;
         align-self: flex-end;
     }
-
 }
+
+
 /*iphone6橫*/
-@media screen and  (orientation:landscape) and (min-height:375px) and (max-width:812px){
-    .logo h1{
+
+@media screen and (orientation:landscape) and (min-height:375px) and (max-width:812px) {
+    .logo h1 {
         font-size: 24px;
     }
-    .menu-content{
+    .menu-content {
         width: 32%;
     }
-    .title{
+    .title {
         font-size: 20px;
     }
-    .sub-title{
+    .sub-title {
         left: -12%;
     }
     /* .top-right{
         justify-content: space-evenly;
     } */
-    .words{
+    .words {
         height: 68%;
     }
-    .words h2{
+    .words h2 {
         font-size: 22px;
         line-height: 23px;
     }
 }
+
+
 /*IX橫*/
-@media screen and (orientation:landscape) and (min-width:812px) and (max-height:375px){
-    .logo h1{
+
+@media screen and (orientation:landscape) and (min-width:812px) and (max-height:375px) {
+    .logo h1 {
         font-size: 24px;
     }
-    .top-left .title-box{
-        left:12%;
-        top:76%;
+    .top-left .title-box {
+        left: 12%;
+        top: 76%;
     }
-    .words{
+    .words {
         height: 62%;
     }
-    .menu-content{
+    .menu-content {
         width: 26%;
     }
-    .sub-title{
+    .sub-title {
         left: -7%;
     }
 }
