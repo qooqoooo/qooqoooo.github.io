@@ -6,7 +6,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=Big5">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ailie.hou</title>
+    <title>Allie.hou</title>
     <link rel="stylesheet" href="css/projects2.css" id="css">
     <link rel="stylesheet" href="css/fontello.css">
     <link href="https://fonts.googleapis.com/css?family=Abel|Cairo|Rajdhani|Roboto+Condensed:300|Crafty+Girls|Special+Elite|Source+Sans+Pro:200,300|Dosis:200" rel="stylesheet">
@@ -16,7 +16,9 @@
     <nav class="nav">
         <div class="nav-right">
             <div class="logo">
-                <a href="./index.html"> <h1>Heyy Hey</h1> </a>
+                <a href="./index.html">
+                    <h1>Heyy Hey</h1>
+                </a>
             </div>
             <div class="burger-menu">
                 <div class="line">
@@ -24,41 +26,41 @@
                     <span class="middle"></span>
                     <span class="bottom"></span>
                 </div>
-            </div>  
-        </div>    
+            </div>
+        </div>
     </nav>
 
     <div class="menu-cover">
         <div class="menu-content">
             <ul>
                 <li>
-                    <a href="./index.html"> 
+                    <a href="./index.html">
                         <i>01</i>
                         <b>Home</b>
-                    </a> 
+                    </a>
                 </li>
                 <li>
-                    <a href="./me.html"> 
+                    <a href="./me.html">
                         <i>02</i>
                         <b>About</b>
-                    </a> 
+                    </a>
                 </li>
                 <li>
-                    <a href="./projects.html"> 
+                    <a href="./projects.html">
                         <i>03</i>
                         <b>Projects</b>
-                    </a> 
+                    </a>
                 </li>
                 <li>
-                    <a class="contact" href="index.html#contact"> 
+                    <a class="contact" href="index.html#contact">
                         <i>04</i>
                         <b>Contacts</b>
-                    </a> 
+                    </a>
                 </li>
             </ul>
-        </div>    
+        </div>
     </div>
-    
+
     <div class="page-content">
         <div class="main-content">
             <div class="primary">
@@ -132,38 +134,50 @@
                        
                     </figure>    
                 </section> -->
-            </div>               
+            </div>
         </div>
     </div>
 
-  
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="./jquery.transit-master/jquery.transit.js"></script>
     <script>
-    /*MeNu*/
-    $('.burger-menu').click(function(){
-        if($('.middle').css('display')=='none'){
-            $('.top').css({'transform':'0'})
-            $('.bottom').css({'transform':'0'})
-            $('.middle').css('display','block')
-            $('.menu-cover').css({'transform':'translate(0%,-100%)'})
-        }else if($('.middle').css('height')=='1px'){
-            $('.top').css({'transform':'translate(0px,5px), rotate(45deg)'})
-            $('.middle').css('display','none')
-            $('.bottom').css({'transform':'translate(1px, -5px), rotate(-45deg)'})
-            $('.menu-cover').css({'transform':'translate(0%,0%), matrix(1,0,0,1,0,0)'})            
-        }else{
-            console.log('pp')
-        }
-    })
+        /*MeNu*/
+        $('.burger-menu').click(function() {
+            if ($('.middle').css('display') == 'none') {
+                $('.top').css({
+                    'transform': '0'
+                })
+                $('.bottom').css({
+                    'transform': '0'
+                })
+                $('.middle').css('display', 'block')
+                $('.menu-cover').css({
+                    'transform': 'translate(0%,-100%)'
+                })
+            } else if ($('.middle').css('height') == '1px') {
+                $('.top').css({
+                    'transform': 'translate(0px,5px), rotate(45deg)'
+                })
+                $('.middle').css('display', 'none')
+                $('.bottom').css({
+                    'transform': 'translate(1px, -5px), rotate(-45deg)'
+                })
+                $('.menu-cover').css({
+                    'transform': 'translate(0%,0%), matrix(1,0,0,1,0,0)'
+                })
+            } else {
+                console.log('pp')
+            }
+        })
 
         /*算 NAV SCROLL 加速度 NAV動畫精緻版!!!*/
-        var checkScrollSpeed = (function (settings) {
+        var checkScrollSpeed = (function(settings) {
             settings = settings || {};
 
             var lastPos, newPos, timer, delta,
-                    delay = settings.delay || 50;
+                delay = settings.delay || 50;
 
             function clear() {
                 lastPos = null;
@@ -172,7 +186,7 @@
 
             clear();
 
-            return function () {
+            return function() {
                 newPos = window.scrollY;
                 if (lastPos != null) {
                     delta = newPos - lastPos;
@@ -183,21 +197,18 @@
                 return delta;
             };
         })();
-        window.addEventListener('scroll', function () {
+        window.addEventListener('scroll', function() {
             delta = checkScrollSpeed()
-            /*如果差值小於10就不做動作*/
-            // if (Math.abs(delta) < 0) {
-            //     return
-            // }
+                /*如果差值小於10就不做動作*/
+                // if (Math.abs(delta) < 0) {
+                //     return
+                // }
             if (delta > 0) {
                 $('.nav').addClass('hideUp')
             } else {
                 $('.nav').removeClass('hideUp')
             }
         })
-
-
-
     </script>
 
 

@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" >
-    <title>Ailie.hou</title>
+    <title>Allie.hou</title>
+    <link rel="shortcut icon" href="css/img/favicon" />
     <link rel="stylesheet" href="css/style.css" id="css">
     <link rel="stylesheet" href="css/style1.css" id="css">
     <link rel="stylesheet" href="css/fontello.css">
@@ -579,7 +580,7 @@
         window.addEventListener('scroll', function () {
             console.log('01')
             // var now = this.scrollY; /*等於$(window).scrollTop()捲軸拉的距離*/
-            var now = $(window).scrollTop()/*為了IE,上一句無效*/
+            var now = $(window).scrollTop()/*為了IE,上一句THIS無效*/
             //if else再加上其他條件來讓function判斷:已進入/未進入 兩種狀態(不重複進入同個function)
             if (now > sectionTop - 550 && topAnimated === false) {
                 topAnimated = true
